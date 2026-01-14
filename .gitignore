@@ -1,0 +1,28 @@
+# macOS system files (clutter, not needed in repo)
+.DS_Store
+**/.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Log files
+*.log
+
+# Environment/secrets (if you ever have API keys in files)
+.env
+.env.local
+*.secrets
+
+# Large media files (optional - remove if you want to track images)
+# *.mp4
+# *.mov
+# *.zip
+
+# Node modules (if you ever use npm)
+node_modules/
+
+# Python cache (if you ever use Python)
+__pycache__/
+*.pyc

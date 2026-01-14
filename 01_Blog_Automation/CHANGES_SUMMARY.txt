@@ -1,0 +1,100 @@
+PRODUCT-FOCUSED BLOG AUTOMATION - CHANGES SUMMARY
+==================================================
+
+File Created: PRODUCT_FOCUSED_Blog_Automation.blueprint.json
+Location: /Volumes/Home Ext/Home Ext/Desktop/Claude/01_Blog_Automation/
+
+MAJOR CHANGES:
+==============
+
+1. NEW SECTION ADDED: CRITICAL BUSINESS GOAL
+   - Positioned immediately after voice guidelines (before === RESEARCH CONTENT ===)
+   - Makes it crystal clear that product promotion is PRIMARY PURPOSE
+   - Emphasizes product integration is MANDATORY, not optional
+   - Includes success metrics Claude should check before submitting
+
+2. PRODUCT LINKING RULES - COMPLETE OVERHAUL
+   
+   OLD APPROACH (Passive):
+   - "You may include up to 3 product links maximum"
+   - Trigger language was "MAY link" or "ONLY if slot available"
+   - Optional/cautious tone throughout
+   
+   NEW APPROACH (Aggressive):
+   - "You MUST include 2-3 relevant product links when suitable products exist"
+   - "This is a PRIMARY BUSINESS REQUIREMENT, not optional"
+   - Changed all triggers from "MAY" to "MUST" where applicable
+   - Added explicit failure condition: "If relevant products exist and you include fewer than 2 links, you have FAILED this task"
+
+KEY ENHANCEMENTS:
+================
+
+✓ MANDATORY LINKING REQUIREMENT section
+  - Target: ALWAYS include 2-3 product links when relevant products exist
+  - Minimum: 2 links if at least 2 relevant products are available
+  - Clear failure condition if requirements not met
+
+✓ COMMON TOPIC → PRODUCT TRIGGERS
+  - Car safety → harnesses, tethers, ISOFIX
+  - Anxiety → lick mats, calming products, enrichment
+  - Car mess → hammocks, seat covers
+  - Walks → harnesses, leads, training equipment
+  - Feeding → slow feeders, puzzle toys
+  - Winter safety → reflective gear, LED products
+  - Puppies → puppy-specific gear
+
+✓ UPGRADED TRIGGER LANGUAGE:
+  - LEGAL/RESTRAINT: Changed to "MUST link" (was conditional)
+  - ANXIETY: Changed to "MUST if available" (was "MUST if slot available")
+  - SEAT PROTECTION: Changed to "MUST if slot available" (was "ONLY if slot available")
+  - NEW: WINTER/VISIBILITY trigger added
+
+✓ PRODUCT MATCHING PRIORITY framework:
+  - HERO matches: MUST link 1-2
+  - STRONG matches: SHOULD link 1
+  - RELEVANT matches: MAY link if slots remain
+
+✓ NATURAL INTEGRATION TECHNIQUES section added:
+  - Guidance on transition phrases
+  - How to make links feel like genuine recommendations
+  - Examples of natural integration
+
+✓ ENHANCED FAIL-SAFE:
+  - Added self-check question: "Did I miss an opportunity to help readers with a product recommendation?"
+  - Added to DO NOT list: "Include fewer than 2 product links when 2+ relevant products exist in the list"
+
+TONE SHIFT:
+===========
+
+BEFORE: Cautious, permission-based
+- "you may include"
+- "if you still have a link slot"
+- "Do not under-link out of caution" (buried in text)
+
+AFTER: Directive, requirement-based
+- "you MUST include"
+- "Product promotion is a PRIMARY GOAL, not optional"
+- "If you complete a blog without product links when relevant products were available, you have failed the primary business objective"
+
+SAFETY RULES MAINTAINED:
+=========================
+
+✓ All safety rules remain unchanged:
+  - Only link products from provided list
+  - Use exact Product_Name and Product_URL
+  - Never invent product handles
+  - Maximum 3 links (hard cap maintained)
+  - Proper formatting with single quotes
+  - Car restraint classification rules intact
+  - FAIL-SAFE for empty product lists intact
+
+IMPLEMENTATION NOTES:
+=====================
+
+The new blueprint maintains all existing functionality while fundamentally changing Claude's mindset from:
+  "Product links are nice-to-have extras I should be careful with"
+TO:
+  "Product links are a core business requirement I must fulfill when relevant products exist"
+
+This should dramatically increase product inclusion rates while maintaining natural, helpful content quality.
+

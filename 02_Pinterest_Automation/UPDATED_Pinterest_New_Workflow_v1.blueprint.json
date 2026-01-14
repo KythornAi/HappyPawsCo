@@ -1,0 +1,3267 @@
+{
+  "name": "Pinterest Pin Generator - NEW Workflow Sheet v1",
+  "flow": [
+    {
+      "id": 20,
+      "module": "google-sheets:filterRows",
+      "version": 2,
+      "parameters": {
+        "__IMTCONN__": 13119631
+      },
+      "mapper": {
+        "from": "share",
+        "limit": "1",
+        "filter": [
+          [
+            {
+              "a": "E",
+              "b": "SCHEDULED",
+              "o": "text:equal"
+            }
+          ]
+        ],
+        "sheetId": "Pinterest_Workflow",
+        "sortOrder": "asc",
+        "spreadsheetId": "1xCcDKooyPShQx7pYuqzzs4CQ3Xlo6groSLXbQa82ekE",
+        "tableFirstRow": "A1:CZ1",
+        "includesHeaders": true,
+        "valueRenderOption": "FORMATTED_VALUE",
+        "dateTimeRenderOption": "FORMATTED_STRING"
+      },
+      "metadata": {
+        "designer": {
+          "x": 28,
+          "y": 52
+        },
+        "restore": {
+          "expect": {
+            "from": {
+              "label": "Select from all"
+            },
+            "orderBy": {
+              "mode": "chose"
+            },
+            "sheetId": {
+              "mode": "chose",
+              "label": "Pinterest_Workflow"
+            },
+            "sortOrder": {
+              "mode": "chose",
+              "label": "Ascending"
+            },
+            "tableFirstRow": {
+              "label": "A-CZ"
+            },
+            "includesHeaders": {
+              "mode": "chose",
+              "label": "Yes"
+            },
+            "valueRenderOption": {
+              "mode": "chose",
+              "label": "Formatted value"
+            },
+            "dateTimeRenderOption": {
+              "mode": "chose",
+              "label": "Formatted string"
+            }
+          },
+          "parameters": {
+            "__IMTCONN__": {
+              "data": {
+                "scoped": "true",
+                "connection": "google"
+              },
+              "label": "My Google connection (casadecashflow@gmail.com)"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "__IMTCONN__",
+            "type": "account:google",
+            "label": "Connection",
+            "required": true
+          }
+        ],
+        "expect": [
+          {
+            "name": "from",
+            "type": "select",
+            "label": "Search Method",
+            "required": true,
+            "validate": {
+              "enum": [
+                "drive",
+                "share"
+              ]
+            }
+          },
+          {
+            "name": "valueRenderOption",
+            "type": "select",
+            "label": "Value render option",
+            "validate": {
+              "enum": [
+                "FORMATTED_VALUE",
+                "UNFORMATTED_VALUE",
+                "FORMULA"
+              ]
+            }
+          },
+          {
+            "name": "dateTimeRenderOption",
+            "type": "select",
+            "label": "Date and time render option",
+            "validate": {
+              "enum": [
+                "SERIAL_NUMBER",
+                "FORMATTED_STRING"
+              ]
+            }
+          },
+          {
+            "name": "limit",
+            "type": "uinteger",
+            "label": "Limit"
+          },
+          {
+            "name": "spreadsheetId",
+            "type": "text",
+            "label": "Spreadsheet ID",
+            "required": true
+          },
+          {
+            "name": "sheetId",
+            "type": "select",
+            "label": "Sheet Name",
+            "required": true
+          },
+          {
+            "name": "includesHeaders",
+            "type": "select",
+            "label": "Table contains headers",
+            "required": true,
+            "validate": {
+              "enum": [
+                true,
+                false
+              ]
+            }
+          },
+          {
+            "name": "tableFirstRow",
+            "type": "select",
+            "label": "Column range",
+            "required": true,
+            "validate": {
+              "enum": [
+                "A1:Z1",
+                "A1:BZ1",
+                "A1:CZ1",
+                "A1:DZ1",
+                "A1:MZ1",
+                "A1:ZZ1",
+                "A1:AZZ1",
+                "A1:BZZ1",
+                "A1:CZZ1",
+                "A1:DZZ1",
+                "A1:MZZ1",
+                "A1:ZZZ1"
+              ]
+            }
+          },
+          {
+            "name": "filter",
+            "type": "filter",
+            "label": "Filter",
+            "options": "rpc://google-sheets/2/rpcGetFilterKeys?includesHeaders=true"
+          },
+          {
+            "name": "orderBy",
+            "type": "select",
+            "label": "Order by"
+          },
+          {
+            "name": "sortOrder",
+            "type": "select",
+            "label": "Sort order",
+            "validate": {
+              "enum": [
+                "asc",
+                "desc"
+              ]
+            }
+          }
+        ],
+        "interface": [
+          {
+            "name": "__IMTLENGTH__",
+            "type": "uinteger",
+            "label": "Total number of bundles"
+          },
+          {
+            "name": "__IMTINDEX__",
+            "type": "uinteger",
+            "label": "Bundle order position"
+          },
+          {
+            "name": "__ROW_NUMBER__",
+            "type": "number",
+            "label": "Row number"
+          },
+          {
+            "name": "__SPREADSHEET_ID__",
+            "type": "text",
+            "label": "Spreadsheet ID"
+          },
+          {
+            "name": "__SHEET__",
+            "type": "text",
+            "label": "Sheet"
+          },
+          {
+            "name": "0",
+            "type": "text",
+            "label": "Publish_Date (A)"
+          },
+          {
+            "name": "1",
+            "type": "text",
+            "label": "Blog_Title (B)"
+          },
+          {
+            "name": "2",
+            "type": "text",
+            "label": "Primary_Keyword (C)"
+          },
+          {
+            "name": "3",
+            "type": "text",
+            "label": "File_ID (D)"
+          },
+          {
+            "name": "4",
+            "type": "text",
+            "label": "Status (E)"
+          },
+          {
+            "name": "5",
+            "type": "text",
+            "label": "Generated_HTML (F)"
+          },
+          {
+            "name": "6",
+            "type": "text",
+            "label": "Image_URL (G)"
+          },
+          {
+            "name": "7",
+            "type": "text",
+            "label": "Special_Instructions (H)"
+          },
+          {
+            "name": "8",
+            "type": "text",
+            "label": "Pin_Tags (I)"
+          },
+          {
+            "name": "9",
+            "type": "text",
+            "label": "Generated_Date (J)"
+          },
+          {
+            "name": "10",
+            "type": "text",
+            "label": "Pin_Title (K)"
+          },
+          {
+            "name": "11",
+            "type": "text",
+            "label": "Pin_Desc (L)"
+          },
+          {
+            "name": "12",
+            "type": "text",
+            "label": "Pin_Alt_Text (M)"
+          },
+          {
+            "name": "13",
+            "type": "text",
+            "label": "Pin_Image (N)"
+          },
+          {
+            "name": "14",
+            "type": "text",
+            "label": "Pin_Copy (O)"
+          },
+          {
+            "name": "15",
+            "type": "text",
+            "label": "(P)"
+          },
+          {
+            "name": "16",
+            "type": "text",
+            "label": "(Q)"
+          },
+          {
+            "name": "17",
+            "type": "text",
+            "label": "(R)"
+          },
+          {
+            "name": "18",
+            "type": "text",
+            "label": "(S)"
+          },
+          {
+            "name": "19",
+            "type": "text",
+            "label": "(T)"
+          },
+          {
+            "name": "20",
+            "type": "text",
+            "label": "(U)"
+          },
+          {
+            "name": "21",
+            "type": "text",
+            "label": "(V)"
+          },
+          {
+            "name": "22",
+            "type": "text",
+            "label": "(W)"
+          },
+          {
+            "name": "23",
+            "type": "text",
+            "label": "(X)"
+          },
+          {
+            "name": "24",
+            "type": "text",
+            "label": "(Y)"
+          },
+          {
+            "name": "25",
+            "type": "text",
+            "label": "(Z)"
+          },
+          {
+            "name": "26",
+            "type": "text",
+            "label": "(AA)"
+          },
+          {
+            "name": "27",
+            "type": "text",
+            "label": "(AB)"
+          },
+          {
+            "name": "28",
+            "type": "text",
+            "label": "(AC)"
+          },
+          {
+            "name": "29",
+            "type": "text",
+            "label": "(AD)"
+          },
+          {
+            "name": "30",
+            "type": "text",
+            "label": "(AE)"
+          },
+          {
+            "name": "31",
+            "type": "text",
+            "label": "(AF)"
+          },
+          {
+            "name": "32",
+            "type": "text",
+            "label": "(AG)"
+          },
+          {
+            "name": "33",
+            "type": "text",
+            "label": "(AH)"
+          },
+          {
+            "name": "34",
+            "type": "text",
+            "label": "(AI)"
+          },
+          {
+            "name": "35",
+            "type": "text",
+            "label": "(AJ)"
+          },
+          {
+            "name": "36",
+            "type": "text",
+            "label": "(AK)"
+          },
+          {
+            "name": "37",
+            "type": "text",
+            "label": "(AL)"
+          },
+          {
+            "name": "38",
+            "type": "text",
+            "label": "(AM)"
+          },
+          {
+            "name": "39",
+            "type": "text",
+            "label": "(AN)"
+          },
+          {
+            "name": "40",
+            "type": "text",
+            "label": "(AO)"
+          },
+          {
+            "name": "41",
+            "type": "text",
+            "label": "(AP)"
+          },
+          {
+            "name": "42",
+            "type": "text",
+            "label": "(AQ)"
+          },
+          {
+            "name": "43",
+            "type": "text",
+            "label": "(AR)"
+          },
+          {
+            "name": "44",
+            "type": "text",
+            "label": "(AS)"
+          },
+          {
+            "name": "45",
+            "type": "text",
+            "label": "(AT)"
+          },
+          {
+            "name": "46",
+            "type": "text",
+            "label": "(AU)"
+          },
+          {
+            "name": "47",
+            "type": "text",
+            "label": "(AV)"
+          },
+          {
+            "name": "48",
+            "type": "text",
+            "label": "(AW)"
+          },
+          {
+            "name": "49",
+            "type": "text",
+            "label": "(AX)"
+          },
+          {
+            "name": "50",
+            "type": "text",
+            "label": "(AY)"
+          },
+          {
+            "name": "51",
+            "type": "text",
+            "label": "(AZ)"
+          },
+          {
+            "name": "52",
+            "type": "text",
+            "label": "(BA)"
+          },
+          {
+            "name": "53",
+            "type": "text",
+            "label": "(BB)"
+          },
+          {
+            "name": "54",
+            "type": "text",
+            "label": "(BC)"
+          },
+          {
+            "name": "55",
+            "type": "text",
+            "label": "(BD)"
+          },
+          {
+            "name": "56",
+            "type": "text",
+            "label": "(BE)"
+          },
+          {
+            "name": "57",
+            "type": "text",
+            "label": "(BF)"
+          },
+          {
+            "name": "58",
+            "type": "text",
+            "label": "(BG)"
+          },
+          {
+            "name": "59",
+            "type": "text",
+            "label": "(BH)"
+          },
+          {
+            "name": "60",
+            "type": "text",
+            "label": "(BI)"
+          },
+          {
+            "name": "61",
+            "type": "text",
+            "label": "(BJ)"
+          },
+          {
+            "name": "62",
+            "type": "text",
+            "label": "(BK)"
+          },
+          {
+            "name": "63",
+            "type": "text",
+            "label": "(BL)"
+          },
+          {
+            "name": "64",
+            "type": "text",
+            "label": "(BM)"
+          },
+          {
+            "name": "65",
+            "type": "text",
+            "label": "(BN)"
+          },
+          {
+            "name": "66",
+            "type": "text",
+            "label": "(BO)"
+          },
+          {
+            "name": "67",
+            "type": "text",
+            "label": "(BP)"
+          },
+          {
+            "name": "68",
+            "type": "text",
+            "label": "(BQ)"
+          },
+          {
+            "name": "69",
+            "type": "text",
+            "label": "(BR)"
+          },
+          {
+            "name": "70",
+            "type": "text",
+            "label": "(BS)"
+          },
+          {
+            "name": "71",
+            "type": "text",
+            "label": "(BT)"
+          },
+          {
+            "name": "72",
+            "type": "text",
+            "label": "(BU)"
+          },
+          {
+            "name": "73",
+            "type": "text",
+            "label": "(BV)"
+          },
+          {
+            "name": "74",
+            "type": "text",
+            "label": "(BW)"
+          },
+          {
+            "name": "75",
+            "type": "text",
+            "label": "(BX)"
+          },
+          {
+            "name": "76",
+            "type": "text",
+            "label": "(BY)"
+          },
+          {
+            "name": "77",
+            "type": "text",
+            "label": "(BZ)"
+          },
+          {
+            "name": "78",
+            "type": "text",
+            "label": "(CA)"
+          },
+          {
+            "name": "79",
+            "type": "text",
+            "label": "(CB)"
+          },
+          {
+            "name": "80",
+            "type": "text",
+            "label": "(CC)"
+          },
+          {
+            "name": "81",
+            "type": "text",
+            "label": "(CD)"
+          },
+          {
+            "name": "82",
+            "type": "text",
+            "label": "(CE)"
+          },
+          {
+            "name": "83",
+            "type": "text",
+            "label": "(CF)"
+          },
+          {
+            "name": "84",
+            "type": "text",
+            "label": "(CG)"
+          },
+          {
+            "name": "85",
+            "type": "text",
+            "label": "(CH)"
+          },
+          {
+            "name": "86",
+            "type": "text",
+            "label": "(CI)"
+          },
+          {
+            "name": "87",
+            "type": "text",
+            "label": "(CJ)"
+          },
+          {
+            "name": "88",
+            "type": "text",
+            "label": "(CK)"
+          },
+          {
+            "name": "89",
+            "type": "text",
+            "label": "(CL)"
+          },
+          {
+            "name": "90",
+            "type": "text",
+            "label": "(CM)"
+          },
+          {
+            "name": "91",
+            "type": "text",
+            "label": "(CN)"
+          },
+          {
+            "name": "92",
+            "type": "text",
+            "label": "(CO)"
+          },
+          {
+            "name": "93",
+            "type": "text",
+            "label": "(CP)"
+          },
+          {
+            "name": "94",
+            "type": "text",
+            "label": "(CQ)"
+          },
+          {
+            "name": "95",
+            "type": "text",
+            "label": "(CR)"
+          },
+          {
+            "name": "96",
+            "type": "text",
+            "label": "(CS)"
+          },
+          {
+            "name": "97",
+            "type": "text",
+            "label": "(CT)"
+          },
+          {
+            "name": "98",
+            "type": "text",
+            "label": "(CU)"
+          },
+          {
+            "name": "99",
+            "type": "text",
+            "label": "(CV)"
+          },
+          {
+            "name": "100",
+            "type": "text",
+            "label": "(CW)"
+          },
+          {
+            "name": "101",
+            "type": "text",
+            "label": "(CX)"
+          },
+          {
+            "name": "102",
+            "type": "text",
+            "label": "(CY)"
+          },
+          {
+            "name": "103",
+            "type": "text",
+            "label": "(CZ)"
+          }
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "module": "google-vertex-ai:createAMultimodalPrompt",
+      "version": 1,
+      "parameters": {
+        "__IMTCONN__": 13251576
+      },
+      "filter": {
+        "name": "Only SCHEDULED Rows",
+        "conditions": [
+          [
+            {
+              "a": "{{20.`4`}}",
+              "b": "SCHEDULED",
+              "o": "text:equal"
+            }
+          ]
+        ]
+      },
+      "mapper": {
+        "topP": "1",
+        "model": "gemini-2.5-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "You are a Professional Pet Lifestyle Photographer creating Pinterest pin concepts for UK pet owners.\n\nBlog Title: \"{{20.`1`}}\"\nSpecial Instructions: \"{{20.`2`}}\"\n\nYOUR TASK: Generate exactly 3 high-quality Pinterest pin concepts that accurately represent this blog topic.\n\n\ud83c\udfaf IMPORTANT: If Special Instructions are provided above, carefully incorporate them into your pin concepts.\nSpecial Instructions may include:\n- Specific products to feature (e.g., \"show puppy in carrier\")\n- Regulatory mentions (e.g., \"mention Highway Code Rule 57 visually\")\n- Age/size specifics (e.g., \"8-week-old puppy\" vs \"adult dog\")\n- Tone guidance (e.g., \"anxious but safe\", \"calming atmosphere\")\n\nCRITICAL ANALYSIS REQUIRED:\n1. Read the blog title AND special instructions carefully\n2. Identify what PRODUCT or TOPIC it's about\n3. Understand HOW that product is used in real life\n4. Generate pins showing realistic usage by UK pet owners\n\nPRODUCT USAGE LOGIC (THINK BEFORE GENERATING):\n\nIF blog mentions food-related products (bowls, feeders, mats):\n- Show them ON THE FLOOR in UK kitchens/utility rooms\n- Pet must be ACTIVELY USING them (eating, licking, drinking)\n- Never show empty products or products on counters\n\nIF blog mentions car products (hammocks, harnesses, carriers, seats):\n- Show them INSIDE vehicles (back seat or boot)\n- Dog/cat must be IN/ON the product, not just near it\n- Car interior must be visible and realistic\n\nIF blog mentions walking/outdoor products (harnesses, leads, coats):\n- Show them being WORN by pet or in use during walks\n- UK outdoor settings (parks, pavements, countryside)\n- Pet must be doing the activity, not just posing\n\nIF blog mentions anxiety/calm products (beds, mats, toys):\n- Show them in quiet UK home settings (living room, bedroom)\n- Pet must look calm/relaxed while using them\n- Cosy, comfortable atmosphere\n\nBREED & SETTING VARIETY (FOR 3 PINS):\n- Pin 1: One breed in appropriate setting\n- Pin 2: Different breed, slightly different angle/lighting\n- Pin 3: Different breed, alternative use scenario\n\nExample breeds: Labrador, Cocker Spaniel, French Bulldog, Beagle, British Shorthair, Tabby\n\nVISUAL QUALITY STANDARDS:\n- Format: 9:16 vertical (Pinterest optimised)\n- Lighting: Soft natural daylight (UK window light, slightly overcast is fine)\n- Lens: 85mm at f/1.8 (blurred background, subject sharp)\n- Composition: Upper third has COPY SPACE for text overlay\n- Style: Editorial pet lifestyle, warm, realistic British homes\n- Quality: Professional, cinematic, not stock-photo generic\n\nABSOLUTE RULES (NON-NEGOTIABLE):\n\u274c No pets on kitchen counters or tables\n\u274c No empty products (bowls, mats, beds with no pet using them)\n\u274c No products in illogical places (bowls in cars, car seats in parks)\n\u274c No wrong species (if blog says \"dog\", don't generate cat pins)\n\u274c No cleaning products, soap, or random household items near pet products\n\u274c No text overlays in the image itself (copy space only)\n\nQUALITY SELF-CHECK BEFORE SUBMITTING:\nAsk yourself for each pin:\n1. Does this show the product/topic ACTUALLY BEING USED?\n2. Would a UK pet owner look at this and think \"that's realistic\"?\n3. Is the setting appropriate for this product type?\n4. Is the benefit of the product VISIBLE in the scene?\n\nIf any answer is \"no\", regenerate that pin.\n\nOUTPUT FORMAT (STRICT JSON):\nReturn ONLY a valid JSON array with exactly 3 pin concepts.\n\n[\n  {\n    \"visual\": \"A professional 9:16 vertical photorealistic lifestyle photograph of [SPECIFIC BREED] [ACTIVELY DOING SOMETHING WITH PRODUCT] in [APPROPRIATE UK SETTING]. Natural window lighting, copy space in upper third, 85mm f/1.8, editorial aesthetic, realistic British home. No text in image.\",\n    \"title\": \"Benefit-focused title under 45 characters\",\n    \"desc\": \"Description explaining why UK pet owners need this, including 3-4 trending hashtags like #UKDogs #PetLifeUK #DogMumUK\",\n    \"alt\": \"Descriptive alt text for accessibility\"\n  },\n  {\n    \"visual\": \"[Second pin with different breed and angle]\",\n    \"title\": \"Different angle on the same benefit\",\n    \"desc\": \"Alternative description with hashtags\",\n    \"alt\": \"Alt text\"\n  },\n  {\n    \"visual\": \"[Third pin with different breed and scenario]\",\n    \"title\": \"Third variation of benefit\",\n    \"desc\": \"Third description with hashtags\",\n    \"alt\": \"Alt text\"\n  }\n]\n\nNow generate 3 Pinterest pin concepts for: \"{{20.`1`}}\""
+          }
+        ],
+        "projectId": "happypawsautomation",
+        "temperature": "0.9",
+        "responseMimeType": "application/json",
+        "serviceEndpointLocationId": "us-central1"
+      },
+      "metadata": {
+        "designer": {
+          "x": 344,
+          "y": 43
+        },
+        "restore": {
+          "expect": {
+            "model": {
+              "mode": "chose",
+              "label": "Gemini 2.5 Flash",
+              "nested": [
+                {
+                  "name": "tools",
+                  "type": "select",
+                  "label": "Tools",
+                  "options": [
+                    {
+                      "label": "Function Declarations",
+                      "value": "functionDeclarations",
+                      "nested": [
+                        {
+                          "name": "functionDeclarations",
+                          "spec": [
+                            {
+                              "name": "name",
+                              "type": "text",
+                              "label": "Function Name",
+                              "required": true
+                            },
+                            {
+                              "name": "description",
+                              "type": "text",
+                              "label": "Function Description",
+                              "required": true
+                            },
+                            {
+                              "help": "Configuration of the parameters that the function accepts.",
+                              "name": "parameters",
+                              "spec": {
+                                "spec": [
+                                  "rpc://google-vertex-ai/1/parametersGeminiFunctionParameters"
+                                ],
+                                "type": "collection",
+                                "label": "Parameter"
+                              },
+                              "type": "array",
+                              "label": "Parameters",
+                              "required": true
+                            }
+                          ],
+                          "type": "array",
+                          "label": "Function Declarations"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Grounding",
+                      "value": "grounding",
+                      "nested": [
+                        "rpc://google-vertex-ai/1/parametersGrounding"
+                      ]
+                    }
+                  ],
+                  "advanced": true
+                }
+              ]
+            },
+            "tools": {
+              "mode": "chose",
+              "label": "Empty"
+            },
+            "messages": {
+              "mode": "chose",
+              "items": [
+                {
+                  "role": {
+                    "mode": "chose",
+                    "label": "User"
+                  },
+                  "files": {
+                    "mode": "chose"
+                  }
+                }
+              ]
+            },
+            "projectId": {
+              "mode": "chose",
+              "label": "HappyPawsAutomation"
+            },
+            "stopSequences": {
+              "mode": "chose"
+            },
+            "safetySettings": {
+              "mode": "chose"
+            },
+            "responseMimeType": {
+              "label": "JSON"
+            },
+            "serviceEndpointLocationId": {
+              "mode": "chose",
+              "label": "Iowa"
+            }
+          },
+          "parameters": {
+            "__IMTCONN__": {
+              "data": {
+                "scoped": "true",
+                "connection": "google-vertex-ai"
+              },
+              "label": "My Google Gemini (Vertex AI) connection (casadecashflow@gmail.com)"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "__IMTCONN__",
+            "type": "account:google-vertex-ai",
+            "label": "Connection",
+            "required": true
+          }
+        ],
+        "expect": [
+          {
+            "name": "projectId",
+            "type": "select",
+            "label": "GCP Project",
+            "required": true
+          },
+          {
+            "name": "serviceEndpointLocationId",
+            "type": "select",
+            "label": "Region",
+            "required": true,
+            "validate": {
+              "enum": [
+                "us-central1",
+                "us-west4",
+                "northamerica-northeast1",
+                "us-east4",
+                "us-west1",
+                "europe-west1",
+                "europe-west3",
+                "europe-west2",
+                "europe-west4",
+                "europe-west9",
+                "asia-northeast3",
+                "asia-southeast1",
+                "asia-northeast1"
+              ]
+            }
+          },
+          {
+            "name": "model",
+            "type": "select",
+            "label": "Model",
+            "required": true
+          },
+          {
+            "name": "messages",
+            "spec": {
+              "name": "value",
+              "spec": [
+                {
+                  "name": "role",
+                  "type": "select",
+                  "label": "Role",
+                  "options": [
+                    {
+                      "label": "User",
+                      "value": "user",
+                      "default": true
+                    },
+                    {
+                      "label": "Assistant",
+                      "value": "model"
+                    }
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "content",
+                  "type": "text",
+                  "label": "Text Content",
+                  "required": true
+                },
+                {
+                  "name": "files",
+                  "spec": {
+                    "spec": [
+                      {
+                        "name": "fileType",
+                        "type": "select",
+                        "label": "File Type",
+                        "options": [
+                          {
+                            "label": "Image",
+                            "value": "image",
+                            "nested": [
+                              {
+                                "name": "inputType",
+                                "type": "select",
+                                "label": "Image Input Method",
+                                "options": [
+                                  {
+                                    "label": "Upload a File",
+                                    "value": "upload",
+                                    "nested": [
+                                      {
+                                        "name": "fileName",
+                                        "type": "filename",
+                                        "label": "File Name",
+                                        "required": true,
+                                        "semantic": "file:name",
+                                        "extension": [
+                                          "png",
+                                          "jpeg",
+                                          "jpg",
+                                          "webp",
+                                          "heic",
+                                          "heif"
+                                        ]
+                                      },
+                                      {
+                                        "name": "data",
+                                        "type": "buffer",
+                                        "label": "Data",
+                                        "required": true,
+                                        "semantic": "file:data"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "File URL",
+                                    "value": "uri",
+                                    "nested": [
+                                      {
+                                        "help": "The file extension/format.",
+                                        "name": "mime",
+                                        "type": "select",
+                                        "label": "MIME Type",
+                                        "options": [
+                                          {
+                                            "label": "PNG",
+                                            "value": "png"
+                                          },
+                                          {
+                                            "label": "JPG",
+                                            "value": "jpg"
+                                          },
+                                          {
+                                            "label": "JPEG",
+                                            "value": "jpeg"
+                                          },
+                                          {
+                                            "label": "WEBP",
+                                            "value": "webp"
+                                          },
+                                          {
+                                            "label": "HEIC",
+                                            "value": "heic"
+                                          },
+                                          {
+                                            "label": "HEIF",
+                                            "value": "heif"
+                                          }
+                                        ],
+                                        "required": true
+                                      },
+                                      {
+                                        "help": "The URL must be publicly accessible. To test this, you can try opening the URL in an anonymous tab. It must take you directly to the file.\nEnsure that the URL is not restricted from automated access. This can involve external platform settings, proxy bot-blocking, and robots.txt configuration.",
+                                        "name": "file_uri",
+                                        "type": "text",
+                                        "label": "File URL",
+                                        "required": true
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "required": true
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Video",
+                            "value": "video",
+                            "nested": [
+                              {
+                                "name": "inputType",
+                                "type": "select",
+                                "label": "Video Input Method",
+                                "default": "uri",
+                                "options": [
+                                  {
+                                    "label": "Upload a File",
+                                    "value": "upload",
+                                    "nested": [
+                                      {
+                                        "name": "fileName",
+                                        "type": "filename",
+                                        "label": "File Name",
+                                        "required": true,
+                                        "semantic": "file:name"
+                                      },
+                                      {
+                                        "name": "data",
+                                        "type": "buffer",
+                                        "label": "Data",
+                                        "required": true,
+                                        "semantic": "file:data"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "File URL",
+                                    "value": "uri",
+                                    "nested": [
+                                      {
+                                        "help": "The file extension/format.",
+                                        "name": "mime",
+                                        "type": "select",
+                                        "label": "MIME Type",
+                                        "options": [
+                                          {
+                                            "label": "MP4",
+                                            "value": "mp4"
+                                          },
+                                          {
+                                            "label": "MPG",
+                                            "value": "mpg"
+                                          },
+                                          {
+                                            "label": "MPEG",
+                                            "value": "mpeg"
+                                          },
+                                          {
+                                            "label": "MOV",
+                                            "value": "mov"
+                                          },
+                                          {
+                                            "label": "AVI",
+                                            "value": "avi"
+                                          },
+                                          {
+                                            "label": "FLV",
+                                            "value": "x-flv"
+                                          },
+                                          {
+                                            "label": "WEBM",
+                                            "value": "webm"
+                                          },
+                                          {
+                                            "label": "WMV",
+                                            "value": "wmv"
+                                          },
+                                          {
+                                            "label": "3GPP",
+                                            "value": "3gpp"
+                                          }
+                                        ],
+                                        "required": true
+                                      },
+                                      {
+                                        "help": "The URL must be publicly accessible. To test this, you can try opening the URL in an anonymous tab. It must take you directly to the file.\nEnsure that the URL is not restricted from automated access. This can involve external platform settings, proxy bot-blocking, and robots.txt configuration.",
+                                        "name": "file_uri",
+                                        "type": "text",
+                                        "label": "File URL",
+                                        "required": true
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "required": true
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Audio",
+                            "value": "audio",
+                            "nested": [
+                              {
+                                "name": "inputType",
+                                "type": "select",
+                                "label": "Audio Input Method",
+                                "default": "uri",
+                                "options": [
+                                  {
+                                    "label": "Upload a File",
+                                    "value": "upload",
+                                    "nested": [
+                                      {
+                                        "name": "fileName",
+                                        "type": "filename",
+                                        "label": "File Name",
+                                        "required": true,
+                                        "semantic": "file:name"
+                                      },
+                                      {
+                                        "name": "data",
+                                        "type": "buffer",
+                                        "label": "Data",
+                                        "required": true,
+                                        "semantic": "file:data"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "File URL",
+                                    "value": "uri",
+                                    "nested": [
+                                      {
+                                        "help": "The file extension/format.",
+                                        "name": "mime",
+                                        "type": "select",
+                                        "label": "MIME Type",
+                                        "options": [
+                                          {
+                                            "label": "WAV",
+                                            "value": "wav"
+                                          },
+                                          {
+                                            "label": "MP3",
+                                            "value": "mp3"
+                                          },
+                                          {
+                                            "label": "AIFF",
+                                            "value": "aiff"
+                                          },
+                                          {
+                                            "label": "AAC",
+                                            "value": "aac"
+                                          },
+                                          {
+                                            "label": "OGG Vorbis",
+                                            "value": "ogg"
+                                          },
+                                          {
+                                            "label": "FLAC",
+                                            "value": "flac"
+                                          }
+                                        ],
+                                        "required": true
+                                      },
+                                      {
+                                        "help": "The URL must be publicly accessible. To test this, you can try opening the URL in an anonymous tab. It must take you directly to the file.\nEnsure that the URL is not restricted from automated access. This can involve external platform settings, proxy bot-blocking, and robots.txt configuration.",
+                                        "name": "file_uri",
+                                        "type": "text",
+                                        "label": "File URL",
+                                        "required": true
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "required": true
+                              }
+                            ]
+                          }
+                        ],
+                        "required": true,
+                        "validate": true
+                      }
+                    ],
+                    "type": "collection",
+                    "label": "File"
+                  },
+                  "type": "array",
+                  "label": "Files",
+                  "labels": {
+                    "add": "Add file"
+                  }
+                }
+              ],
+              "type": "collection",
+              "label": "Message"
+            },
+            "type": "array",
+            "label": "Messages",
+            "required": true
+          },
+          {
+            "name": "temperature",
+            "type": "number",
+            "label": "Temperature",
+            "validate": {
+              "max": 1,
+              "min": 0
+            }
+          },
+          {
+            "name": "maxOutputTokens",
+            "type": "uinteger",
+            "label": "Max Output Tokens",
+            "validate": {
+              "max": 8192,
+              "min": 0
+            }
+          },
+          {
+            "name": "topK",
+            "type": "uinteger",
+            "label": "Top-k",
+            "validate": {
+              "max": 40,
+              "min": 1
+            }
+          },
+          {
+            "name": "topP",
+            "type": "number",
+            "label": "Top-p",
+            "validate": {
+              "max": 1,
+              "min": 0
+            }
+          },
+          {
+            "name": "stopSequences",
+            "spec": {
+              "name": "value",
+              "type": "text",
+              "label": "Stop Sequence"
+            },
+            "type": "array",
+            "label": "Stop Sequences",
+            "validate": {
+              "maxItems": 5
+            }
+          },
+          {
+            "name": "responseMimeType",
+            "type": "select",
+            "label": "Response Format",
+            "validate": {
+              "enum": [
+                "text/plain",
+                "application/json"
+              ]
+            }
+          },
+          {
+            "name": "safetySettings",
+            "spec": {
+              "name": "value",
+              "spec": [
+                {
+                  "name": "category",
+                  "type": "select",
+                  "label": "Safety Category",
+                  "options": [
+                    {
+                      "label": "Sexually Explicit",
+                      "value": "HARM_CATEGORY_SEXUALLY_EXPLICIT"
+                    },
+                    {
+                      "label": "Hate Speech",
+                      "value": "HARM_CATEGORY_HATE_SPEECH"
+                    },
+                    {
+                      "label": "Harassment",
+                      "value": "HARM_CATEGORY_HARASSMENT"
+                    },
+                    {
+                      "label": "Dangerous Content",
+                      "value": "HARM_CATEGORY_DANGEROUS_CONTENT"
+                    }
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "threshold",
+                  "type": "select",
+                  "label": "Threshold",
+                  "options": [
+                    {
+                      "label": "Block None",
+                      "value": "BLOCK_NONE"
+                    },
+                    {
+                      "label": "Block Low and Above",
+                      "value": "BLOCK_LOW_AND_ABOVE"
+                    },
+                    {
+                      "label": "Block Medium and Above",
+                      "value": "BLOCK_MEDIUM_AND_ABOVE"
+                    },
+                    {
+                      "label": "Block High and Above",
+                      "value": "BLOCK_ONLY_HIGH"
+                    }
+                  ],
+                  "required": true
+                }
+              ],
+              "type": "collection",
+              "label": "Safety Setting"
+            },
+            "type": "array",
+            "label": "Safety Settings"
+          },
+          {
+            "name": "tools",
+            "type": "select",
+            "label": "Tools",
+            "validate": {
+              "enum": [
+                "functionDeclarations",
+                "grounding"
+              ]
+            }
+          },
+          {
+            "name": "responseSchema",
+            "type": "text",
+            "label": "Response Schema"
+          }
+        ],
+        "interface": [
+          {
+            "name": "predictions",
+            "spec": {
+              "spec": [
+                {
+                  "name": "candidates",
+                  "spec": {
+                    "spec": [
+                      {
+                        "name": "content",
+                        "spec": [
+                          {
+                            "name": "role",
+                            "type": "text",
+                            "label": "Role"
+                          },
+                          {
+                            "name": "parts",
+                            "spec": [
+                              {
+                                "name": "text",
+                                "type": "text",
+                                "label": "Text"
+                              }
+                            ],
+                            "type": "array",
+                            "label": "Parts"
+                          }
+                        ],
+                        "type": "collection",
+                        "label": "Content"
+                      },
+                      {
+                        "name": "finishReason",
+                        "type": "text",
+                        "label": "Finish Reason"
+                      },
+                      {
+                        "name": "safetyRatings",
+                        "spec": {
+                          "spec": [
+                            {
+                              "name": "category",
+                              "type": "text",
+                              "label": "Category"
+                            },
+                            {
+                              "name": "probability",
+                              "type": "text",
+                              "label": "Probability"
+                            },
+                            {
+                              "name": "probabilityScore",
+                              "type": "number",
+                              "label": "Probability Score"
+                            },
+                            {
+                              "name": "severity",
+                              "type": "text",
+                              "label": "Severity"
+                            },
+                            {
+                              "name": "severityScore",
+                              "type": "number",
+                              "label": "Severity Score"
+                            }
+                          ],
+                          "type": "collection"
+                        },
+                        "type": "array",
+                        "label": "Safety Ratings"
+                      },
+                      {
+                        "name": "groundingMetadata",
+                        "spec": [
+                          {
+                            "name": "webSearchQueries",
+                            "spec": {
+                              "type": "text"
+                            },
+                            "type": "array",
+                            "label": "Web Search Queries"
+                          },
+                          {
+                            "name": "searchEntryPoint",
+                            "type": "collection",
+                            "label": "Search Entry Point"
+                          },
+                          {
+                            "name": "groundingChunks",
+                            "spec": {
+                              "type": "collection"
+                            },
+                            "type": "array",
+                            "label": "Grounding Chunks"
+                          },
+                          {
+                            "name": "groundingSupports",
+                            "spec": {
+                              "type": "collection"
+                            },
+                            "type": "array",
+                            "label": "Grounding Supports"
+                          },
+                          {
+                            "name": "retrievalMetadata",
+                            "spec": [],
+                            "type": "collection",
+                            "label": "Retrieval Metadata"
+                          }
+                        ],
+                        "type": "collection",
+                        "label": "Grounding Metadata"
+                      }
+                    ],
+                    "type": "collection"
+                  },
+                  "type": "array",
+                  "label": "Candidates"
+                },
+                {
+                  "name": "usageMetadata",
+                  "spec": [
+                    {
+                      "name": "promptTokenCount",
+                      "type": "number",
+                      "label": "Prompt Token Count"
+                    },
+                    {
+                      "name": "candidatesTokenCount",
+                      "type": "number",
+                      "label": "Candidates Token Count"
+                    },
+                    {
+                      "name": "totalTokenCount",
+                      "type": "number",
+                      "label": "Total Token Count"
+                    },
+                    {
+                      "name": "promptTokensDetails",
+                      "spec": [
+                        {
+                          "name": "modality",
+                          "type": "text",
+                          "label": "Modality"
+                        },
+                        {
+                          "name": "tokenCount",
+                          "type": "number",
+                          "label": "Token Count"
+                        }
+                      ],
+                      "type": "array",
+                      "label": "Prompt Tokens Details"
+                    },
+                    {
+                      "name": "candidatesTokensDetails",
+                      "spec": [
+                        {
+                          "name": "modality",
+                          "type": "text",
+                          "label": "Modality"
+                        },
+                        {
+                          "name": "tokenCount",
+                          "type": "number",
+                          "label": "Token Count"
+                        }
+                      ],
+                      "type": "array",
+                      "label": "Candidates Tokens Details"
+                    }
+                  ],
+                  "type": "collection",
+                  "label": "Usage Metadata"
+                },
+                {
+                  "name": "modelVersion",
+                  "type": "text",
+                  "label": "Model Version"
+                },
+                {
+                  "name": "createTime",
+                  "type": "date",
+                  "label": "Create Time"
+                },
+                {
+                  "name": "responseId",
+                  "type": "text",
+                  "label": "Response ID"
+                }
+              ],
+              "type": "collection"
+            },
+            "type": "array",
+            "label": "Predictions"
+          },
+          {
+            "name": "textResponse",
+            "type": "text",
+            "label": "Text Response"
+          }
+        ],
+        "advanced": true
+      }
+    },
+    {
+      "id": 23,
+      "module": "json:ParseJSON",
+      "version": 1,
+      "parameters": {
+        "type": 513753
+      },
+      "mapper": {
+        "json": "{{19.textResponse}}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 693,
+          "y": 38
+        },
+        "restore": {
+          "parameters": {
+            "type": {
+              "label": "My data structure"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "type",
+            "type": "udt",
+            "label": "Data structure"
+          }
+        ],
+        "expect": [
+          {
+            "name": "json",
+            "type": "text",
+            "label": "JSON string",
+            "required": true
+          }
+        ],
+        "interface": [
+          {
+            "help": "",
+            "name": "visual",
+            "type": "text",
+            "label": "Visual",
+            "default": null,
+            "required": false,
+            "multiline": false
+          },
+          {
+            "help": "",
+            "name": "title",
+            "type": "text",
+            "label": "Title",
+            "default": null,
+            "required": false,
+            "multiline": false
+          },
+          {
+            "help": "",
+            "name": "desc",
+            "type": "text",
+            "label": "Desc",
+            "default": null,
+            "required": false,
+            "multiline": false
+          },
+          {
+            "help": "",
+            "name": "alt",
+            "type": "text",
+            "label": "Alt",
+            "default": null,
+            "required": false,
+            "multiline": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "module": "builtin:BasicFeeder",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "array": "{{`23`}}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 1036,
+          "y": 36
+        },
+        "restore": {
+          "expect": {
+            "array": {
+              "mode": "edit"
+            }
+          }
+        },
+        "expect": [
+          {
+            "mode": "edit",
+            "name": "array",
+            "spec": [],
+            "type": "array",
+            "label": "Array"
+          }
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "module": "google-drive:createAFolder",
+      "version": 3,
+      "parameters": {
+        "__IMTCONN__": 13119631
+      },
+      "filter": {
+        "name": "Only run once per blog",
+        "conditions": [
+          [
+            {
+              "a": "{{24.`__IMTINDEX__`}}",
+              "b": "1",
+              "o": "number:equal"
+            }
+          ]
+        ]
+      },
+      "mapper": {
+        "name": "{{20.`1`}}",
+        "parent": "1YwU4p-azYip_AZc2mXXOeKCXM6EXCMh4"
+      },
+      "metadata": {
+        "designer": {
+          "x": 600,
+          "y": 150
+        },
+        "restore": {
+          "parameters": {
+            "__IMTCONN__": {
+              "data": {
+                "scoped": "true",
+                "connection": "google"
+              },
+              "label": "My Google connection (casadecashflow@gmail.com)"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 21,
+      "module": "google-vertex-ai:generateImage",
+      "version": 1,
+      "parameters": {
+        "__IMTCONN__": 13251576
+      },
+      "mapper": {
+        "model": "imagen-4.0-generate-001",
+        "prompt": "{{24.visual}}",
+        "projectId": "happypawsautomation",
+        "aspectRatio": "9:16",
+        "sampleCount": "1",
+        "outputOptions": {},
+        "negativePrompt": "text, words, letters, font, watermark, coherent text, gibberish",
+        "serviceEndpointLocationId": "us-central1"
+      },
+      "metadata": {
+        "designer": {
+          "x": 1369,
+          "y": 42
+        },
+        "restore": {
+          "expect": {
+            "model": {
+              "mode": "chose",
+              "label": "imagen-4.0-generate-001"
+            },
+            "projectId": {
+              "mode": "chose",
+              "label": "HappyPawsAutomation"
+            },
+            "aspectRatio": {
+              "mode": "chose",
+              "label": "9:16"
+            },
+            "addWatermark": {
+              "mode": "chose"
+            },
+            "enhancePrompt": {
+              "mode": "chose"
+            },
+            "outputOptions": {
+              "nested": {
+                "mimeType": {
+                  "mode": "chose",
+                  "label": "Empty"
+                }
+              }
+            },
+            "safetySetting": {
+              "mode": "chose",
+              "label": "Empty"
+            },
+            "includeRaiReason": {
+              "mode": "chose"
+            },
+            "personGeneration": {
+              "mode": "chose",
+              "label": "Empty"
+            },
+            "sampleImageStyle": {
+              "mode": "chose",
+              "label": "Empty"
+            },
+            "includeSafetyAttributes": {
+              "mode": "chose"
+            },
+            "serviceEndpointLocationId": {
+              "mode": "chose",
+              "label": "us-central1"
+            }
+          },
+          "parameters": {
+            "__IMTCONN__": {
+              "data": {
+                "scoped": "true",
+                "connection": "google-vertex-ai"
+              },
+              "label": "My Google Gemini (Vertex AI) connection (casadecashflow@gmail.com)"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "__IMTCONN__",
+            "type": "account:google-vertex-ai",
+            "label": "Connection",
+            "required": true
+          }
+        ],
+        "expect": [
+          {
+            "name": "projectId",
+            "type": "select",
+            "label": "GCP Project",
+            "required": true
+          },
+          {
+            "name": "model",
+            "type": "select",
+            "label": "Model",
+            "required": true
+          },
+          {
+            "name": "prompt",
+            "type": "text",
+            "label": "Text Prompt",
+            "required": true
+          },
+          {
+            "name": "sampleCount",
+            "type": "uinteger",
+            "label": "Image Count",
+            "required": true
+          },
+          {
+            "name": "enhancePrompt",
+            "type": "boolean",
+            "label": "Enhance Prompt"
+          },
+          {
+            "name": "storageUri",
+            "type": "url",
+            "label": "Storage URI"
+          },
+          {
+            "name": "addWatermark",
+            "type": "boolean",
+            "label": "Add Watermark"
+          },
+          {
+            "name": "seed",
+            "type": "uinteger",
+            "label": "Seed"
+          },
+          {
+            "name": "negativePrompt",
+            "type": "text",
+            "label": "Negative Prompt"
+          },
+          {
+            "name": "aspectRatio",
+            "type": "select",
+            "label": "Aspect Ratio",
+            "validate": {
+              "enum": [
+                "1:1",
+                "9:16",
+                "16:9",
+                "3:4",
+                "4:3"
+              ]
+            }
+          },
+          {
+            "name": "outputOptions",
+            "spec": [
+              {
+                "name": "mimeType",
+                "type": "select",
+                "label": "Mime Type",
+                "validate": {
+                  "enum": [
+                    "image/png",
+                    "image/jpeg"
+                  ]
+                }
+              }
+            ],
+            "type": "collection",
+            "label": "Output Options"
+          },
+          {
+            "name": "sampleImageStyle",
+            "type": "select",
+            "label": "Sample Image Style",
+            "validate": {
+              "enum": [
+                "photograph",
+                "digital_art",
+                "landscape",
+                "sketch",
+                "watercolor",
+                "cyberpunk",
+                "pop_art"
+              ]
+            }
+          },
+          {
+            "name": "personGeneration",
+            "type": "select",
+            "label": "Person Generation",
+            "validate": {
+              "enum": [
+                "dont_allow",
+                "allow_adult",
+                "allow_all"
+              ]
+            }
+          },
+          {
+            "name": "safetySetting",
+            "type": "select",
+            "label": "Safety Setting",
+            "validate": {
+              "enum": [
+                "block_low_and_above",
+                "block_medium_and_above",
+                "block_only_high",
+                "block_none"
+              ]
+            }
+          },
+          {
+            "name": "includeRaiReason",
+            "type": "boolean",
+            "label": "Include Rai Reason"
+          },
+          {
+            "name": "includeSafetyAttributes",
+            "type": "boolean",
+            "label": "Include Safety Attributes"
+          },
+          {
+            "name": "serviceEndpointLocationId",
+            "type": "select",
+            "label": "Region",
+            "required": true
+          }
+        ],
+        "advanced": true
+      }
+    },
+    {
+      "id": 11,
+      "module": "google-drive:uploadAFile",
+      "version": 4,
+      "parameters": {
+        "__IMTCONN__": 13364246
+      },
+      "mapper": {
+        "data": "{{21.predictions[].imageData}}",
+        "select": "map",
+        "convert": false,
+        "filename": "{{20.`1`}}_Pin_{{24.`__IMTINDEX__`}}.jpg",
+        "folderId": "{{27.id}}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 1675,
+          "y": 36
+        },
+        "restore": {
+          "expect": {
+            "select": {
+              "label": "Enter manually"
+            }
+          },
+          "parameters": {
+            "__IMTCONN__": {
+              "data": {
+                "scoped": "true",
+                "connection": "google-restricted"
+              },
+              "label": "My Google Restricted connection (casadecashflow@gmail.com)"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "__IMTCONN__",
+            "type": "account:google-restricted",
+            "label": "Connection",
+            "required": true
+          }
+        ],
+        "expect": [
+          {
+            "name": "select",
+            "type": "select",
+            "label": "Enter a Folder ID",
+            "required": true,
+            "validate": {
+              "enum": [
+                "map",
+                "value"
+              ]
+            }
+          },
+          {
+            "name": "title",
+            "type": "text",
+            "label": "New File Name"
+          },
+          {
+            "name": "filename",
+            "type": "text",
+            "label": "File Name",
+            "required": true
+          },
+          {
+            "name": "data",
+            "type": "buffer",
+            "label": "Data",
+            "required": true
+          },
+          {
+            "name": "convert",
+            "type": "boolean",
+            "label": "Convert a File",
+            "required": true
+          },
+          {
+            "name": "folderId",
+            "type": "text",
+            "label": "Folder ID",
+            "required": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "module": "google-sheets:updateRow",
+      "version": 2,
+      "parameters": {
+        "__IMTCONN__": 13119631
+      },
+      "mapper": {
+        "mode": "fromAll",
+        "values": {
+          "3": "={{NOW()}}",
+          "4": "=HYPERLINK(\"{{27.webViewLink}}\"; \"View Folder\")",
+          "5": "NEEDS_REVIEW"
+        },
+        "sheetId": "Pinterest_Workflow",
+        "rowNumber": "{{20.`__ROW_NUMBER__`}}",
+        "spreadsheetId": "1xCcDKooyPShQx7pYuqzzs4CQ3Xlo6groSLXbQa82ekE",
+        "includesHeaders": true,
+        "valueInputOption": "USER_ENTERED"
+      },
+      "metadata": {
+        "designer": {
+          "x": 2024,
+          "y": 32
+        },
+        "restore": {
+          "expect": {
+            "mode": {
+              "label": "Select from all"
+            },
+            "sheetId": {
+              "mode": "edit"
+            },
+            "includesHeaders": {
+              "label": "Yes",
+              "nested": [
+                {
+                  "name": "values",
+                  "spec": [
+                    {
+                      "name": "0",
+                      "type": "text",
+                      "label": "A"
+                    },
+                    {
+                      "name": "1",
+                      "type": "text",
+                      "label": "B"
+                    },
+                    {
+                      "name": "2",
+                      "type": "text",
+                      "label": "C"
+                    },
+                    {
+                      "name": "3",
+                      "type": "text",
+                      "label": "D"
+                    },
+                    {
+                      "name": "4",
+                      "type": "text",
+                      "label": "E"
+                    },
+                    {
+                      "name": "5",
+                      "type": "text",
+                      "label": "F"
+                    },
+                    {
+                      "name": "6",
+                      "type": "text",
+                      "label": "G"
+                    },
+                    {
+                      "name": "7",
+                      "type": "text",
+                      "label": "H"
+                    },
+                    {
+                      "name": "8",
+                      "type": "text",
+                      "label": "I"
+                    },
+                    {
+                      "name": "9",
+                      "type": "text",
+                      "label": "J"
+                    },
+                    {
+                      "name": "10",
+                      "type": "text",
+                      "label": "K"
+                    },
+                    {
+                      "name": "11",
+                      "type": "text",
+                      "label": "L"
+                    },
+                    {
+                      "name": "12",
+                      "type": "text",
+                      "label": "M"
+                    },
+                    {
+                      "name": "13",
+                      "type": "text",
+                      "label": "N"
+                    },
+                    {
+                      "name": "14",
+                      "type": "text",
+                      "label": "O"
+                    },
+                    {
+                      "name": "15",
+                      "type": "text",
+                      "label": "P"
+                    },
+                    {
+                      "name": "16",
+                      "type": "text",
+                      "label": "Q"
+                    },
+                    {
+                      "name": "17",
+                      "type": "text",
+                      "label": "R"
+                    },
+                    {
+                      "name": "18",
+                      "type": "text",
+                      "label": "S"
+                    },
+                    {
+                      "name": "19",
+                      "type": "text",
+                      "label": "T"
+                    },
+                    {
+                      "name": "20",
+                      "type": "text",
+                      "label": "U"
+                    },
+                    {
+                      "name": "21",
+                      "type": "text",
+                      "label": "V"
+                    },
+                    {
+                      "name": "22",
+                      "type": "text",
+                      "label": "W"
+                    },
+                    {
+                      "name": "23",
+                      "type": "text",
+                      "label": "X"
+                    },
+                    {
+                      "name": "24",
+                      "type": "text",
+                      "label": "Y"
+                    },
+                    {
+                      "name": "25",
+                      "type": "text",
+                      "label": "Z"
+                    },
+                    {
+                      "name": "26",
+                      "type": "text",
+                      "label": "AA"
+                    },
+                    {
+                      "name": "27",
+                      "type": "text",
+                      "label": "AB"
+                    },
+                    {
+                      "name": "28",
+                      "type": "text",
+                      "label": "AC"
+                    },
+                    {
+                      "name": "29",
+                      "type": "text",
+                      "label": "AD"
+                    },
+                    {
+                      "name": "30",
+                      "type": "text",
+                      "label": "AE"
+                    },
+                    {
+                      "name": "31",
+                      "type": "text",
+                      "label": "AF"
+                    },
+                    {
+                      "name": "32",
+                      "type": "text",
+                      "label": "AG"
+                    },
+                    {
+                      "name": "33",
+                      "type": "text",
+                      "label": "AH"
+                    },
+                    {
+                      "name": "34",
+                      "type": "text",
+                      "label": "AI"
+                    },
+                    {
+                      "name": "35",
+                      "type": "text",
+                      "label": "AJ"
+                    },
+                    {
+                      "name": "36",
+                      "type": "text",
+                      "label": "AK"
+                    },
+                    {
+                      "name": "37",
+                      "type": "text",
+                      "label": "AL"
+                    },
+                    {
+                      "name": "38",
+                      "type": "text",
+                      "label": "AM"
+                    },
+                    {
+                      "name": "39",
+                      "type": "text",
+                      "label": "AN"
+                    },
+                    {
+                      "name": "40",
+                      "type": "text",
+                      "label": "AO"
+                    },
+                    {
+                      "name": "41",
+                      "type": "text",
+                      "label": "AP"
+                    },
+                    {
+                      "name": "42",
+                      "type": "text",
+                      "label": "AQ"
+                    },
+                    {
+                      "name": "43",
+                      "type": "text",
+                      "label": "AR"
+                    },
+                    {
+                      "name": "44",
+                      "type": "text",
+                      "label": "AS"
+                    },
+                    {
+                      "name": "45",
+                      "type": "text",
+                      "label": "AT"
+                    },
+                    {
+                      "name": "46",
+                      "type": "text",
+                      "label": "AU"
+                    },
+                    {
+                      "name": "47",
+                      "type": "text",
+                      "label": "AV"
+                    },
+                    {
+                      "name": "48",
+                      "type": "text",
+                      "label": "AW"
+                    },
+                    {
+                      "name": "49",
+                      "type": "text",
+                      "label": "AX"
+                    },
+                    {
+                      "name": "50",
+                      "type": "text",
+                      "label": "AY"
+                    },
+                    {
+                      "name": "51",
+                      "type": "text",
+                      "label": "AZ"
+                    },
+                    {
+                      "name": "52",
+                      "type": "text",
+                      "label": "BA"
+                    },
+                    {
+                      "name": "53",
+                      "type": "text",
+                      "label": "BB"
+                    },
+                    {
+                      "name": "54",
+                      "type": "text",
+                      "label": "BC"
+                    },
+                    {
+                      "name": "55",
+                      "type": "text",
+                      "label": "BD"
+                    },
+                    {
+                      "name": "56",
+                      "type": "text",
+                      "label": "BE"
+                    },
+                    {
+                      "name": "57",
+                      "type": "text",
+                      "label": "BF"
+                    },
+                    {
+                      "name": "58",
+                      "type": "text",
+                      "label": "BG"
+                    },
+                    {
+                      "name": "59",
+                      "type": "text",
+                      "label": "BH"
+                    },
+                    {
+                      "name": "60",
+                      "type": "text",
+                      "label": "BI"
+                    },
+                    {
+                      "name": "61",
+                      "type": "text",
+                      "label": "BJ"
+                    },
+                    {
+                      "name": "62",
+                      "type": "text",
+                      "label": "BK"
+                    },
+                    {
+                      "name": "63",
+                      "type": "text",
+                      "label": "BL"
+                    },
+                    {
+                      "name": "64",
+                      "type": "text",
+                      "label": "BM"
+                    },
+                    {
+                      "name": "65",
+                      "type": "text",
+                      "label": "BN"
+                    },
+                    {
+                      "name": "66",
+                      "type": "text",
+                      "label": "BO"
+                    },
+                    {
+                      "name": "67",
+                      "type": "text",
+                      "label": "BP"
+                    },
+                    {
+                      "name": "68",
+                      "type": "text",
+                      "label": "BQ"
+                    },
+                    {
+                      "name": "69",
+                      "type": "text",
+                      "label": "BR"
+                    },
+                    {
+                      "name": "70",
+                      "type": "text",
+                      "label": "BS"
+                    },
+                    {
+                      "name": "71",
+                      "type": "text",
+                      "label": "BT"
+                    },
+                    {
+                      "name": "72",
+                      "type": "text",
+                      "label": "BU"
+                    },
+                    {
+                      "name": "73",
+                      "type": "text",
+                      "label": "BV"
+                    },
+                    {
+                      "name": "74",
+                      "type": "text",
+                      "label": "BW"
+                    },
+                    {
+                      "name": "75",
+                      "type": "text",
+                      "label": "BX"
+                    },
+                    {
+                      "name": "76",
+                      "type": "text",
+                      "label": "BY"
+                    },
+                    {
+                      "name": "77",
+                      "type": "text",
+                      "label": "BZ"
+                    },
+                    {
+                      "name": "78",
+                      "type": "text",
+                      "label": "CA"
+                    },
+                    {
+                      "name": "79",
+                      "type": "text",
+                      "label": "CB"
+                    },
+                    {
+                      "name": "80",
+                      "type": "text",
+                      "label": "CC"
+                    },
+                    {
+                      "name": "81",
+                      "type": "text",
+                      "label": "CD"
+                    },
+                    {
+                      "name": "82",
+                      "type": "text",
+                      "label": "CE"
+                    },
+                    {
+                      "name": "83",
+                      "type": "text",
+                      "label": "CF"
+                    },
+                    {
+                      "name": "84",
+                      "type": "text",
+                      "label": "CG"
+                    },
+                    {
+                      "name": "85",
+                      "type": "text",
+                      "label": "CH"
+                    },
+                    {
+                      "name": "86",
+                      "type": "text",
+                      "label": "CI"
+                    },
+                    {
+                      "name": "87",
+                      "type": "text",
+                      "label": "CJ"
+                    },
+                    {
+                      "name": "88",
+                      "type": "text",
+                      "label": "CK"
+                    },
+                    {
+                      "name": "89",
+                      "type": "text",
+                      "label": "CL"
+                    },
+                    {
+                      "name": "90",
+                      "type": "text",
+                      "label": "CM"
+                    },
+                    {
+                      "name": "91",
+                      "type": "text",
+                      "label": "CN"
+                    },
+                    {
+                      "name": "92",
+                      "type": "text",
+                      "label": "CO"
+                    },
+                    {
+                      "name": "93",
+                      "type": "text",
+                      "label": "CP"
+                    },
+                    {
+                      "name": "94",
+                      "type": "text",
+                      "label": "CQ"
+                    },
+                    {
+                      "name": "95",
+                      "type": "text",
+                      "label": "CR"
+                    },
+                    {
+                      "name": "96",
+                      "type": "text",
+                      "label": "CS"
+                    },
+                    {
+                      "name": "97",
+                      "type": "text",
+                      "label": "CT"
+                    },
+                    {
+                      "name": "98",
+                      "type": "text",
+                      "label": "CU"
+                    },
+                    {
+                      "name": "99",
+                      "type": "text",
+                      "label": "CV"
+                    },
+                    {
+                      "name": "100",
+                      "type": "text",
+                      "label": "CW"
+                    },
+                    {
+                      "name": "101",
+                      "type": "text",
+                      "label": "CX"
+                    },
+                    {
+                      "name": "102",
+                      "type": "text",
+                      "label": "CY"
+                    },
+                    {
+                      "name": "103",
+                      "type": "text",
+                      "label": "CZ"
+                    }
+                  ],
+                  "type": "collection",
+                  "label": "Values"
+                }
+              ]
+            },
+            "valueInputOption": {
+              "mode": "chose",
+              "label": "User entered"
+            }
+          },
+          "parameters": {
+            "__IMTCONN__": {
+              "data": {
+                "scoped": "true",
+                "connection": "google"
+              },
+              "label": "My Google connection (casadecashflow@gmail.com)"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "__IMTCONN__",
+            "type": "account:google",
+            "label": "Connection",
+            "required": true
+          }
+        ],
+        "expect": [
+          {
+            "name": "mode",
+            "type": "select",
+            "label": "Search Method",
+            "required": true,
+            "validate": {
+              "enum": [
+                "select",
+                "fromAll",
+                "map"
+              ]
+            }
+          },
+          {
+            "name": "valueInputOption",
+            "type": "select",
+            "label": "Value input option",
+            "validate": {
+              "enum": [
+                "USER_ENTERED",
+                "RAW"
+              ]
+            }
+          },
+          {
+            "name": "spreadsheetId",
+            "type": "text",
+            "label": "Spreadsheet ID",
+            "required": true
+          },
+          {
+            "mode": "edit",
+            "name": "sheetId",
+            "type": "select",
+            "label": "Sheet Name",
+            "required": true
+          },
+          {
+            "name": "rowNumber",
+            "type": "uinteger",
+            "label": "Row number",
+            "required": true
+          },
+          {
+            "name": "includesHeaders",
+            "type": "select",
+            "label": "Table contains headers",
+            "required": true,
+            "validate": {
+              "enum": [
+                true,
+                false
+              ]
+            }
+          },
+          {
+            "name": "values",
+            "spec": [
+              {
+                "name": "0",
+                "type": "text",
+                "label": "A"
+              },
+              {
+                "name": "1",
+                "type": "text",
+                "label": "B"
+              },
+              {
+                "name": "2",
+                "type": "text",
+                "label": "C"
+              },
+              {
+                "name": "3",
+                "type": "text",
+                "label": "D"
+              },
+              {
+                "name": "4",
+                "type": "text",
+                "label": "E"
+              },
+              {
+                "name": "5",
+                "type": "text",
+                "label": "F"
+              },
+              {
+                "name": "6",
+                "type": "text",
+                "label": "G"
+              },
+              {
+                "name": "7",
+                "type": "text",
+                "label": "H"
+              },
+              {
+                "name": "8",
+                "type": "text",
+                "label": "I"
+              },
+              {
+                "name": "9",
+                "type": "text",
+                "label": "J"
+              },
+              {
+                "name": "10",
+                "type": "text",
+                "label": "K"
+              },
+              {
+                "name": "11",
+                "type": "text",
+                "label": "L"
+              },
+              {
+                "name": "12",
+                "type": "text",
+                "label": "M"
+              },
+              {
+                "name": "13",
+                "type": "text",
+                "label": "N"
+              },
+              {
+                "name": "14",
+                "type": "text",
+                "label": "O"
+              },
+              {
+                "name": "15",
+                "type": "text",
+                "label": "P"
+              },
+              {
+                "name": "16",
+                "type": "text",
+                "label": "Q"
+              },
+              {
+                "name": "17",
+                "type": "text",
+                "label": "R"
+              },
+              {
+                "name": "18",
+                "type": "text",
+                "label": "S"
+              },
+              {
+                "name": "19",
+                "type": "text",
+                "label": "T"
+              },
+              {
+                "name": "20",
+                "type": "text",
+                "label": "U"
+              },
+              {
+                "name": "21",
+                "type": "text",
+                "label": "V"
+              },
+              {
+                "name": "22",
+                "type": "text",
+                "label": "W"
+              },
+              {
+                "name": "23",
+                "type": "text",
+                "label": "X"
+              },
+              {
+                "name": "24",
+                "type": "text",
+                "label": "Y"
+              },
+              {
+                "name": "25",
+                "type": "text",
+                "label": "Z"
+              },
+              {
+                "name": "26",
+                "type": "text",
+                "label": "AA"
+              },
+              {
+                "name": "27",
+                "type": "text",
+                "label": "AB"
+              },
+              {
+                "name": "28",
+                "type": "text",
+                "label": "AC"
+              },
+              {
+                "name": "29",
+                "type": "text",
+                "label": "AD"
+              },
+              {
+                "name": "30",
+                "type": "text",
+                "label": "AE"
+              },
+              {
+                "name": "31",
+                "type": "text",
+                "label": "AF"
+              },
+              {
+                "name": "32",
+                "type": "text",
+                "label": "AG"
+              },
+              {
+                "name": "33",
+                "type": "text",
+                "label": "AH"
+              },
+              {
+                "name": "34",
+                "type": "text",
+                "label": "AI"
+              },
+              {
+                "name": "35",
+                "type": "text",
+                "label": "AJ"
+              },
+              {
+                "name": "36",
+                "type": "text",
+                "label": "AK"
+              },
+              {
+                "name": "37",
+                "type": "text",
+                "label": "AL"
+              },
+              {
+                "name": "38",
+                "type": "text",
+                "label": "AM"
+              },
+              {
+                "name": "39",
+                "type": "text",
+                "label": "AN"
+              },
+              {
+                "name": "40",
+                "type": "text",
+                "label": "AO"
+              },
+              {
+                "name": "41",
+                "type": "text",
+                "label": "AP"
+              },
+              {
+                "name": "42",
+                "type": "text",
+                "label": "AQ"
+              },
+              {
+                "name": "43",
+                "type": "text",
+                "label": "AR"
+              },
+              {
+                "name": "44",
+                "type": "text",
+                "label": "AS"
+              },
+              {
+                "name": "45",
+                "type": "text",
+                "label": "AT"
+              },
+              {
+                "name": "46",
+                "type": "text",
+                "label": "AU"
+              },
+              {
+                "name": "47",
+                "type": "text",
+                "label": "AV"
+              },
+              {
+                "name": "48",
+                "type": "text",
+                "label": "AW"
+              },
+              {
+                "name": "49",
+                "type": "text",
+                "label": "AX"
+              },
+              {
+                "name": "50",
+                "type": "text",
+                "label": "AY"
+              },
+              {
+                "name": "51",
+                "type": "text",
+                "label": "AZ"
+              },
+              {
+                "name": "52",
+                "type": "text",
+                "label": "BA"
+              },
+              {
+                "name": "53",
+                "type": "text",
+                "label": "BB"
+              },
+              {
+                "name": "54",
+                "type": "text",
+                "label": "BC"
+              },
+              {
+                "name": "55",
+                "type": "text",
+                "label": "BD"
+              },
+              {
+                "name": "56",
+                "type": "text",
+                "label": "BE"
+              },
+              {
+                "name": "57",
+                "type": "text",
+                "label": "BF"
+              },
+              {
+                "name": "58",
+                "type": "text",
+                "label": "BG"
+              },
+              {
+                "name": "59",
+                "type": "text",
+                "label": "BH"
+              },
+              {
+                "name": "60",
+                "type": "text",
+                "label": "BI"
+              },
+              {
+                "name": "61",
+                "type": "text",
+                "label": "BJ"
+              },
+              {
+                "name": "62",
+                "type": "text",
+                "label": "BK"
+              },
+              {
+                "name": "63",
+                "type": "text",
+                "label": "BL"
+              },
+              {
+                "name": "64",
+                "type": "text",
+                "label": "BM"
+              },
+              {
+                "name": "65",
+                "type": "text",
+                "label": "BN"
+              },
+              {
+                "name": "66",
+                "type": "text",
+                "label": "BO"
+              },
+              {
+                "name": "67",
+                "type": "text",
+                "label": "BP"
+              },
+              {
+                "name": "68",
+                "type": "text",
+                "label": "BQ"
+              },
+              {
+                "name": "69",
+                "type": "text",
+                "label": "BR"
+              },
+              {
+                "name": "70",
+                "type": "text",
+                "label": "BS"
+              },
+              {
+                "name": "71",
+                "type": "text",
+                "label": "BT"
+              },
+              {
+                "name": "72",
+                "type": "text",
+                "label": "BU"
+              },
+              {
+                "name": "73",
+                "type": "text",
+                "label": "BV"
+              },
+              {
+                "name": "74",
+                "type": "text",
+                "label": "BW"
+              },
+              {
+                "name": "75",
+                "type": "text",
+                "label": "BX"
+              },
+              {
+                "name": "76",
+                "type": "text",
+                "label": "BY"
+              },
+              {
+                "name": "77",
+                "type": "text",
+                "label": "BZ"
+              },
+              {
+                "name": "78",
+                "type": "text",
+                "label": "CA"
+              },
+              {
+                "name": "79",
+                "type": "text",
+                "label": "CB"
+              },
+              {
+                "name": "80",
+                "type": "text",
+                "label": "CC"
+              },
+              {
+                "name": "81",
+                "type": "text",
+                "label": "CD"
+              },
+              {
+                "name": "82",
+                "type": "text",
+                "label": "CE"
+              },
+              {
+                "name": "83",
+                "type": "text",
+                "label": "CF"
+              },
+              {
+                "name": "84",
+                "type": "text",
+                "label": "CG"
+              },
+              {
+                "name": "85",
+                "type": "text",
+                "label": "CH"
+              },
+              {
+                "name": "86",
+                "type": "text",
+                "label": "CI"
+              },
+              {
+                "name": "87",
+                "type": "text",
+                "label": "CJ"
+              },
+              {
+                "name": "88",
+                "type": "text",
+                "label": "CK"
+              },
+              {
+                "name": "89",
+                "type": "text",
+                "label": "CL"
+              },
+              {
+                "name": "90",
+                "type": "text",
+                "label": "CM"
+              },
+              {
+                "name": "91",
+                "type": "text",
+                "label": "CN"
+              },
+              {
+                "name": "92",
+                "type": "text",
+                "label": "CO"
+              },
+              {
+                "name": "93",
+                "type": "text",
+                "label": "CP"
+              },
+              {
+                "name": "94",
+                "type": "text",
+                "label": "CQ"
+              },
+              {
+                "name": "95",
+                "type": "text",
+                "label": "CR"
+              },
+              {
+                "name": "96",
+                "type": "text",
+                "label": "CS"
+              },
+              {
+                "name": "97",
+                "type": "text",
+                "label": "CT"
+              },
+              {
+                "name": "98",
+                "type": "text",
+                "label": "CU"
+              },
+              {
+                "name": "99",
+                "type": "text",
+                "label": "CV"
+              },
+              {
+                "name": "100",
+                "type": "text",
+                "label": "CW"
+              },
+              {
+                "name": "101",
+                "type": "text",
+                "label": "CX"
+              },
+              {
+                "name": "102",
+                "type": "text",
+                "label": "CY"
+              },
+              {
+                "name": "103",
+                "type": "text",
+                "label": "CZ"
+              }
+            ],
+            "type": "collection",
+            "label": "Values"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "instant": false,
+    "version": 1,
+    "scenario": {
+      "roundtrips": 1,
+      "maxErrors": 3,
+      "autoCommit": true,
+      "autoCommitTriggerLast": true,
+      "sequential": false,
+      "slots": null,
+      "confidential": false,
+      "dataloss": false,
+      "dlq": false,
+      "freshVariables": false
+    },
+    "designer": {
+      "orphans": []
+    },
+    "zone": "eu2.make.com",
+    "notes": []
+  }
+}

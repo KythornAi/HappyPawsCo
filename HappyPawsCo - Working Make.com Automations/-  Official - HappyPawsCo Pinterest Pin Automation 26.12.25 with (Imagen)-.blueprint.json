@@ -1,0 +1,3321 @@
+{
+    "name": "****  Official - HappyPawsCo Pinterest Pin Automation 26.12.25 with (Imagen)**",
+    "flow": [
+        {
+            "id": 20,
+            "module": "google-sheets:filterRows",
+            "version": 2,
+            "parameters": {
+                "__IMTCONN__": 13391620
+            },
+            "mapper": {
+                "from": "share",
+                "limit": "1",
+                "filter": [
+                    [
+                        {
+                            "a": "E",
+                            "b": "SCHEDULED",
+                            "o": "text:equal"
+                        }
+                    ]
+                ],
+                "sheetId": "Pinterest_Pins",
+                "sortOrder": "asc",
+                "spreadsheetId": "1xCcDKooyPShQx7pYuqzzs4CQ3Xlo6groSLXbQa82ekE",
+                "tableFirstRow": "A1:CZ1",
+                "includesHeaders": true,
+                "valueRenderOption": "FORMATTED_VALUE",
+                "dateTimeRenderOption": "FORMATTED_STRING"
+            },
+            "metadata": {
+                "designer": {
+                    "x": -272,
+                    "y": 76
+                },
+                "restore": {
+                    "expect": {
+                        "from": {
+                            "label": "Select from all"
+                        },
+                        "orderBy": {
+                            "mode": "chose"
+                        },
+                        "sheetId": {
+                            "mode": "chose",
+                            "label": "Pinterest_Pins"
+                        },
+                        "sortOrder": {
+                            "mode": "chose",
+                            "label": "Ascending"
+                        },
+                        "tableFirstRow": {
+                            "label": "A-CZ"
+                        },
+                        "includesHeaders": {
+                            "mode": "chose",
+                            "label": "Yes"
+                        },
+                        "valueRenderOption": {
+                            "mode": "chose",
+                            "label": "Formatted value"
+                        },
+                        "dateTimeRenderOption": {
+                            "mode": "chose",
+                            "label": "Formatted string"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "google"
+                            },
+                            "label": "My Google connection (casadecashflow@gmail.com)"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:google",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "from",
+                        "type": "select",
+                        "label": "Search Method",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "drive",
+                                "share"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "valueRenderOption",
+                        "type": "select",
+                        "label": "Value render option",
+                        "validate": {
+                            "enum": [
+                                "FORMATTED_VALUE",
+                                "UNFORMATTED_VALUE",
+                                "FORMULA"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "dateTimeRenderOption",
+                        "type": "select",
+                        "label": "Date and time render option",
+                        "validate": {
+                            "enum": [
+                                "SERIAL_NUMBER",
+                                "FORMATTED_STRING"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "limit",
+                        "type": "uinteger",
+                        "label": "Limit"
+                    },
+                    {
+                        "name": "spreadsheetId",
+                        "type": "text",
+                        "label": "Spreadsheet ID",
+                        "required": true
+                    },
+                    {
+                        "name": "sheetId",
+                        "type": "select",
+                        "label": "Sheet Name",
+                        "required": true
+                    },
+                    {
+                        "name": "includesHeaders",
+                        "type": "select",
+                        "label": "Table contains headers",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                true,
+                                false
+                            ]
+                        }
+                    },
+                    {
+                        "name": "tableFirstRow",
+                        "type": "select",
+                        "label": "Column range",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "A1:Z1",
+                                "A1:BZ1",
+                                "A1:CZ1",
+                                "A1:DZ1",
+                                "A1:MZ1",
+                                "A1:ZZ1",
+                                "A1:AZZ1",
+                                "A1:BZZ1",
+                                "A1:CZZ1",
+                                "A1:DZZ1",
+                                "A1:MZZ1",
+                                "A1:ZZZ1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "filter",
+                        "type": "filter",
+                        "label": "Filter",
+                        "options": "rpc://google-sheets/2/rpcGetFilterKeys?includesHeaders=true"
+                    },
+                    {
+                        "name": "orderBy",
+                        "type": "select",
+                        "label": "Order by"
+                    },
+                    {
+                        "name": "sortOrder",
+                        "type": "select",
+                        "label": "Sort order",
+                        "validate": {
+                            "enum": [
+                                "asc",
+                                "desc"
+                            ]
+                        }
+                    }
+                ],
+                "interface": [
+                    {
+                        "name": "__IMTLENGTH__",
+                        "type": "uinteger",
+                        "label": "Total number of bundles"
+                    },
+                    {
+                        "name": "__IMTINDEX__",
+                        "type": "uinteger",
+                        "label": "Bundle order position"
+                    },
+                    {
+                        "name": "__ROW_NUMBER__",
+                        "type": "number",
+                        "label": "Row number"
+                    },
+                    {
+                        "name": "__SPREADSHEET_ID__",
+                        "type": "text",
+                        "label": "Spreadsheet ID"
+                    },
+                    {
+                        "name": "__SHEET__",
+                        "type": "text",
+                        "label": "Sheet"
+                    },
+                    {
+                        "name": "0",
+                        "type": "text",
+                        "label": "Blog_Title (A)"
+                    },
+                    {
+                        "name": "1",
+                        "type": "text",
+                        "label": "Pin_Special_Instructions (B)"
+                    },
+                    {
+                        "name": "2",
+                        "type": "text",
+                        "label": "Generated_Date (C)"
+                    },
+                    {
+                        "name": "3",
+                        "type": "text",
+                        "label": "Drive_Folder_URL (D)"
+                    },
+                    {
+                        "name": "4",
+                        "type": "text",
+                        "label": "Pin_Status (E)"
+                    },
+                    {
+                        "name": "5",
+                        "type": "text",
+                        "label": "Canva_Done (F)"
+                    },
+                    {
+                        "name": "6",
+                        "type": "text",
+                        "label": "Pinterest_Posted_Date (G)"
+                    },
+                    {
+                        "name": "7",
+                        "type": "text",
+                        "label": "Review_Notes  (H)"
+                    },
+                    {
+                        "name": "8",
+                        "type": "text",
+                        "label": "(I)"
+                    },
+                    {
+                        "name": "9",
+                        "type": "text",
+                        "label": "(J)"
+                    },
+                    {
+                        "name": "10",
+                        "type": "text",
+                        "label": "(K)"
+                    },
+                    {
+                        "name": "11",
+                        "type": "text",
+                        "label": "(L)"
+                    },
+                    {
+                        "name": "12",
+                        "type": "text",
+                        "label": "(M)"
+                    },
+                    {
+                        "name": "13",
+                        "type": "text",
+                        "label": "(N)"
+                    },
+                    {
+                        "name": "14",
+                        "type": "text",
+                        "label": "(O)"
+                    },
+                    {
+                        "name": "15",
+                        "type": "text",
+                        "label": "(P)"
+                    },
+                    {
+                        "name": "16",
+                        "type": "text",
+                        "label": "(Q)"
+                    },
+                    {
+                        "name": "17",
+                        "type": "text",
+                        "label": "(R)"
+                    },
+                    {
+                        "name": "18",
+                        "type": "text",
+                        "label": "(S)"
+                    },
+                    {
+                        "name": "19",
+                        "type": "text",
+                        "label": "(T)"
+                    },
+                    {
+                        "name": "20",
+                        "type": "text",
+                        "label": "(U)"
+                    },
+                    {
+                        "name": "21",
+                        "type": "text",
+                        "label": "(V)"
+                    },
+                    {
+                        "name": "22",
+                        "type": "text",
+                        "label": "(W)"
+                    },
+                    {
+                        "name": "23",
+                        "type": "text",
+                        "label": "(X)"
+                    },
+                    {
+                        "name": "24",
+                        "type": "text",
+                        "label": "(Y)"
+                    },
+                    {
+                        "name": "25",
+                        "type": "text",
+                        "label": "(Z)"
+                    },
+                    {
+                        "name": "26",
+                        "type": "text",
+                        "label": "(AA)"
+                    },
+                    {
+                        "name": "27",
+                        "type": "text",
+                        "label": "(AB)"
+                    },
+                    {
+                        "name": "28",
+                        "type": "text",
+                        "label": "(AC)"
+                    },
+                    {
+                        "name": "29",
+                        "type": "text",
+                        "label": "(AD)"
+                    },
+                    {
+                        "name": "30",
+                        "type": "text",
+                        "label": "(AE)"
+                    },
+                    {
+                        "name": "31",
+                        "type": "text",
+                        "label": "(AF)"
+                    },
+                    {
+                        "name": "32",
+                        "type": "text",
+                        "label": "(AG)"
+                    },
+                    {
+                        "name": "33",
+                        "type": "text",
+                        "label": "(AH)"
+                    },
+                    {
+                        "name": "34",
+                        "type": "text",
+                        "label": "(AI)"
+                    },
+                    {
+                        "name": "35",
+                        "type": "text",
+                        "label": "(AJ)"
+                    },
+                    {
+                        "name": "36",
+                        "type": "text",
+                        "label": "(AK)"
+                    },
+                    {
+                        "name": "37",
+                        "type": "text",
+                        "label": "(AL)"
+                    },
+                    {
+                        "name": "38",
+                        "type": "text",
+                        "label": "(AM)"
+                    },
+                    {
+                        "name": "39",
+                        "type": "text",
+                        "label": "(AN)"
+                    },
+                    {
+                        "name": "40",
+                        "type": "text",
+                        "label": "(AO)"
+                    },
+                    {
+                        "name": "41",
+                        "type": "text",
+                        "label": "(AP)"
+                    },
+                    {
+                        "name": "42",
+                        "type": "text",
+                        "label": "(AQ)"
+                    },
+                    {
+                        "name": "43",
+                        "type": "text",
+                        "label": "(AR)"
+                    },
+                    {
+                        "name": "44",
+                        "type": "text",
+                        "label": "(AS)"
+                    },
+                    {
+                        "name": "45",
+                        "type": "text",
+                        "label": "(AT)"
+                    },
+                    {
+                        "name": "46",
+                        "type": "text",
+                        "label": "(AU)"
+                    },
+                    {
+                        "name": "47",
+                        "type": "text",
+                        "label": "(AV)"
+                    },
+                    {
+                        "name": "48",
+                        "type": "text",
+                        "label": "(AW)"
+                    },
+                    {
+                        "name": "49",
+                        "type": "text",
+                        "label": "(AX)"
+                    },
+                    {
+                        "name": "50",
+                        "type": "text",
+                        "label": "(AY)"
+                    },
+                    {
+                        "name": "51",
+                        "type": "text",
+                        "label": "(AZ)"
+                    },
+                    {
+                        "name": "52",
+                        "type": "text",
+                        "label": "(BA)"
+                    },
+                    {
+                        "name": "53",
+                        "type": "text",
+                        "label": "(BB)"
+                    },
+                    {
+                        "name": "54",
+                        "type": "text",
+                        "label": "(BC)"
+                    },
+                    {
+                        "name": "55",
+                        "type": "text",
+                        "label": "(BD)"
+                    },
+                    {
+                        "name": "56",
+                        "type": "text",
+                        "label": "(BE)"
+                    },
+                    {
+                        "name": "57",
+                        "type": "text",
+                        "label": "(BF)"
+                    },
+                    {
+                        "name": "58",
+                        "type": "text",
+                        "label": "(BG)"
+                    },
+                    {
+                        "name": "59",
+                        "type": "text",
+                        "label": "(BH)"
+                    },
+                    {
+                        "name": "60",
+                        "type": "text",
+                        "label": "(BI)"
+                    },
+                    {
+                        "name": "61",
+                        "type": "text",
+                        "label": "(BJ)"
+                    },
+                    {
+                        "name": "62",
+                        "type": "text",
+                        "label": "(BK)"
+                    },
+                    {
+                        "name": "63",
+                        "type": "text",
+                        "label": "(BL)"
+                    },
+                    {
+                        "name": "64",
+                        "type": "text",
+                        "label": "(BM)"
+                    },
+                    {
+                        "name": "65",
+                        "type": "text",
+                        "label": "(BN)"
+                    },
+                    {
+                        "name": "66",
+                        "type": "text",
+                        "label": "(BO)"
+                    },
+                    {
+                        "name": "67",
+                        "type": "text",
+                        "label": "(BP)"
+                    },
+                    {
+                        "name": "68",
+                        "type": "text",
+                        "label": "(BQ)"
+                    },
+                    {
+                        "name": "69",
+                        "type": "text",
+                        "label": "(BR)"
+                    },
+                    {
+                        "name": "70",
+                        "type": "text",
+                        "label": "(BS)"
+                    },
+                    {
+                        "name": "71",
+                        "type": "text",
+                        "label": "(BT)"
+                    },
+                    {
+                        "name": "72",
+                        "type": "text",
+                        "label": "(BU)"
+                    },
+                    {
+                        "name": "73",
+                        "type": "text",
+                        "label": "(BV)"
+                    },
+                    {
+                        "name": "74",
+                        "type": "text",
+                        "label": "(BW)"
+                    },
+                    {
+                        "name": "75",
+                        "type": "text",
+                        "label": "(BX)"
+                    },
+                    {
+                        "name": "76",
+                        "type": "text",
+                        "label": "(BY)"
+                    },
+                    {
+                        "name": "77",
+                        "type": "text",
+                        "label": "(BZ)"
+                    },
+                    {
+                        "name": "78",
+                        "type": "text",
+                        "label": "(CA)"
+                    },
+                    {
+                        "name": "79",
+                        "type": "text",
+                        "label": "(CB)"
+                    },
+                    {
+                        "name": "80",
+                        "type": "text",
+                        "label": "(CC)"
+                    },
+                    {
+                        "name": "81",
+                        "type": "text",
+                        "label": "(CD)"
+                    },
+                    {
+                        "name": "82",
+                        "type": "text",
+                        "label": "(CE)"
+                    },
+                    {
+                        "name": "83",
+                        "type": "text",
+                        "label": "(CF)"
+                    },
+                    {
+                        "name": "84",
+                        "type": "text",
+                        "label": "(CG)"
+                    },
+                    {
+                        "name": "85",
+                        "type": "text",
+                        "label": "(CH)"
+                    },
+                    {
+                        "name": "86",
+                        "type": "text",
+                        "label": "(CI)"
+                    },
+                    {
+                        "name": "87",
+                        "type": "text",
+                        "label": "(CJ)"
+                    },
+                    {
+                        "name": "88",
+                        "type": "text",
+                        "label": "(CK)"
+                    },
+                    {
+                        "name": "89",
+                        "type": "text",
+                        "label": "(CL)"
+                    },
+                    {
+                        "name": "90",
+                        "type": "text",
+                        "label": "(CM)"
+                    },
+                    {
+                        "name": "91",
+                        "type": "text",
+                        "label": "(CN)"
+                    },
+                    {
+                        "name": "92",
+                        "type": "text",
+                        "label": "(CO)"
+                    },
+                    {
+                        "name": "93",
+                        "type": "text",
+                        "label": "(CP)"
+                    },
+                    {
+                        "name": "94",
+                        "type": "text",
+                        "label": "(CQ)"
+                    },
+                    {
+                        "name": "95",
+                        "type": "text",
+                        "label": "(CR)"
+                    },
+                    {
+                        "name": "96",
+                        "type": "text",
+                        "label": "(CS)"
+                    },
+                    {
+                        "name": "97",
+                        "type": "text",
+                        "label": "(CT)"
+                    },
+                    {
+                        "name": "98",
+                        "type": "text",
+                        "label": "(CU)"
+                    },
+                    {
+                        "name": "99",
+                        "type": "text",
+                        "label": "(CV)"
+                    },
+                    {
+                        "name": "100",
+                        "type": "text",
+                        "label": "(CW)"
+                    },
+                    {
+                        "name": "101",
+                        "type": "text",
+                        "label": "(CX)"
+                    },
+                    {
+                        "name": "102",
+                        "type": "text",
+                        "label": "(CY)"
+                    },
+                    {
+                        "name": "103",
+                        "type": "text",
+                        "label": "(CZ)"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 19,
+            "module": "google-vertex-ai:createAMultimodalPrompt",
+            "version": 1,
+            "parameters": {
+                "__IMTCONN__": 13251576
+            },
+            "filter": {
+                "name": "Only SCHEDULED Rows",
+                "conditions": [
+                    [
+                        {
+                            "a": "{{20.`4`}}",
+                            "b": "SCHEDULED",
+                            "o": "text:equal"
+                        }
+                    ]
+                ]
+            },
+            "mapper": {
+                "projectId": "happypawsautomation",
+                "serviceEndpointLocationId": "us-central1",
+                "model": "gemini-2.5-flash",
+                "messages": [
+                    {
+                        "role": "user",
+                        "content": "⚠️ CRITICAL INSTRUCTION ⚠️\nYou are a Professional Pet Lifestyle Photographer creating Pinterest pin IMAGE CONCEPTS (NOT text-based pins) for UK pet owners.\n\nBlog Title: \"{{20.`0`}}\"\nSpecial Instructions: \"{{20.`1`}}{{(B)}}\"\n\n🎯 IMPORTANT: If Special Instructions are provided above, carefully incorporate them into your pin concepts.\n\n\n═══════════════════════════════════════════════════════════════\n🚨 ABSOLUTE #1 RULE - NO TEXT IN IMAGES 🚨\n═══════════════════════════════════════════════════════════════\n\n⛔ DO NOT generate ANY text, words, letters, numbers, or typography IN the image itself\n⛔ DO NOT create headlines, titles, or captions AS PART of the visual\n⛔ DO NOT render any readable text overlays, watermarks, or labels\n⛔ The \"visual\" field describes a PHOTOGRAPH ONLY - pure imagery with NO text elements\n\n✅ CORRECT: \"A photograph of a Golden Retriever sleeping in a grey pet bed by a window\"\n❌ WRONG: \"A pin showing 'Best Dog Beds 2024' text over a photo of a dog in a bed\"\n\nThe upper third should be CLEAR COPY SPACE (blank area or soft gradient) where Canva will ADD text later.\nYou are creating the BASE PHOTOGRAPH only. Text will be added in post-production.\n\nREPEAT: Zero text in the actual image. Copy space means EMPTY SPACE for future text overlay.\n\n═══════════════════════════════════════════════════════════════\n\nYOUR TASK: Generate exactly 3 high-quality Pinterest pin IMAGE concepts (photographs only, no text) that accurately represent this blog topic.\n\nCRITICAL ANALYSIS REQUIRED:\n1. Read the blog title carefully\n2. Identify what PRODUCT or TOPIC it's about\n3. Understand HOW that product is used in real life\n4. Generate pins showing REALISTIC, COMPLETE usage by UK pet owners\n\n═══════════════════════════════════════════════════════════════\n🚨 CRITICAL RULE #2 - REALISTIC PRODUCT USAGE 🚨\n═══════════════════════════════════════════════════════════════\n\n⛔ NO pets halfway out of hammocks/beds/carriers (unrealistic and unusable)\n⛔ NO pets partially visible or awkwardly positioned\n⛔ NO floating products or products without pets actively using them\n\n✅ CORRECT: \"Cocker Spaniel fully settled inside grey car hammock in back seat\"\n❌ WRONG: \"Dog's head and front paws in hammock, rear half hanging out\"\n\n✅ CORRECT: \"Tabby cat completely curled up in round pet bed, sleeping peacefully\"\n❌ WRONG: \"Cat with only front half in bed, back legs on floor\"\n\nThe pet must be COMPLETELY and COMFORTABLY using the product as intended.\nIf you wouldn't publish it in a pet magazine, don't generate it.\n\n═══════════════════════════════════════════════════════════════\n\nPRODUCT USAGE LOGIC (THINK BEFORE GENERATING):\n\nIF blog mentions food-related products (bowls, feeders, mats):\n- Show them ON THE FLOOR in UK kitchens/utility rooms\n- Pet must be ACTIVELY USING them (eating, licking, drinking)\n- Pet fully visible, properly positioned over bowl\n- Never show empty products or products on counters\n\nIF blog mentions car products (hammocks, harnesses, carriers, seats):\n- Show them INSIDE vehicles (back seat or boot)\n- Dog/cat must be FULLY IN/ON the product, completely visible, properly positioned\n- Car interior must be visible and realistic (British car models like Nissan Qashqai, VW Golf, Range Rover)\n- Pet looks comfortable and secure, not half-in/half-out\n\nIF blog mentions walking/outdoor products (harnesses, leads, coats):\n- Show them being WORN by pet during walks\n- UK outdoor settings (parks, pavements, countryside, British streets)\n- Pet must be doing the activity naturally, not posing awkwardly\n- Full pet visible, product properly fitted\n\nIF blog mentions anxiety/calm products (beds, mats, toys):\n- Show them in quiet UK home settings (living room, bedroom, conservatory)\n- Pet must look genuinely calm/relaxed while FULLY using them\n- Pet completely in bed/on mat, not partially visible\n- Cosy, comfortable British home atmosphere\n\nIF blog mentions bedding/sleep products:\n- Pet must be FULLY in the bed/on the blanket\n- Show complete, realistic sleeping/resting position\n- No awkward half-in/half-out positions\n- Pet looks genuinely comfortable and settled\n\n═══════════════════════════════════════════════════════════════\n🎨 VISUAL COHESION RULES - ALL 3 PINS MUST MATCH 🎨\n═══════════════════════════════════════════════════════════════\n\nThese 3 pins will be posted together as a SET - they MUST look cohesive and branded.\n\nMANDATORY CONSISTENCY ACROSS ALL 3 PINS:\n\n1. COLOR PALETTE (IDENTICAL for all 3):\n   - warm earth tone palette with soft taupe, warm cream, and gentle beige tones\n   - Accent: Soft sage green, dusty rose, warm grey\n   - Avoid: Bright primary colors, neon, stark white, harsh blacks\n   - All 3 pins should feel like they're from the same brand photoshoot\n\n2. LIGHTING QUALITY (IDENTICAL for all 3):\n   - Soft, diffused natural daylight (overcast UK window light)\n   - Same time of day (morning or afternoon, not mixed)\n   - Consistent shadow softness and direction\n   - Same warmth/coolness temperature (all warm OR all cool, not mixed)\n\n3. PHOTOGRAPHY STYLE (IDENTICAL for all 3):\n   - Editorial lifestyle aesthetic (not stock photo generic)\n   - 85mm lens at f/1.8-f/2.8 (shallow depth of field)\n   - Same level of background blur across all 3\n   - Professional, cinematic quality\n   - Same post-processing look (slightly desaturated, film-like)\n\n4. SETTING AESTHETIC (COHESIVE across all 3):\n   - All pins set in authentic British homes (terraced houses, cottages, flats, gardens)\n   - Similar decor style (modern farmhouse, Scandi-minimalist, or cosy traditional - pick ONE)\n   - Consistent props (similar textures: linen, wood, ceramic)\n   - Same level of \"lived-in\" authenticity\n\n✅ GOOD SET EXAMPLE:\n   - Pin 1: Labrador in grey bed, morning light, warm tones, modern farmhouse living room\n   - Pin 2: Cocker Spaniel in same grey bed, same morning light, warm tones, similar modern farmhouse bedroom\n   - Pin 3: French Bulldog in same grey bed, same morning light, warm tones, modern farmhouse conservatory\n   → All feel like one cohesive brand campaign\n\n❌ BAD SET EXAMPLE:\n   - Pin 1: Labrador in bed, bright harsh sunlight, white walls, modern minimalist\n   - Pin 2: Cocker Spaniel in bed, dim evening light, dark moody tones, rustic cottage\n   - Pin 3: French Bulldog in bed, overcast daylight, colorful playful decor, eclectic flat\n   → Looks like 3 random pins from different brands\n\n═══════════════════════════════════════════════════════════════\n📐 THE 3 PERSONAS/ANGLES (Different but Cohesive) 📐\n═══════════════════════════════════════════════════════════════\n\nWhile maintaining visual cohesion, create 3 DISTINCT perspectives:\n\nPIN 1 - CLOSE-UP DETAIL SHOT:\n- Focus: Intimate view of pet + product interaction\n- Framing: Tight on pet's face/body while using product\n- Shows: Product details, pet's contentment, texture close-up\n- Example: \"Close-up of Golden Retriever's peaceful face as she sleeps in grey orthopedic bed, showing cushion texture and comfort\"\n- Breed: Choose one (e.g., Labrador, Golden Retriever, Cocker Spaniel)\n- Setting: One UK room type (e.g., living room corner by window)\n\nPIN 2 - MID-RANGE LIFESTYLE SHOT:\n- Focus: Pet using product in realistic home context\n- Framing: Mid-distance showing pet, product, and immediate surroundings\n- Shows: How product fits into UK home life, practical usage\n- Example: \"Cocker Spaniel fully curled in grey orthopedic bed beside fireplace in cosy British cottage living room\"\n- Breed: DIFFERENT from Pin 1 (e.g., if Pin 1 was Labrador, use Spaniel)\n- Setting: DIFFERENT UK room but similar aesthetic (e.g., bedroom nook)\n\nPIN 3 - WIDE ENVIRONMENTAL SHOT:\n- Focus: Full scene showing pet, product, and complete British home setting\n- Framing: Wide angle capturing room ambiance and lifestyle context\n- Shows: Overall aesthetic, aspirational UK pet life, complete scene\n- Example: \"French Bulldog resting in grey orthopedic bed in bright conservatory with plants, showing full warm British home interior\"\n- Breed: DIFFERENT from Pins 1 & 2 (e.g., French Bulldog, Beagle, British Shorthair)\n- Setting: DIFFERENT UK space with same cohesive look (e.g., conservatory, kitchen corner, hallway)\n\nBREED VARIETY (use different breeds across the 3 pins):\n- Popular UK breeds: Labrador, Cocker Spaniel, French Bulldog, Beagle, Border Terrier, Springer Spaniel\n- UK cats: British Shorthair, Tabby, Ginger cat, Tortoiseshell\n\nUK SETTINGS VARIETY (different rooms, same aesthetic):\n- Terraced house living room\n- Cottage bedroom\n- Modern flat kitchen\n- Victorian home hallway\n- Conservatory with plants\n- Garden room\n- Utility room\n- Home office nook\n\n═══════════════════════════════════════════════════════════════\n📋 COPY SPACE REQUIREMENTS 📋\n═══════════════════════════════════════════════════════════════\n\nUpper Third of Every Pin (Top 1/3 of 9:16 frame):\n⛔ NO busy backgrounds (avoid shelves, artwork, cluttered walls)\n⛔ NO pets' faces or main subject in this zone\n⛔ NO detailed textures or distracting elements\n\n✅ IDEAL copy space zones:\n- Soft gradient wall (cream to warm taupe)\n- Out-of-focus blank wall area\n- Blurred window with diffused light\n- Soft bokeh background\n- Plain painted wall (slightly out of focus)\n\nThe copy space should be BORING and EMPTY - perfect for text overlay.\n\n═══════════════════════════════════════════════════════════════\n🇬🇧 UK AUTHENTICITY & OPTIMIZATION 🇬🇧\n═══════════════════════════════════════════════════════════════\n\nUK VISUAL ELEMENTS:\n- British home architecture (Victorian terrace, 1930s semi, modern new build, cottage)\n- UK cars if applicable (Nissan Qashqai, VW Golf, Ford Fiesta, Range Rover)\n- British weather light (often overcast, soft diffused daylight)\n- UK decor trends (Farrow & Ball paint colors, William Morris patterns, cosy maximalism)\n\nUK COPYWRITING:\n- British spelling: \"colour,\" \"favourite,\" \"cosy,\" \"programme,\" \"grey\"\n- UK-specific hashtags: #UKDogs #DogMumUK #PetLifeUK #BritishPets #UKPetOwners #DogWalkersUK\n- Title character limit: Under 45 characters for Pinterest UK optimization\n- Description: Natural British voice, benefit-focused, includes trending UK hashtags\n\nPINTEREST UK BEST PRACTICES:\n- Titles: Action-oriented, under 45 chars (\"Keep Your Dog Calm in the Car\")\n- Descriptions: 150-300 characters, includes 3-4 UK hashtags, explains benefit\n- Alt text: Descriptive for accessibility, mentions breed, product, setting\n\n═══════════════════════════════════════════════════════════════\n❌ ABSOLUTE RULES (NON-NEGOTIABLE) ❌\n═══════════════════════════════════════════════════════════════\n\nNEVER GENERATE:\n⛔ Any text, words, typography, or letters IN the image itself\n⛔ Pets halfway out of products (hammocks, beds, carriers, bowls)\n⛔ Pets partially visible or awkwardly cut off\n⛔ Pets on kitchen counters or tables\n⛔ Empty products (bowls, beds, toys with no pet using them)\n⛔ Products in illogical places (bowls in cars, car seats in gardens)\n⛔ Wrong species (if blog says \"dog,\" don't generate cat pins)\n⛔ Cleaning products, soap, or random household items near pet products\n⛔ Inconsistent lighting/colors across the 3 pins\n⛔ Stock photo generic looks (avoid overly posed, fake smiles, unnatural setups)\n\nALWAYS INCLUDE:\n✅ Clear copy space in upper third of every pin (empty, soft, blurred)\n✅ Pet FULLY visible and PROPERLY using product as intended\n✅ Realistic British home settings appropriate to product type\n✅ Cohesive visual style across all 3 pins (same lighting, colors, aesthetic)\n✅ 3 different breeds and 3 different UK settings (but matching style)\n✅ Professional editorial photography quality (85mm f/1.8, shallow DOF)\n✅ Warm earth tone color palette (#937F71, #EEECE6, #E0CFBD)\n\n═══════════════════════════════════════════════════════════════\n✅ PRE-SUBMISSION QUALITY CHECKLIST ✅\n═══════════════════════════════════════════════════════════════\n\nBefore submitting your JSON, verify EACH of the 3 pins:\n\n1. TEXT CHECK:\n   □ Is there ANY text/words/letters rendered in the image description? → If YES, remove it\n   □ Is the upper third described as clear/empty/soft copy space? → Must be YES\n\n2. PRODUCT USAGE CHECK:\n   □ Is the pet FULLY visible (not halfway out)? → Must be YES\n   □ Is the pet PROPERLY using the product as intended? → Must be YES\n   □ Would a UK pet owner look at this and think \"that's realistic\"? → Must be YES\n\n3. VISUAL COHESION CHECK:\n   □ Do all 3 pins have the SAME lighting quality? → Must be YES\n   □ Do all 3 pins use the SAME warm earth tone palette? → Must be YES\n   □ Do all 3 pins have the SAME photography style? → Must be YES\n   □ Would these 3 pins look cohesive posted together? → Must be YES\n\n4. SETTING CHECK:\n   □ Is the setting appropriate for this product type? → Must be YES\n   □ Is the setting authentically British? → Must be YES\n   □ Is the benefit of the product VISIBLE in the scene? → Must be YES\n\n5. PINTEREST UK CHECK:\n   □ Is the title under 45 characters? → Must be YES\n   □ Does the description include 3-4 UK hashtags? → Must be YES\n   □ Is British spelling used throughout? → Must be YES\n\nIf ANY answer is \"NO,\" regenerate that pin before submitting.\n\n═══════════════════════════════════════════════════════════════\n📤 OUTPUT FORMAT (STRICT JSON) 📤\n═══════════════════════════════════════════════════════════════\n\nReturn ONLY valid JSON. No explanation before or after. Just the JSON array.\n\nCRITICAL JSON RULES:\n- Return EXACTLY 3 pin objects in an array\n- \"visual\" field describes a PHOTOGRAPH ONLY (no text in image)\n- Escape all special characters properly\n- Validate JSON structure before submission\n\n[\n  {\n    \"visual\": \"A professional 9:16 vertical photorealistic editorial lifestyle photograph of [SPECIFIC UK BREED] [ACTIVELY AND COMPLETELY USING PRODUCT - fully visible, properly positioned, realistic usage] in [APPROPRIATE UK SETTING - specific British home type]. Soft diffused natural daylight (overcast UK window light), upper third has clear copy space (soft gradient warm taupe wall, slightly blurred), 85mm f/1.8 shallow depth of field, warm earth tone palette (#937F71 taupe, #EEECE6 cream, #E0CFBD beige), editorial aesthetic, authentic British home, cinematic quality. Absolutely no text or typography in image.\",\n    \"title\": \"Under 45 chars, benefit-focused, British spelling\",\n    \"desc\": \"150-300 char description explaining why UK pet owners need this, using British spelling (colour, favourite, cosy), benefit-driven, includes 3-4 trending UK hashtags: #UKDogs #PetLifeUK #DogMumUK #BritishPets\",\n    \"alt\": \"Descriptive alt text for accessibility: [Breed] [action with product] in [UK setting]\"\n  },\n  {\n    \"visual\": \"[PIN 2: Different breed, mid-range angle, different UK room, SAME lighting/colors/style as Pin 1, pet FULLY visible and properly using product, clear copy space in upper third, no text]\",\n    \"title\": \"Different angle on benefit, under 45 chars\",\n    \"desc\": \"Alternative description, British spelling, UK hashtags\",\n    \"alt\": \"Alt text for Pin 2\"\n  },\n  {\n    \"visual\": \"[PIN 3: Different breed again, wide environmental shot, different UK setting, SAME cohesive aesthetic as Pins 1 & 2, pet completely visible using product properly, copy space maintained, no text]\",\n    \"title\": \"Third variation, under 45 chars\",\n    \"desc\": \"Third description, British spelling, UK hashtags\",\n    \"alt\": \"Alt text for Pin 3\"\n  }\n]\n\n═══════════════════════════════════════════════════════════════\n\nFINAL REMINDER BEFORE YOU GENERATE:\n1. NO text in images (copy space only, NO rendered text)\n2. Pet FULLY visible and PROPERLY using product (no halfway positions)\n3. All 3 pins VISUALLY COHESIVE (same lighting, colors, style)\n4. Clear copy space in upper third (empty, soft, blurred)\n5. Return ONLY valid JSON (no explanation)\n\nNow generate 3 cohesive Pinterest pin IMAGE concepts for: \"{{20.`0`}}{{(A)}}\"\n"
+                    }
+                ],
+                "temperature": "0.7",
+                "topP": "1",
+                "responseMimeType": "application/json"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 98,
+                    "y": 67
+                },
+                "restore": {
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "label": "My Google Gemini (Vertex AI) connection (casadecashflow@gmail.com)",
+                            "data": {
+                                "scoped": "true",
+                                "connection": "google-vertex-ai"
+                            }
+                        }
+                    },
+                    "expect": {
+                        "projectId": {
+                            "mode": "chose",
+                            "label": "HappyPawsAutomation"
+                        },
+                        "serviceEndpointLocationId": {
+                            "mode": "chose",
+                            "label": "Iowa"
+                        },
+                        "model": {
+                            "mode": "chose",
+                            "nested": [
+                                {
+                                    "name": "tools",
+                                    "type": "select",
+                                    "label": "Tools",
+                                    "options": [
+                                        {
+                                            "label": "Function Declarations",
+                                            "value": "functionDeclarations",
+                                            "nested": [
+                                                {
+                                                    "name": "functionDeclarations",
+                                                    "spec": [
+                                                        {
+                                                            "name": "name",
+                                                            "type": "text",
+                                                            "label": "Function Name",
+                                                            "required": true
+                                                        },
+                                                        {
+                                                            "name": "description",
+                                                            "type": "text",
+                                                            "label": "Function Description",
+                                                            "required": true
+                                                        },
+                                                        {
+                                                            "help": "Configuration of the parameters that the function accepts.",
+                                                            "name": "parameters",
+                                                            "spec": {
+                                                                "spec": [
+                                                                    "rpc://google-vertex-ai/1/parametersGeminiFunctionParameters"
+                                                                ],
+                                                                "type": "collection",
+                                                                "label": "Parameter"
+                                                            },
+                                                            "type": "array",
+                                                            "label": "Parameters",
+                                                            "required": true
+                                                        }
+                                                    ],
+                                                    "type": "array",
+                                                    "label": "Function Declarations"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "label": "Grounding",
+                                            "value": "grounding",
+                                            "nested": [
+                                                "rpc://google-vertex-ai/1/parametersGrounding"
+                                            ]
+                                        }
+                                    ],
+                                    "advanced": true
+                                }
+                            ],
+                            "label": "Gemini 2.5 Flash"
+                        },
+                        "messages": {
+                            "mode": "chose",
+                            "items": [
+                                {
+                                    "role": {
+                                        "mode": "chose",
+                                        "label": "User"
+                                    },
+                                    "files": {
+                                        "mode": "chose"
+                                    }
+                                }
+                            ]
+                        },
+                        "stopSequences": {
+                            "mode": "chose"
+                        },
+                        "responseMimeType": {
+                            "label": "JSON"
+                        },
+                        "safetySettings": {
+                            "mode": "chose"
+                        },
+                        "tools": {
+                            "mode": "chose",
+                            "label": "Empty"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:google-vertex-ai",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "projectId",
+                        "type": "select",
+                        "label": "GCP Project",
+                        "required": true
+                    },
+                    {
+                        "name": "serviceEndpointLocationId",
+                        "type": "select",
+                        "label": "Region",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "us-central1",
+                                "us-west4",
+                                "northamerica-northeast1",
+                                "us-east4",
+                                "us-west1",
+                                "europe-west1",
+                                "europe-west3",
+                                "europe-west2",
+                                "europe-west4",
+                                "europe-west9",
+                                "asia-northeast3",
+                                "asia-southeast1",
+                                "asia-northeast1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "model",
+                        "type": "select",
+                        "label": "Model",
+                        "required": true
+                    },
+                    {
+                        "name": "messages",
+                        "type": "array",
+                        "label": "Messages",
+                        "required": true,
+                        "spec": {
+                            "spec": [
+                                {
+                                    "name": "role",
+                                    "type": "select",
+                                    "label": "Role",
+                                    "options": [
+                                        {
+                                            "label": "User",
+                                            "value": "user",
+                                            "default": true
+                                        },
+                                        {
+                                            "label": "Assistant",
+                                            "value": "model"
+                                        }
+                                    ],
+                                    "required": true
+                                },
+                                {
+                                    "name": "content",
+                                    "type": "text",
+                                    "label": "Text Content",
+                                    "required": true
+                                },
+                                {
+                                    "name": "files",
+                                    "spec": {
+                                        "spec": [
+                                            {
+                                                "name": "fileType",
+                                                "type": "select",
+                                                "label": "File Type",
+                                                "options": [
+                                                    {
+                                                        "label": "Image",
+                                                        "value": "image",
+                                                        "nested": [
+                                                            {
+                                                                "name": "inputType",
+                                                                "type": "select",
+                                                                "label": "Image Input Method",
+                                                                "options": [
+                                                                    {
+                                                                        "label": "Upload a File",
+                                                                        "value": "upload",
+                                                                        "nested": [
+                                                                            {
+                                                                                "name": "fileName",
+                                                                                "type": "filename",
+                                                                                "label": "File Name",
+                                                                                "required": true,
+                                                                                "semantic": "file:name",
+                                                                                "extension": [
+                                                                                    "png",
+                                                                                    "jpeg",
+                                                                                    "jpg",
+                                                                                    "webp",
+                                                                                    "heic",
+                                                                                    "heif"
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "name": "data",
+                                                                                "type": "buffer",
+                                                                                "label": "Data",
+                                                                                "required": true,
+                                                                                "semantic": "file:data"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "label": "File URL",
+                                                                        "value": "uri",
+                                                                        "nested": [
+                                                                            {
+                                                                                "help": "The file extension/format.",
+                                                                                "name": "mime",
+                                                                                "type": "select",
+                                                                                "label": "MIME Type",
+                                                                                "options": [
+                                                                                    {
+                                                                                        "label": "PNG",
+                                                                                        "value": "png"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "JPG",
+                                                                                        "value": "jpg"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "JPEG",
+                                                                                        "value": "jpeg"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "WEBP",
+                                                                                        "value": "webp"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "HEIC",
+                                                                                        "value": "heic"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "HEIF",
+                                                                                        "value": "heif"
+                                                                                    }
+                                                                                ],
+                                                                                "required": true
+                                                                            },
+                                                                            {
+                                                                                "help": "The URL must be publicly accessible. To test this, you can try opening the URL in an anonymous tab. It must take you directly to the file.\nEnsure that the URL is not restricted from automated access. This can involve external platform settings, proxy bot-blocking, and robots.txt configuration.",
+                                                                                "name": "file_uri",
+                                                                                "type": "text",
+                                                                                "label": "File URL",
+                                                                                "required": true
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "required": true
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "label": "Video",
+                                                        "value": "video",
+                                                        "nested": [
+                                                            {
+                                                                "name": "inputType",
+                                                                "type": "select",
+                                                                "label": "Video Input Method",
+                                                                "default": "uri",
+                                                                "options": [
+                                                                    {
+                                                                        "label": "Upload a File",
+                                                                        "value": "upload",
+                                                                        "nested": [
+                                                                            {
+                                                                                "name": "fileName",
+                                                                                "type": "filename",
+                                                                                "label": "File Name",
+                                                                                "required": true,
+                                                                                "semantic": "file:name"
+                                                                            },
+                                                                            {
+                                                                                "name": "data",
+                                                                                "type": "buffer",
+                                                                                "label": "Data",
+                                                                                "required": true,
+                                                                                "semantic": "file:data"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "label": "File URL",
+                                                                        "value": "uri",
+                                                                        "nested": [
+                                                                            {
+                                                                                "help": "The file extension/format.",
+                                                                                "name": "mime",
+                                                                                "type": "select",
+                                                                                "label": "MIME Type",
+                                                                                "options": [
+                                                                                    {
+                                                                                        "label": "MP4",
+                                                                                        "value": "mp4"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "MPG",
+                                                                                        "value": "mpg"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "MPEG",
+                                                                                        "value": "mpeg"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "MOV",
+                                                                                        "value": "mov"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "AVI",
+                                                                                        "value": "avi"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "FLV",
+                                                                                        "value": "x-flv"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "WEBM",
+                                                                                        "value": "webm"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "WMV",
+                                                                                        "value": "wmv"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "3GPP",
+                                                                                        "value": "3gpp"
+                                                                                    }
+                                                                                ],
+                                                                                "required": true
+                                                                            },
+                                                                            {
+                                                                                "help": "The URL must be publicly accessible. To test this, you can try opening the URL in an anonymous tab. It must take you directly to the file.\nEnsure that the URL is not restricted from automated access. This can involve external platform settings, proxy bot-blocking, and robots.txt configuration.",
+                                                                                "name": "file_uri",
+                                                                                "type": "text",
+                                                                                "label": "File URL",
+                                                                                "required": true
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "required": true
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "label": "Audio",
+                                                        "value": "audio",
+                                                        "nested": [
+                                                            {
+                                                                "name": "inputType",
+                                                                "type": "select",
+                                                                "label": "Audio Input Method",
+                                                                "default": "uri",
+                                                                "options": [
+                                                                    {
+                                                                        "label": "Upload a File",
+                                                                        "value": "upload",
+                                                                        "nested": [
+                                                                            {
+                                                                                "name": "fileName",
+                                                                                "type": "filename",
+                                                                                "label": "File Name",
+                                                                                "required": true,
+                                                                                "semantic": "file:name"
+                                                                            },
+                                                                            {
+                                                                                "name": "data",
+                                                                                "type": "buffer",
+                                                                                "label": "Data",
+                                                                                "required": true,
+                                                                                "semantic": "file:data"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "label": "File URL",
+                                                                        "value": "uri",
+                                                                        "nested": [
+                                                                            {
+                                                                                "help": "The file extension/format.",
+                                                                                "name": "mime",
+                                                                                "type": "select",
+                                                                                "label": "MIME Type",
+                                                                                "options": [
+                                                                                    {
+                                                                                        "label": "WAV",
+                                                                                        "value": "wav"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "MP3",
+                                                                                        "value": "mp3"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "AIFF",
+                                                                                        "value": "aiff"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "AAC",
+                                                                                        "value": "aac"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "OGG Vorbis",
+                                                                                        "value": "ogg"
+                                                                                    },
+                                                                                    {
+                                                                                        "label": "FLAC",
+                                                                                        "value": "flac"
+                                                                                    }
+                                                                                ],
+                                                                                "required": true
+                                                                            },
+                                                                            {
+                                                                                "help": "The URL must be publicly accessible. To test this, you can try opening the URL in an anonymous tab. It must take you directly to the file.\nEnsure that the URL is not restricted from automated access. This can involve external platform settings, proxy bot-blocking, and robots.txt configuration.",
+                                                                                "name": "file_uri",
+                                                                                "type": "text",
+                                                                                "label": "File URL",
+                                                                                "required": true
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "required": true
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "required": true,
+                                                "validate": true
+                                            }
+                                        ],
+                                        "type": "collection",
+                                        "label": "File"
+                                    },
+                                    "type": "array",
+                                    "label": "Files",
+                                    "labels": {
+                                        "add": "Add file"
+                                    }
+                                }
+                            ],
+                            "type": "collection",
+                            "label": "Message",
+                            "name": "value"
+                        }
+                    },
+                    {
+                        "name": "temperature",
+                        "type": "number",
+                        "label": "Temperature",
+                        "validate": {
+                            "max": 1,
+                            "min": 0
+                        }
+                    },
+                    {
+                        "name": "maxOutputTokens",
+                        "type": "uinteger",
+                        "label": "Max Output Tokens",
+                        "validate": {
+                            "max": 8192,
+                            "min": 0
+                        }
+                    },
+                    {
+                        "name": "topK",
+                        "type": "uinteger",
+                        "label": "Top-k",
+                        "validate": {
+                            "max": 40,
+                            "min": 1
+                        }
+                    },
+                    {
+                        "name": "topP",
+                        "type": "number",
+                        "label": "Top-p",
+                        "validate": {
+                            "max": 1,
+                            "min": 0
+                        }
+                    },
+                    {
+                        "name": "stopSequences",
+                        "type": "array",
+                        "label": "Stop Sequences",
+                        "validate": {
+                            "maxItems": 5
+                        },
+                        "spec": {
+                            "type": "text",
+                            "label": "Stop Sequence",
+                            "name": "value"
+                        }
+                    },
+                    {
+                        "name": "responseMimeType",
+                        "type": "select",
+                        "label": "Response Format",
+                        "validate": {
+                            "enum": [
+                                "text/plain",
+                                "application/json"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "safetySettings",
+                        "type": "array",
+                        "label": "Safety Settings",
+                        "spec": {
+                            "spec": [
+                                {
+                                    "name": "category",
+                                    "type": "select",
+                                    "label": "Safety Category",
+                                    "options": [
+                                        {
+                                            "label": "Sexually Explicit",
+                                            "value": "HARM_CATEGORY_SEXUALLY_EXPLICIT"
+                                        },
+                                        {
+                                            "label": "Hate Speech",
+                                            "value": "HARM_CATEGORY_HATE_SPEECH"
+                                        },
+                                        {
+                                            "label": "Harassment",
+                                            "value": "HARM_CATEGORY_HARASSMENT"
+                                        },
+                                        {
+                                            "label": "Dangerous Content",
+                                            "value": "HARM_CATEGORY_DANGEROUS_CONTENT"
+                                        }
+                                    ],
+                                    "required": true
+                                },
+                                {
+                                    "name": "threshold",
+                                    "type": "select",
+                                    "label": "Threshold",
+                                    "options": [
+                                        {
+                                            "label": "Block None",
+                                            "value": "BLOCK_NONE"
+                                        },
+                                        {
+                                            "label": "Block Low and Above",
+                                            "value": "BLOCK_LOW_AND_ABOVE"
+                                        },
+                                        {
+                                            "label": "Block Medium and Above",
+                                            "value": "BLOCK_MEDIUM_AND_ABOVE"
+                                        },
+                                        {
+                                            "label": "Block High and Above",
+                                            "value": "BLOCK_ONLY_HIGH"
+                                        }
+                                    ],
+                                    "required": true
+                                }
+                            ],
+                            "type": "collection",
+                            "label": "Safety Setting",
+                            "name": "value"
+                        }
+                    },
+                    {
+                        "name": "tools",
+                        "type": "select",
+                        "label": "Tools",
+                        "validate": {
+                            "enum": [
+                                "functionDeclarations",
+                                "grounding"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "responseSchema",
+                        "type": "text",
+                        "label": "Response Schema"
+                    }
+                ],
+                "interface": [
+                    {
+                        "name": "predictions",
+                        "spec": {
+                            "spec": [
+                                {
+                                    "name": "candidates",
+                                    "spec": {
+                                        "spec": [
+                                            {
+                                                "name": "content",
+                                                "spec": [
+                                                    {
+                                                        "name": "role",
+                                                        "type": "text",
+                                                        "label": "Role"
+                                                    },
+                                                    {
+                                                        "name": "parts",
+                                                        "spec": [
+                                                            {
+                                                                "name": "text",
+                                                                "type": "text",
+                                                                "label": "Text"
+                                                            }
+                                                        ],
+                                                        "type": "array",
+                                                        "label": "Parts"
+                                                    }
+                                                ],
+                                                "type": "collection",
+                                                "label": "Content"
+                                            },
+                                            {
+                                                "name": "finishReason",
+                                                "type": "text",
+                                                "label": "Finish Reason"
+                                            },
+                                            {
+                                                "name": "safetyRatings",
+                                                "spec": {
+                                                    "spec": [
+                                                        {
+                                                            "name": "category",
+                                                            "type": "text",
+                                                            "label": "Category"
+                                                        },
+                                                        {
+                                                            "name": "probability",
+                                                            "type": "text",
+                                                            "label": "Probability"
+                                                        },
+                                                        {
+                                                            "name": "probabilityScore",
+                                                            "type": "number",
+                                                            "label": "Probability Score"
+                                                        },
+                                                        {
+                                                            "name": "severity",
+                                                            "type": "text",
+                                                            "label": "Severity"
+                                                        },
+                                                        {
+                                                            "name": "severityScore",
+                                                            "type": "number",
+                                                            "label": "Severity Score"
+                                                        }
+                                                    ],
+                                                    "type": "collection"
+                                                },
+                                                "type": "array",
+                                                "label": "Safety Ratings"
+                                            },
+                                            {
+                                                "name": "groundingMetadata",
+                                                "spec": [
+                                                    {
+                                                        "name": "webSearchQueries",
+                                                        "spec": {
+                                                            "type": "text"
+                                                        },
+                                                        "type": "array",
+                                                        "label": "Web Search Queries"
+                                                    },
+                                                    {
+                                                        "name": "searchEntryPoint",
+                                                        "type": "collection",
+                                                        "label": "Search Entry Point"
+                                                    },
+                                                    {
+                                                        "name": "groundingChunks",
+                                                        "spec": {
+                                                            "type": "collection"
+                                                        },
+                                                        "type": "array",
+                                                        "label": "Grounding Chunks"
+                                                    },
+                                                    {
+                                                        "name": "groundingSupports",
+                                                        "spec": {
+                                                            "type": "collection"
+                                                        },
+                                                        "type": "array",
+                                                        "label": "Grounding Supports"
+                                                    },
+                                                    {
+                                                        "name": "retrievalMetadata",
+                                                        "spec": [],
+                                                        "type": "collection",
+                                                        "label": "Retrieval Metadata"
+                                                    }
+                                                ],
+                                                "type": "collection",
+                                                "label": "Grounding Metadata"
+                                            }
+                                        ],
+                                        "type": "collection"
+                                    },
+                                    "type": "array",
+                                    "label": "Candidates"
+                                },
+                                {
+                                    "name": "usageMetadata",
+                                    "spec": [
+                                        {
+                                            "name": "promptTokenCount",
+                                            "type": "number",
+                                            "label": "Prompt Token Count"
+                                        },
+                                        {
+                                            "name": "candidatesTokenCount",
+                                            "type": "number",
+                                            "label": "Candidates Token Count"
+                                        },
+                                        {
+                                            "name": "totalTokenCount",
+                                            "type": "number",
+                                            "label": "Total Token Count"
+                                        },
+                                        {
+                                            "name": "promptTokensDetails",
+                                            "spec": [
+                                                {
+                                                    "name": "modality",
+                                                    "type": "text",
+                                                    "label": "Modality"
+                                                },
+                                                {
+                                                    "name": "tokenCount",
+                                                    "type": "number",
+                                                    "label": "Token Count"
+                                                }
+                                            ],
+                                            "type": "array",
+                                            "label": "Prompt Tokens Details"
+                                        },
+                                        {
+                                            "name": "candidatesTokensDetails",
+                                            "spec": [
+                                                {
+                                                    "name": "modality",
+                                                    "type": "text",
+                                                    "label": "Modality"
+                                                },
+                                                {
+                                                    "name": "tokenCount",
+                                                    "type": "number",
+                                                    "label": "Token Count"
+                                                }
+                                            ],
+                                            "type": "array",
+                                            "label": "Candidates Tokens Details"
+                                        }
+                                    ],
+                                    "type": "collection",
+                                    "label": "Usage Metadata"
+                                },
+                                {
+                                    "name": "modelVersion",
+                                    "type": "text",
+                                    "label": "Model Version"
+                                },
+                                {
+                                    "name": "createTime",
+                                    "type": "date",
+                                    "label": "Create Time"
+                                },
+                                {
+                                    "name": "responseId",
+                                    "type": "text",
+                                    "label": "Response ID"
+                                }
+                            ],
+                            "type": "collection"
+                        },
+                        "type": "array",
+                        "label": "Predictions"
+                    },
+                    {
+                        "name": "textResponse",
+                        "type": "text",
+                        "label": "Text Response"
+                    }
+                ],
+                "advanced": true
+            }
+        },
+        {
+            "id": 23,
+            "module": "json:ParseJSON",
+            "version": 1,
+            "parameters": {
+                "type": 513753
+            },
+            "mapper": {
+                "json": "{{19.textResponse}}"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 412,
+                    "y": 74
+                },
+                "restore": {
+                    "parameters": {
+                        "type": {
+                            "label": "My data structure"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "type",
+                        "type": "udt",
+                        "label": "Data structure"
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "json",
+                        "type": "text",
+                        "label": "JSON string",
+                        "required": true
+                    }
+                ],
+                "interface": [
+                    {
+                        "help": "",
+                        "name": "visual",
+                        "type": "text",
+                        "label": "Visual",
+                        "default": null,
+                        "required": false,
+                        "multiline": false
+                    },
+                    {
+                        "help": "",
+                        "name": "title",
+                        "type": "text",
+                        "label": "Title",
+                        "default": null,
+                        "required": false,
+                        "multiline": false
+                    },
+                    {
+                        "help": "",
+                        "name": "desc",
+                        "type": "text",
+                        "label": "Desc",
+                        "default": null,
+                        "required": false,
+                        "multiline": false
+                    },
+                    {
+                        "help": "",
+                        "name": "alt",
+                        "type": "text",
+                        "label": "Alt",
+                        "default": null,
+                        "required": false,
+                        "multiline": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": 24,
+            "module": "builtin:BasicFeeder",
+            "version": 1,
+            "parameters": {},
+            "mapper": {
+                "array": "{{`23`}}"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 720,
+                    "y": 97
+                },
+                "restore": {
+                    "expect": {
+                        "array": {
+                            "mode": "edit"
+                        }
+                    }
+                },
+                "expect": [
+                    {
+                        "mode": "edit",
+                        "name": "array",
+                        "spec": [],
+                        "type": "array",
+                        "label": "Array"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 25,
+            "module": "google-drive:createAFolder",
+            "version": 4,
+            "parameters": {
+                "__IMTCONN__": 13391629
+            },
+            "filter": {
+                "name": "Only run once per blog",
+                "conditions": [
+                    [
+                        {
+                            "a": "{{24.`__IMTINDEX__`}}",
+                            "b": "1",
+                            "o": "number:equal"
+                        }
+                    ]
+                ]
+            },
+            "mapper": {
+                "name": "{{20.`0`}}",
+                "shared": false,
+                "folderId": "/1phsPsEpGjubKaQ4T3-cnuol3lNGKFs80",
+                "destination": "drive"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 1053,
+                    "y": 91
+                },
+                "restore": {
+                    "expect": {
+                        "folderId": {
+                            "mode": "chose",
+                            "path": [
+                                "HappyPawsCo_Pinterest_Automation"
+                            ]
+                        },
+                        "destination": {
+                            "label": "My Drive"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "google-restricted"
+                            },
+                            "label": "My Google Restricted connection (casadecashflow@gmail.com)"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:google-restricted",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "destination",
+                        "type": "select",
+                        "label": "New Drive Location",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "drive",
+                                "share",
+                                "team"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "folderId",
+                        "type": "folder",
+                        "label": "New Folder Location",
+                        "required": true
+                    },
+                    {
+                        "name": "name",
+                        "type": "text",
+                        "label": "New Folder's Name"
+                    },
+                    {
+                        "name": "shared",
+                        "type": "boolean",
+                        "label": "Share Folder",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": 21,
+            "module": "google-vertex-ai:generateImage",
+            "version": 1,
+            "parameters": {
+                "__IMTCONN__": 13251576
+            },
+            "mapper": {
+                "projectId": "happypawsautomation",
+                "model": "imagen-4.0-generate-001",
+                "prompt": "{{24.visual}}",
+                "sampleCount": "1",
+                "negativePrompt": "\"negativePrompt\": \"text, words, letters, numbers, font, typography, watermark, logo, headline, title, caption, label, sign, writing, script, coherent text, gibberish text, overlay text, rendered text, any readable characters, alphabet letters, hex codes, color codes, hashtags, #\"",
+                "aspectRatio": "9:16",
+                "outputOptions": {},
+                "serviceEndpointLocationId": "us-central1"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 1391,
+                    "y": 77
+                },
+                "restore": {
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "label": "My Google Gemini (Vertex AI) connection (casadecashflow@gmail.com)",
+                            "data": {
+                                "scoped": "true",
+                                "connection": "google-vertex-ai"
+                            }
+                        }
+                    },
+                    "expect": {
+                        "projectId": {
+                            "mode": "chose",
+                            "label": "HappyPawsAutomation"
+                        },
+                        "model": {
+                            "mode": "chose",
+                            "label": "imagen-4.0-generate-001"
+                        },
+                        "enhancePrompt": {
+                            "mode": "chose"
+                        },
+                        "addWatermark": {
+                            "mode": "chose"
+                        },
+                        "aspectRatio": {
+                            "mode": "chose",
+                            "label": "9:16"
+                        },
+                        "outputOptions": {
+                            "nested": {
+                                "mimeType": {
+                                    "mode": "chose",
+                                    "label": "Empty"
+                                }
+                            }
+                        },
+                        "sampleImageStyle": {
+                            "mode": "chose",
+                            "label": "Empty"
+                        },
+                        "personGeneration": {
+                            "mode": "chose",
+                            "label": "Empty"
+                        },
+                        "safetySetting": {
+                            "mode": "chose",
+                            "label": "Empty"
+                        },
+                        "includeRaiReason": {
+                            "mode": "chose"
+                        },
+                        "includeSafetyAttributes": {
+                            "mode": "chose"
+                        },
+                        "serviceEndpointLocationId": {
+                            "mode": "chose",
+                            "label": "us-central1"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:google-vertex-ai",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "projectId",
+                        "type": "select",
+                        "label": "GCP Project",
+                        "required": true
+                    },
+                    {
+                        "name": "model",
+                        "type": "select",
+                        "label": "Model",
+                        "required": true
+                    },
+                    {
+                        "name": "prompt",
+                        "type": "text",
+                        "label": "Text Prompt",
+                        "required": true
+                    },
+                    {
+                        "name": "sampleCount",
+                        "type": "uinteger",
+                        "label": "Image Count",
+                        "required": true
+                    },
+                    {
+                        "name": "enhancePrompt",
+                        "type": "boolean",
+                        "label": "Enhance Prompt"
+                    },
+                    {
+                        "name": "storageUri",
+                        "type": "url",
+                        "label": "Storage URI"
+                    },
+                    {
+                        "name": "addWatermark",
+                        "type": "boolean",
+                        "label": "Add Watermark"
+                    },
+                    {
+                        "name": "seed",
+                        "type": "uinteger",
+                        "label": "Seed"
+                    },
+                    {
+                        "name": "negativePrompt",
+                        "type": "text",
+                        "label": "Negative Prompt"
+                    },
+                    {
+                        "name": "aspectRatio",
+                        "type": "select",
+                        "label": "Aspect Ratio",
+                        "validate": {
+                            "enum": [
+                                "1:1",
+                                "9:16",
+                                "16:9",
+                                "3:4",
+                                "4:3"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "outputOptions",
+                        "type": "collection",
+                        "label": "Output Options",
+                        "spec": [
+                            {
+                                "name": "mimeType",
+                                "type": "select",
+                                "label": "Mime Type",
+                                "validate": {
+                                    "enum": [
+                                        "image/png",
+                                        "image/jpeg"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "sampleImageStyle",
+                        "type": "select",
+                        "label": "Sample Image Style",
+                        "validate": {
+                            "enum": [
+                                "photograph",
+                                "digital_art",
+                                "landscape",
+                                "sketch",
+                                "watercolor",
+                                "cyberpunk",
+                                "pop_art"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "personGeneration",
+                        "type": "select",
+                        "label": "Person Generation",
+                        "validate": {
+                            "enum": [
+                                "dont_allow",
+                                "allow_adult",
+                                "allow_all"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "safetySetting",
+                        "type": "select",
+                        "label": "Safety Setting",
+                        "validate": {
+                            "enum": [
+                                "block_low_and_above",
+                                "block_medium_and_above",
+                                "block_only_high",
+                                "block_none"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "includeRaiReason",
+                        "type": "boolean",
+                        "label": "Include Rai Reason"
+                    },
+                    {
+                        "name": "includeSafetyAttributes",
+                        "type": "boolean",
+                        "label": "Include Safety Attributes"
+                    },
+                    {
+                        "name": "serviceEndpointLocationId",
+                        "type": "select",
+                        "label": "Region",
+                        "required": true
+                    }
+                ],
+                "advanced": true
+            }
+        },
+        {
+            "id": 11,
+            "module": "google-drive:uploadAFile",
+            "version": 4,
+            "parameters": {
+                "__IMTCONN__": 13391661
+            },
+            "mapper": {
+                "select": "map",
+                "filename": "{{20.`0`}}_Pin_{{24.`__IMTINDEX__`}}",
+                "data": "{{21.predictions[].imageData}}",
+                "convert": false,
+                "folderId": "1phsPsEpGjubKaQ4T3-cnuol3lNGKFs80"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 1730,
+                    "y": 84
+                },
+                "restore": {
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "label": "My Google Restricted connection (casadecashflow@gmail.com)",
+                            "data": {
+                                "scoped": "true",
+                                "connection": "google-restricted"
+                            }
+                        }
+                    },
+                    "expect": {
+                        "select": {
+                            "label": "Enter manually"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:google-restricted",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "select",
+                        "type": "select",
+                        "label": "Enter a Folder ID",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "map",
+                                "value"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "title",
+                        "type": "text",
+                        "label": "New File Name"
+                    },
+                    {
+                        "name": "filename",
+                        "type": "text",
+                        "label": "File Name",
+                        "required": true
+                    },
+                    {
+                        "name": "data",
+                        "type": "buffer",
+                        "label": "Data",
+                        "required": true
+                    },
+                    {
+                        "name": "convert",
+                        "type": "boolean",
+                        "label": "Convert a File",
+                        "required": true
+                    },
+                    {
+                        "name": "folderId",
+                        "type": "text",
+                        "label": "Folder ID",
+                        "required": true
+                    }
+                ],
+                "advanced": true
+            }
+        },
+        {
+            "id": 13,
+            "module": "google-sheets:updateRow",
+            "version": 2,
+            "parameters": {
+                "__IMTCONN__": 13119631
+            },
+            "mapper": {
+                "mode": "fromAll",
+                "valueInputOption": "USER_ENTERED",
+                "spreadsheetId": "1xCcDKooyPShQx7pYuqzzs4CQ3Xlo6groSLXbQa82ekE",
+                "sheetId": "Pinterest_Pins",
+                "rowNumber": "{{20.`__ROW_NUMBER__`}}",
+                "includesHeaders": true,
+                "values": {
+                    "2": "{{formatDate(now; \"DD-MM-YYYY\")}}",
+                    "3": "=HYPERLINK(\"{{25.webViewLink}}\"; \"View Folder\")",
+                    "4": "NEEDS_REVIEW"
+                }
+            },
+            "metadata": {
+                "designer": {
+                    "x": 2056,
+                    "y": 92
+                },
+                "restore": {
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "label": "My Google connection (casadecashflow@gmail.com)",
+                            "data": {
+                                "scoped": "true",
+                                "connection": "google"
+                            }
+                        }
+                    },
+                    "expect": {
+                        "mode": {
+                            "label": "Select from all"
+                        },
+                        "valueInputOption": {
+                            "mode": "chose",
+                            "label": "User entered"
+                        },
+                        "sheetId": {
+                            "mode": "edit"
+                        },
+                        "includesHeaders": {
+                            "nested": [
+                                {
+                                    "name": "values",
+                                    "spec": [
+                                        {
+                                            "name": "0",
+                                            "type": "text",
+                                            "label": "A"
+                                        },
+                                        {
+                                            "name": "1",
+                                            "type": "text",
+                                            "label": "B"
+                                        },
+                                        {
+                                            "name": "2",
+                                            "type": "text",
+                                            "label": "C"
+                                        },
+                                        {
+                                            "name": "3",
+                                            "type": "text",
+                                            "label": "D"
+                                        },
+                                        {
+                                            "name": "4",
+                                            "type": "text",
+                                            "label": "E"
+                                        },
+                                        {
+                                            "name": "5",
+                                            "type": "text",
+                                            "label": "F"
+                                        },
+                                        {
+                                            "name": "6",
+                                            "type": "text",
+                                            "label": "G"
+                                        },
+                                        {
+                                            "name": "7",
+                                            "type": "text",
+                                            "label": "H"
+                                        },
+                                        {
+                                            "name": "8",
+                                            "type": "text",
+                                            "label": "I"
+                                        },
+                                        {
+                                            "name": "9",
+                                            "type": "text",
+                                            "label": "J"
+                                        },
+                                        {
+                                            "name": "10",
+                                            "type": "text",
+                                            "label": "K"
+                                        },
+                                        {
+                                            "name": "11",
+                                            "type": "text",
+                                            "label": "L"
+                                        },
+                                        {
+                                            "name": "12",
+                                            "type": "text",
+                                            "label": "M"
+                                        },
+                                        {
+                                            "name": "13",
+                                            "type": "text",
+                                            "label": "N"
+                                        },
+                                        {
+                                            "name": "14",
+                                            "type": "text",
+                                            "label": "O"
+                                        },
+                                        {
+                                            "name": "15",
+                                            "type": "text",
+                                            "label": "P"
+                                        },
+                                        {
+                                            "name": "16",
+                                            "type": "text",
+                                            "label": "Q"
+                                        },
+                                        {
+                                            "name": "17",
+                                            "type": "text",
+                                            "label": "R"
+                                        },
+                                        {
+                                            "name": "18",
+                                            "type": "text",
+                                            "label": "S"
+                                        },
+                                        {
+                                            "name": "19",
+                                            "type": "text",
+                                            "label": "T"
+                                        },
+                                        {
+                                            "name": "20",
+                                            "type": "text",
+                                            "label": "U"
+                                        },
+                                        {
+                                            "name": "21",
+                                            "type": "text",
+                                            "label": "V"
+                                        },
+                                        {
+                                            "name": "22",
+                                            "type": "text",
+                                            "label": "W"
+                                        },
+                                        {
+                                            "name": "23",
+                                            "type": "text",
+                                            "label": "X"
+                                        },
+                                        {
+                                            "name": "24",
+                                            "type": "text",
+                                            "label": "Y"
+                                        },
+                                        {
+                                            "name": "25",
+                                            "type": "text",
+                                            "label": "Z"
+                                        },
+                                        {
+                                            "name": "26",
+                                            "type": "text",
+                                            "label": "AA"
+                                        },
+                                        {
+                                            "name": "27",
+                                            "type": "text",
+                                            "label": "AB"
+                                        },
+                                        {
+                                            "name": "28",
+                                            "type": "text",
+                                            "label": "AC"
+                                        },
+                                        {
+                                            "name": "29",
+                                            "type": "text",
+                                            "label": "AD"
+                                        },
+                                        {
+                                            "name": "30",
+                                            "type": "text",
+                                            "label": "AE"
+                                        },
+                                        {
+                                            "name": "31",
+                                            "type": "text",
+                                            "label": "AF"
+                                        },
+                                        {
+                                            "name": "32",
+                                            "type": "text",
+                                            "label": "AG"
+                                        },
+                                        {
+                                            "name": "33",
+                                            "type": "text",
+                                            "label": "AH"
+                                        },
+                                        {
+                                            "name": "34",
+                                            "type": "text",
+                                            "label": "AI"
+                                        },
+                                        {
+                                            "name": "35",
+                                            "type": "text",
+                                            "label": "AJ"
+                                        },
+                                        {
+                                            "name": "36",
+                                            "type": "text",
+                                            "label": "AK"
+                                        },
+                                        {
+                                            "name": "37",
+                                            "type": "text",
+                                            "label": "AL"
+                                        },
+                                        {
+                                            "name": "38",
+                                            "type": "text",
+                                            "label": "AM"
+                                        },
+                                        {
+                                            "name": "39",
+                                            "type": "text",
+                                            "label": "AN"
+                                        },
+                                        {
+                                            "name": "40",
+                                            "type": "text",
+                                            "label": "AO"
+                                        },
+                                        {
+                                            "name": "41",
+                                            "type": "text",
+                                            "label": "AP"
+                                        },
+                                        {
+                                            "name": "42",
+                                            "type": "text",
+                                            "label": "AQ"
+                                        },
+                                        {
+                                            "name": "43",
+                                            "type": "text",
+                                            "label": "AR"
+                                        },
+                                        {
+                                            "name": "44",
+                                            "type": "text",
+                                            "label": "AS"
+                                        },
+                                        {
+                                            "name": "45",
+                                            "type": "text",
+                                            "label": "AT"
+                                        },
+                                        {
+                                            "name": "46",
+                                            "type": "text",
+                                            "label": "AU"
+                                        },
+                                        {
+                                            "name": "47",
+                                            "type": "text",
+                                            "label": "AV"
+                                        },
+                                        {
+                                            "name": "48",
+                                            "type": "text",
+                                            "label": "AW"
+                                        },
+                                        {
+                                            "name": "49",
+                                            "type": "text",
+                                            "label": "AX"
+                                        },
+                                        {
+                                            "name": "50",
+                                            "type": "text",
+                                            "label": "AY"
+                                        },
+                                        {
+                                            "name": "51",
+                                            "type": "text",
+                                            "label": "AZ"
+                                        },
+                                        {
+                                            "name": "52",
+                                            "type": "text",
+                                            "label": "BA"
+                                        },
+                                        {
+                                            "name": "53",
+                                            "type": "text",
+                                            "label": "BB"
+                                        },
+                                        {
+                                            "name": "54",
+                                            "type": "text",
+                                            "label": "BC"
+                                        },
+                                        {
+                                            "name": "55",
+                                            "type": "text",
+                                            "label": "BD"
+                                        },
+                                        {
+                                            "name": "56",
+                                            "type": "text",
+                                            "label": "BE"
+                                        },
+                                        {
+                                            "name": "57",
+                                            "type": "text",
+                                            "label": "BF"
+                                        },
+                                        {
+                                            "name": "58",
+                                            "type": "text",
+                                            "label": "BG"
+                                        },
+                                        {
+                                            "name": "59",
+                                            "type": "text",
+                                            "label": "BH"
+                                        },
+                                        {
+                                            "name": "60",
+                                            "type": "text",
+                                            "label": "BI"
+                                        },
+                                        {
+                                            "name": "61",
+                                            "type": "text",
+                                            "label": "BJ"
+                                        },
+                                        {
+                                            "name": "62",
+                                            "type": "text",
+                                            "label": "BK"
+                                        },
+                                        {
+                                            "name": "63",
+                                            "type": "text",
+                                            "label": "BL"
+                                        },
+                                        {
+                                            "name": "64",
+                                            "type": "text",
+                                            "label": "BM"
+                                        },
+                                        {
+                                            "name": "65",
+                                            "type": "text",
+                                            "label": "BN"
+                                        },
+                                        {
+                                            "name": "66",
+                                            "type": "text",
+                                            "label": "BO"
+                                        },
+                                        {
+                                            "name": "67",
+                                            "type": "text",
+                                            "label": "BP"
+                                        },
+                                        {
+                                            "name": "68",
+                                            "type": "text",
+                                            "label": "BQ"
+                                        },
+                                        {
+                                            "name": "69",
+                                            "type": "text",
+                                            "label": "BR"
+                                        },
+                                        {
+                                            "name": "70",
+                                            "type": "text",
+                                            "label": "BS"
+                                        },
+                                        {
+                                            "name": "71",
+                                            "type": "text",
+                                            "label": "BT"
+                                        },
+                                        {
+                                            "name": "72",
+                                            "type": "text",
+                                            "label": "BU"
+                                        },
+                                        {
+                                            "name": "73",
+                                            "type": "text",
+                                            "label": "BV"
+                                        },
+                                        {
+                                            "name": "74",
+                                            "type": "text",
+                                            "label": "BW"
+                                        },
+                                        {
+                                            "name": "75",
+                                            "type": "text",
+                                            "label": "BX"
+                                        },
+                                        {
+                                            "name": "76",
+                                            "type": "text",
+                                            "label": "BY"
+                                        },
+                                        {
+                                            "name": "77",
+                                            "type": "text",
+                                            "label": "BZ"
+                                        },
+                                        {
+                                            "name": "78",
+                                            "type": "text",
+                                            "label": "CA"
+                                        },
+                                        {
+                                            "name": "79",
+                                            "type": "text",
+                                            "label": "CB"
+                                        },
+                                        {
+                                            "name": "80",
+                                            "type": "text",
+                                            "label": "CC"
+                                        },
+                                        {
+                                            "name": "81",
+                                            "type": "text",
+                                            "label": "CD"
+                                        },
+                                        {
+                                            "name": "82",
+                                            "type": "text",
+                                            "label": "CE"
+                                        },
+                                        {
+                                            "name": "83",
+                                            "type": "text",
+                                            "label": "CF"
+                                        },
+                                        {
+                                            "name": "84",
+                                            "type": "text",
+                                            "label": "CG"
+                                        },
+                                        {
+                                            "name": "85",
+                                            "type": "text",
+                                            "label": "CH"
+                                        },
+                                        {
+                                            "name": "86",
+                                            "type": "text",
+                                            "label": "CI"
+                                        },
+                                        {
+                                            "name": "87",
+                                            "type": "text",
+                                            "label": "CJ"
+                                        },
+                                        {
+                                            "name": "88",
+                                            "type": "text",
+                                            "label": "CK"
+                                        },
+                                        {
+                                            "name": "89",
+                                            "type": "text",
+                                            "label": "CL"
+                                        },
+                                        {
+                                            "name": "90",
+                                            "type": "text",
+                                            "label": "CM"
+                                        },
+                                        {
+                                            "name": "91",
+                                            "type": "text",
+                                            "label": "CN"
+                                        },
+                                        {
+                                            "name": "92",
+                                            "type": "text",
+                                            "label": "CO"
+                                        },
+                                        {
+                                            "name": "93",
+                                            "type": "text",
+                                            "label": "CP"
+                                        },
+                                        {
+                                            "name": "94",
+                                            "type": "text",
+                                            "label": "CQ"
+                                        },
+                                        {
+                                            "name": "95",
+                                            "type": "text",
+                                            "label": "CR"
+                                        },
+                                        {
+                                            "name": "96",
+                                            "type": "text",
+                                            "label": "CS"
+                                        },
+                                        {
+                                            "name": "97",
+                                            "type": "text",
+                                            "label": "CT"
+                                        },
+                                        {
+                                            "name": "98",
+                                            "type": "text",
+                                            "label": "CU"
+                                        },
+                                        {
+                                            "name": "99",
+                                            "type": "text",
+                                            "label": "CV"
+                                        },
+                                        {
+                                            "name": "100",
+                                            "type": "text",
+                                            "label": "CW"
+                                        },
+                                        {
+                                            "name": "101",
+                                            "type": "text",
+                                            "label": "CX"
+                                        },
+                                        {
+                                            "name": "102",
+                                            "type": "text",
+                                            "label": "CY"
+                                        },
+                                        {
+                                            "name": "103",
+                                            "type": "text",
+                                            "label": "CZ"
+                                        }
+                                    ],
+                                    "type": "collection",
+                                    "label": "Values"
+                                }
+                            ],
+                            "label": "Yes"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:google",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "mode",
+                        "type": "select",
+                        "label": "Search Method",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "select",
+                                "fromAll",
+                                "map"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "valueInputOption",
+                        "type": "select",
+                        "label": "Value input option",
+                        "validate": {
+                            "enum": [
+                                "USER_ENTERED",
+                                "RAW"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "spreadsheetId",
+                        "type": "text",
+                        "label": "Spreadsheet ID",
+                        "required": true
+                    },
+                    {
+                        "name": "sheetId",
+                        "type": "select",
+                        "label": "Sheet Name",
+                        "mode": "edit",
+                        "required": true
+                    },
+                    {
+                        "name": "rowNumber",
+                        "type": "uinteger",
+                        "label": "Row number",
+                        "required": true
+                    },
+                    {
+                        "name": "includesHeaders",
+                        "type": "select",
+                        "label": "Table contains headers",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                true,
+                                false
+                            ]
+                        }
+                    },
+                    {
+                        "name": "values",
+                        "type": "collection",
+                        "label": "Values",
+                        "spec": [
+                            {
+                                "name": "0",
+                                "type": "text",
+                                "label": "A"
+                            },
+                            {
+                                "name": "1",
+                                "type": "text",
+                                "label": "B"
+                            },
+                            {
+                                "name": "2",
+                                "type": "text",
+                                "label": "C"
+                            },
+                            {
+                                "name": "3",
+                                "type": "text",
+                                "label": "D"
+                            },
+                            {
+                                "name": "4",
+                                "type": "text",
+                                "label": "E"
+                            },
+                            {
+                                "name": "5",
+                                "type": "text",
+                                "label": "F"
+                            },
+                            {
+                                "name": "6",
+                                "type": "text",
+                                "label": "G"
+                            },
+                            {
+                                "name": "7",
+                                "type": "text",
+                                "label": "H"
+                            },
+                            {
+                                "name": "8",
+                                "type": "text",
+                                "label": "I"
+                            },
+                            {
+                                "name": "9",
+                                "type": "text",
+                                "label": "J"
+                            },
+                            {
+                                "name": "10",
+                                "type": "text",
+                                "label": "K"
+                            },
+                            {
+                                "name": "11",
+                                "type": "text",
+                                "label": "L"
+                            },
+                            {
+                                "name": "12",
+                                "type": "text",
+                                "label": "M"
+                            },
+                            {
+                                "name": "13",
+                                "type": "text",
+                                "label": "N"
+                            },
+                            {
+                                "name": "14",
+                                "type": "text",
+                                "label": "O"
+                            },
+                            {
+                                "name": "15",
+                                "type": "text",
+                                "label": "P"
+                            },
+                            {
+                                "name": "16",
+                                "type": "text",
+                                "label": "Q"
+                            },
+                            {
+                                "name": "17",
+                                "type": "text",
+                                "label": "R"
+                            },
+                            {
+                                "name": "18",
+                                "type": "text",
+                                "label": "S"
+                            },
+                            {
+                                "name": "19",
+                                "type": "text",
+                                "label": "T"
+                            },
+                            {
+                                "name": "20",
+                                "type": "text",
+                                "label": "U"
+                            },
+                            {
+                                "name": "21",
+                                "type": "text",
+                                "label": "V"
+                            },
+                            {
+                                "name": "22",
+                                "type": "text",
+                                "label": "W"
+                            },
+                            {
+                                "name": "23",
+                                "type": "text",
+                                "label": "X"
+                            },
+                            {
+                                "name": "24",
+                                "type": "text",
+                                "label": "Y"
+                            },
+                            {
+                                "name": "25",
+                                "type": "text",
+                                "label": "Z"
+                            },
+                            {
+                                "name": "26",
+                                "type": "text",
+                                "label": "AA"
+                            },
+                            {
+                                "name": "27",
+                                "type": "text",
+                                "label": "AB"
+                            },
+                            {
+                                "name": "28",
+                                "type": "text",
+                                "label": "AC"
+                            },
+                            {
+                                "name": "29",
+                                "type": "text",
+                                "label": "AD"
+                            },
+                            {
+                                "name": "30",
+                                "type": "text",
+                                "label": "AE"
+                            },
+                            {
+                                "name": "31",
+                                "type": "text",
+                                "label": "AF"
+                            },
+                            {
+                                "name": "32",
+                                "type": "text",
+                                "label": "AG"
+                            },
+                            {
+                                "name": "33",
+                                "type": "text",
+                                "label": "AH"
+                            },
+                            {
+                                "name": "34",
+                                "type": "text",
+                                "label": "AI"
+                            },
+                            {
+                                "name": "35",
+                                "type": "text",
+                                "label": "AJ"
+                            },
+                            {
+                                "name": "36",
+                                "type": "text",
+                                "label": "AK"
+                            },
+                            {
+                                "name": "37",
+                                "type": "text",
+                                "label": "AL"
+                            },
+                            {
+                                "name": "38",
+                                "type": "text",
+                                "label": "AM"
+                            },
+                            {
+                                "name": "39",
+                                "type": "text",
+                                "label": "AN"
+                            },
+                            {
+                                "name": "40",
+                                "type": "text",
+                                "label": "AO"
+                            },
+                            {
+                                "name": "41",
+                                "type": "text",
+                                "label": "AP"
+                            },
+                            {
+                                "name": "42",
+                                "type": "text",
+                                "label": "AQ"
+                            },
+                            {
+                                "name": "43",
+                                "type": "text",
+                                "label": "AR"
+                            },
+                            {
+                                "name": "44",
+                                "type": "text",
+                                "label": "AS"
+                            },
+                            {
+                                "name": "45",
+                                "type": "text",
+                                "label": "AT"
+                            },
+                            {
+                                "name": "46",
+                                "type": "text",
+                                "label": "AU"
+                            },
+                            {
+                                "name": "47",
+                                "type": "text",
+                                "label": "AV"
+                            },
+                            {
+                                "name": "48",
+                                "type": "text",
+                                "label": "AW"
+                            },
+                            {
+                                "name": "49",
+                                "type": "text",
+                                "label": "AX"
+                            },
+                            {
+                                "name": "50",
+                                "type": "text",
+                                "label": "AY"
+                            },
+                            {
+                                "name": "51",
+                                "type": "text",
+                                "label": "AZ"
+                            },
+                            {
+                                "name": "52",
+                                "type": "text",
+                                "label": "BA"
+                            },
+                            {
+                                "name": "53",
+                                "type": "text",
+                                "label": "BB"
+                            },
+                            {
+                                "name": "54",
+                                "type": "text",
+                                "label": "BC"
+                            },
+                            {
+                                "name": "55",
+                                "type": "text",
+                                "label": "BD"
+                            },
+                            {
+                                "name": "56",
+                                "type": "text",
+                                "label": "BE"
+                            },
+                            {
+                                "name": "57",
+                                "type": "text",
+                                "label": "BF"
+                            },
+                            {
+                                "name": "58",
+                                "type": "text",
+                                "label": "BG"
+                            },
+                            {
+                                "name": "59",
+                                "type": "text",
+                                "label": "BH"
+                            },
+                            {
+                                "name": "60",
+                                "type": "text",
+                                "label": "BI"
+                            },
+                            {
+                                "name": "61",
+                                "type": "text",
+                                "label": "BJ"
+                            },
+                            {
+                                "name": "62",
+                                "type": "text",
+                                "label": "BK"
+                            },
+                            {
+                                "name": "63",
+                                "type": "text",
+                                "label": "BL"
+                            },
+                            {
+                                "name": "64",
+                                "type": "text",
+                                "label": "BM"
+                            },
+                            {
+                                "name": "65",
+                                "type": "text",
+                                "label": "BN"
+                            },
+                            {
+                                "name": "66",
+                                "type": "text",
+                                "label": "BO"
+                            },
+                            {
+                                "name": "67",
+                                "type": "text",
+                                "label": "BP"
+                            },
+                            {
+                                "name": "68",
+                                "type": "text",
+                                "label": "BQ"
+                            },
+                            {
+                                "name": "69",
+                                "type": "text",
+                                "label": "BR"
+                            },
+                            {
+                                "name": "70",
+                                "type": "text",
+                                "label": "BS"
+                            },
+                            {
+                                "name": "71",
+                                "type": "text",
+                                "label": "BT"
+                            },
+                            {
+                                "name": "72",
+                                "type": "text",
+                                "label": "BU"
+                            },
+                            {
+                                "name": "73",
+                                "type": "text",
+                                "label": "BV"
+                            },
+                            {
+                                "name": "74",
+                                "type": "text",
+                                "label": "BW"
+                            },
+                            {
+                                "name": "75",
+                                "type": "text",
+                                "label": "BX"
+                            },
+                            {
+                                "name": "76",
+                                "type": "text",
+                                "label": "BY"
+                            },
+                            {
+                                "name": "77",
+                                "type": "text",
+                                "label": "BZ"
+                            },
+                            {
+                                "name": "78",
+                                "type": "text",
+                                "label": "CA"
+                            },
+                            {
+                                "name": "79",
+                                "type": "text",
+                                "label": "CB"
+                            },
+                            {
+                                "name": "80",
+                                "type": "text",
+                                "label": "CC"
+                            },
+                            {
+                                "name": "81",
+                                "type": "text",
+                                "label": "CD"
+                            },
+                            {
+                                "name": "82",
+                                "type": "text",
+                                "label": "CE"
+                            },
+                            {
+                                "name": "83",
+                                "type": "text",
+                                "label": "CF"
+                            },
+                            {
+                                "name": "84",
+                                "type": "text",
+                                "label": "CG"
+                            },
+                            {
+                                "name": "85",
+                                "type": "text",
+                                "label": "CH"
+                            },
+                            {
+                                "name": "86",
+                                "type": "text",
+                                "label": "CI"
+                            },
+                            {
+                                "name": "87",
+                                "type": "text",
+                                "label": "CJ"
+                            },
+                            {
+                                "name": "88",
+                                "type": "text",
+                                "label": "CK"
+                            },
+                            {
+                                "name": "89",
+                                "type": "text",
+                                "label": "CL"
+                            },
+                            {
+                                "name": "90",
+                                "type": "text",
+                                "label": "CM"
+                            },
+                            {
+                                "name": "91",
+                                "type": "text",
+                                "label": "CN"
+                            },
+                            {
+                                "name": "92",
+                                "type": "text",
+                                "label": "CO"
+                            },
+                            {
+                                "name": "93",
+                                "type": "text",
+                                "label": "CP"
+                            },
+                            {
+                                "name": "94",
+                                "type": "text",
+                                "label": "CQ"
+                            },
+                            {
+                                "name": "95",
+                                "type": "text",
+                                "label": "CR"
+                            },
+                            {
+                                "name": "96",
+                                "type": "text",
+                                "label": "CS"
+                            },
+                            {
+                                "name": "97",
+                                "type": "text",
+                                "label": "CT"
+                            },
+                            {
+                                "name": "98",
+                                "type": "text",
+                                "label": "CU"
+                            },
+                            {
+                                "name": "99",
+                                "type": "text",
+                                "label": "CV"
+                            },
+                            {
+                                "name": "100",
+                                "type": "text",
+                                "label": "CW"
+                            },
+                            {
+                                "name": "101",
+                                "type": "text",
+                                "label": "CX"
+                            },
+                            {
+                                "name": "102",
+                                "type": "text",
+                                "label": "CY"
+                            },
+                            {
+                                "name": "103",
+                                "type": "text",
+                                "label": "CZ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "metadata": {
+        "instant": false,
+        "version": 1,
+        "scenario": {
+            "roundtrips": 1,
+            "maxErrors": 3,
+            "autoCommit": true,
+            "autoCommitTriggerLast": true,
+            "sequential": false,
+            "slots": null,
+            "confidential": false,
+            "dataloss": false,
+            "dlq": false,
+            "freshVariables": false
+        },
+        "designer": {
+            "orphans": []
+        },
+        "zone": "eu2.make.com",
+        "notes": []
+    }
+}

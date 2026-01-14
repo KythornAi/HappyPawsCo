@@ -1,0 +1,22 @@
+{
+  "name": "skill-creator",
+  "version": "1.0.0",
+  "description": "Creates new Claude Code skills with proper YAML frontmatter, official structure, and validation. Ensures skills are created correctly the first time.",
+  "triggers": [
+    "create a new skill",
+    "build a skill for",
+    "make a skill that",
+    "create skill",
+    "new skill"
+  ],
+  "capabilities": [
+    "Creates skills in official .claude/skills/ directory",
+    "Generates proper YAML frontmatter with validation",
+    "Ensures name matches directory (lowercase-with-hyphens)",
+    "Creates descriptive trigger keywords",
+    "Validates YAML syntax before saving",
+    "Follows Claude Code official standards"
+  ],
+  "created": "2026-01-10",
+  "lastUpdated": "2026-01-10"
+}

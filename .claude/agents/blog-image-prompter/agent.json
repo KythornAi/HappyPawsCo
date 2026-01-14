@@ -1,0 +1,22 @@
+{
+  "name": "blog-image-prompter",
+  "version": "1.0.0",
+  "description": "Analyzes blog content and generates detailed AI image prompts for Google Vertex AI, Midjourney, DALL-E, or other image generators. Creates SEO-optimized filenames and alt text for each image.",
+  "triggers": [
+    "create image prompts for this blog",
+    "generate image prompts",
+    "I need images for this blog",
+    "create vertex ai prompts",
+    "generate blog images"
+  ],
+  "capabilities": [
+    "Blog content analysis for image opportunities",
+    "AI image prompt generation (Vertex AI, Midjourney, DALL-E)",
+    "SEO-optimized filename suggestions",
+    "Keyword-rich alt text creation",
+    "Image placement recommendations",
+    "Brand aesthetic consistency (UK homes, natural lighting, warm tones)",
+    "Multiple image types: hero, section, product, infographic"
+  ],
+  "outputFormat": "Detailed prompts ready to paste into image generators, with filenames, alt text, and placement suggestions for each image"
+}

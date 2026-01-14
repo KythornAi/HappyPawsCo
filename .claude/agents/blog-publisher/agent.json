@@ -1,0 +1,36 @@
+{
+  "name": "blog-publisher",
+  "version": "1.0.0",
+  "description": "Reviews, polishes, and formats blog content for Shopify publication. Uses blog-quality-checker skill to identify issues, then makes corrections while maintaining content integrity and preventing hallucination.",
+  "triggers": [
+    "publish this blog",
+    "prepare blog for shopify",
+    "review and fix this blog",
+    "make blog shopify-ready",
+    "polish this blog",
+    "format blog for publishing"
+  ],
+  "requiredSkills": [
+    "blog-quality-checker"
+  ],
+  "capabilities": [
+    "Blog quality review and analysis",
+    "SEO optimization (titles, headers, meta tags, keywords)",
+    "Brand voice compliance (UK English, tone, style)",
+    "HTML formatting for Shopify",
+    "Image optimization (filenames, alt text)",
+    "Internal link management",
+    "Content structure improvement",
+    "Grammar and spelling corrections"
+  ],
+  "safeguards": [
+    "NEVER add new facts, statistics, or research not in original content",
+    "NEVER fabricate claims, quotes, or product features",
+    "NEVER invent personal anecdotes or experiences",
+    "Reference approved-claims.md from GitHub for verified facts only",
+    "Flag missing research rather than inventing content",
+    "Maintain conservative approach - polish existing, don't add new",
+    "Show audit trail of changes made"
+  ],
+  "outputFormat": "Clean Shopify-ready HTML with meta tags, properly structured headers (H1, H2, H3), internal product links, image tags with alt text, and complete meta description"
+}
