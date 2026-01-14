@@ -3168,11 +3168,420 @@ These signal lived experience and expertise.
 
 \- Make content genuinely helpful (not just SEO-driven)
 
-  
+
 
 \---
 
+---
 
+## DEEP RESEARCH JANUARY 2026 - CONDENSED ENTRIES
+
+*Processed from Perplexity AI research files (January 2026)*
+
+---
+
+## 9. DOG BOOSTER SEATS (UK Market Research)
+
+### Use Case
+Dog booster seats elevate small to medium dogs (typically under 15kg) in vehicles for better visibility, reduced anxiety, and legal compliance with UK Highway Code Rule 57. Popular among owners of Chihuahuas, French Bulldogs, Dachshunds, and small terriers.
+
+### Long-Tail Keywords
+**Primary Keywords:**
+- "dog booster seat UK"
+- "elevated dog car seat UK"
+- "small dog car seat with harness"
+
+**Secondary Keywords:**
+- "ISOFIX dog car seat UK"
+- "crash tested dog car seat"
+- "dog car seat for anxiety"
+- "lookout dog car seat UK"
+- "dog seat belt law UK 2026"
+- "best dog booster seat for small dogs"
+- "raised dog car seat for elderly dogs"
+
+**Question-Based:**
+- "Is it illegal to have an unrestrained dog in car UK?"
+- "Do dog booster seats need to be crash tested?"
+- "What is Highway Code Rule 57 for dogs?"
+
+### FAQs to Answer
+1. Is it a legal requirement to restrain dogs in cars UK? (Highway Code Rule 57 - fines up to £5,000, 9 penalty points)
+2. What size dog fits in a booster seat?
+3. Are dog booster seats crash tested?
+4. Can I use a booster seat on the front seat?
+5. How do I secure a booster seat without ISOFIX?
+6. Do elevated seats help with car sickness?
+7. What's the difference between a booster and a carrier?
+
+### Ad Angles
+- **Legal Compliance**: "Avoid £5,000 fines - Highway Code compliant dog restraint"
+- **Anxiety Relief**: "Calm nervous travellers with an elevated view"
+- **Small Dog Solution**: "Finally, a car seat designed for dogs under 10kg"
+- **Senior Dog Care**: "Help arthritic dogs see out safely"
+
+### Seasonality
+- **March-April**: Easter travel surge, spring holiday bookings
+- **July-August**: Summer staycation peak
+- **December**: Christmas travel, gift season
+- **Year-round**: Consistent searches for legal compliance queries
+
+### Competitors (UK Market)
+| Brand | Price Range | Key Features |
+|-------|-------------|--------------|
+| Zooplus (generic) | £18-25 | Budget entry, basic restraint |
+| Henry Wag | £45-55 | Quilted, UK brand, mid-range |
+| Kong Secure Booster | £65-75 | Premium brand recognition |
+| EzyDog | £60-70 | Australian quality, harness integration |
+| Kurgo | £50-80 | Crash tested claims, US brand |
+| Pets at Home (own brand) | £25-40 | Accessible, UK retail |
+
+---
+
+## 10. TWO-POINT CONTROL TRAINING LEADS
+
+### Use Case
+Dual-clip/double-ended training leads with front and back harness attachment for managing pulling dogs. Popular for reactive dog training, loose-lead walking, and transitioning from restrictive control to freedom. Used by professional trainers and behaviourists.
+
+### Long-Tail Keywords
+**Primary Keywords:**
+- "double ended dog lead UK"
+- "two point control lead"
+- "dual clip dog lead"
+- "training lead double clip"
+
+**Secondary Keywords:**
+- "anti-pull lead with two attachments"
+- "front and back clip harness lead"
+- "multi-point training lead"
+- "police dog training lead"
+- "figure 8 lead for pulling dogs"
+- "adjustable training lead UK"
+
+**Question-Based:**
+- "What is a two point control lead?"
+- "How do double ended leads stop pulling?"
+- "Should I clip lead to front or back of harness?"
+- "Are dual clip leads better for reactive dogs?"
+
+### FAQs to Answer
+1. How does a two-point control system work?
+2. Which attachment point is better for pulling - front or back?
+3. Can I use a double-ended lead with any harness?
+4. How long should a training lead be?
+5. Are two-point leads recommended by dog trainers?
+6. What material is best for training leads?
+7. Can I convert a standard harness to two-point?
+
+### Ad Angles
+- **Trainer Approved**: "The lead professional behaviourists choose"
+- **Anti-Pull Solution**: "Redirect pulling without choking"
+- **Reactive Dog Ready**: "Better control for unpredictable encounters"
+- **Transition Tool**: "From tight control to loose-lead freedom"
+
+### Seasonality
+- **January-February**: New Year training resolutions
+- **March-April**: Puppy season, new dog owners
+- **September**: Post-summer training restart
+- **Year-round**: Consistent behaviour training demand
+
+### Competitors (UK Pricing)
+| Price Tier | Range | Examples |
+|------------|-------|----------|
+| Entry | £7-13 | Halti, basic double-ended |
+| Mid-Range | £13-20 | Company of Animals, PetSafe |
+| Premium | £20-30+ | Ruffwear, EzyDog |
+| Bundle (Lead + Harness) | £30-50 | Complete training kits |
+
+---
+
+## 11. CAT WATER FOUNTAINS (UK Market)
+
+### Use Case
+Encouraging hydration in cats through running water to support kidney health and prevent UTIs. Particularly valuable for dry-food fed cats, cats with kidney disease, and multi-cat households. Wireless/cordless models gaining popularity for placement flexibility.
+
+### Long-Tail Keywords
+**Primary Keywords:**
+- "cat water fountain UK"
+- "wireless cat fountain"
+- "cordless cat fountain UK"
+- "best cat water fountain 2026"
+
+**Secondary Keywords:**
+- "stainless steel cat fountain"
+- "ceramic cat fountain UK"
+- "quiet cat fountain"
+- "cat fountain for kidney disease"
+- "multi-cat water fountain"
+- "cat fountain replacement filters UK"
+
+**Question-Based:**
+- "Do cat fountains really help cats drink more?"
+- "How often should I clean a cat fountain?"
+- "Are plastic cat fountains safe?"
+- "Why is my cat fountain getting slimy?"
+- "What material is best for cat fountains?"
+
+### FAQs to Answer
+1. Why do cats prefer running water?
+2. How do I know if my cat is dehydrated?
+3. How often should I clean a cat fountain? (Weekly deep clean essential)
+4. Wireless vs wired - which is better?
+5. Stainless steel vs ceramic vs plastic - pros/cons
+6. What capacity do I need for multiple cats?
+7. How long do replacement filters last? (4 weeks typical)
+8. Are cat fountains noisy?
+
+### Ad Angles
+- **Health Investment**: "Support kidney health, prevent costly vet bills"
+- **Instinct Satisfaction**: "Running water appeals to their wild instincts"
+- **Wireless Freedom**: "Place anywhere - no cables, no risk"
+- **Material Matters**: "Stainless steel = bacteria-free hydration"
+
+### Seasonality
+- **Summer**: Peak hydration concerns
+- **Winter**: Central heating = dehydration risk
+- **Year-round**: Health-conscious pet owners
+
+### Competitors (UK Pricing)
+| Tier | Price | Models |
+|------|-------|--------|
+| Budget (£20-35) | Cat Mate Shell, Catit Mini Flower, TIAKI |
+| Mid-Range (£35-60) | Catit PIXI Stainless Steel, PetSafe Sedona, MIXC |
+| Wireless Premium (£60-80) | Fussy Cat Ceramic, OneIsAll Wireless |
+| Smart/Premium (£80-100) | Catit PIXI Smart, PetKit EverSweet Max Cordless |
+| Luxury (£100+) | Drinkwell 360 Stainless, SureFlap Felaqua Connect |
+
+**Filter Ongoing Costs:**
+- Catit: £5-7 for 3-pack (£20-28/year)
+- Cat Mate: £6-10 for 6-pack (£12-20/year)
+- Fussy Cat: £13 for 3-pack (£52/year)
+
+---
+
+## 12. SPRING 2026 CONTENT OPPORTUNITIES
+
+### Seasonal Hazards Content Cluster
+
+**Toxic Flora:**
+- Lilies (fatal to cats - Mother's Day bouquet danger)
+- Daffodils, Tulips, Bluebells (bulb toxicity)
+- Garden fertilizers (blood/bone meal risks)
+
+**Wildlife Hazards:**
+- Adder bites (March-May emergence, heathlands)
+- Lungworm (slug ban → population increase)
+- Tick season (year-round now with climate change)
+
+**Parasites:**
+- New 12-month injectable flea treatments (2026 disruption)
+- Tick protection required all year
+- Lungworm risk from slug exposure
+
+### Trending Blog Topics
+
+**Health & Safety Pillar:**
+1. "2026 Pollen Forecast: Protecting Your Itchy Dog This Spring"
+2. "Adder Map: High-Risk Walking Zones for Easter 2026"
+3. "12-Month Flea Shot: Is It Safe? What You Need to Know"
+4. "Mother's Day Bouquet Checklist: Safe vs Toxic Flowers"
+5. "Slug Pellets Banned: New Lungworm Risks for Dogs"
+
+**Travel Pillar:**
+1. "Northumberland: UK's Dog Capital for 2026"
+2. "Reactive Dog Holidays: Glamping with Enclosed Paddocks"
+3. "Car Safety Law 2026: Is Your Harness Legal?"
+
+**Garden Pillar:**
+1. "Clover Lawns: The Urine-Proof Solution for Dog Owners"
+2. "Sensory Gardens: Herbs Your Dog Will Love"
+3. "Dog-Safe Fertilizers: Why 'Organic' Can Still Be Toxic"
+
+**Innovation Pillar:**
+1. "Insect Protein Dog Food: Sustainable Superfood or Yuck?"
+2. "Robot Vacuums with Poop Avoidance: Tested"
+
+### Key Dates Spring 2026
+- **March 15**: Mother's Day (Dog Mum content, bouquet safety)
+- **April 1-29**: National Pet Month (responsible ownership)
+- **April 3-6**: Easter (chocolate toxicity, egg hunts)
+- **April 23**: National Puppy Day (socialisation content)
+
+### Demographic Insights
+- Male cat owner segment growing (27% adult cat adoptions by men)
+- Gen Z prefers designer crossbreeds (Cockapoos, Labradoodles)
+- 85% UK dog owners prefer staycations to kenneling
+- 64% pledging to prioritise pet health more in 2026
+- 20% considering giving up pets due to costs → budget content needed
+
+---
+
+## 13. SEO/AEO/GEO BEST PRACTICES 2026
+
+### Key Strategic Shifts
+
+**From SEO to GEO (Generative Engine Optimization):**
+- Goal: Get cited by AI (ChatGPT, Gemini, Perplexity), not just ranked
+- Traditional SEO targets crawlers; GEO targets LLMs
+- "Share of Model" replacing "Share of Voice" as key metric
+
+**December 2025 Core Update Impact:**
+- Penalised "search-engine-first" content
+- Rewards "First-Hand Experience" (E-E-A-T)
+- "Information Gain" now critical (unique data, not rehashed info)
+
+### Content Architecture for AI Citation
+
+**Answer-First Formatting:**
+```
+H2: Can dogs eat strawberries?
+[Bold answer immediately]: Yes, dogs can eat strawberries in moderation...
+```
+
+**Structure Requirements:**
+- Lead with direct answer (inverted pyramid)
+- High factual density (stats, specifics, numbers)
+- Comparison tables (easily extracted by AI)
+- TL;DR summary boxes
+- FAQ sections with natural language questions
+
+**Visual Optimization:**
+- Descriptive filenames (waterproof-dog-coat-yellow.jpg not IMG_1234.jpg)
+- Rich alt text describing visual content
+- Original photography (not stock) for E-E-A-T
+
+### UK-Specific Compliance (VMD Regulations)
+
+**Prohibited Claims for Non-Medicines:**
+- Cannot use: "cure", "treat", "prevent", "heal", "remedy"
+
+**Compliant Alternatives:**
+- Use: "support", "maintain", "promote", "help", "soothe"
+- Target: "joint support for dogs" not "arthritis cure"
+
+### Schema Markup Priorities
+1. **FAQ Schema** (with dateCreated/dateModified)
+2. **Product Schema** (price in GBP, aggregateRating)
+3. **Author/ReviewedBy Schema** (vet credentials, sameAs links)
+
+### E-E-A-T Requirements
+- Veterinary review workflow essential for health content
+- UK Pet Food/PFMA membership signals
+- sameAs links to RCVS register for vet credentialing
+- UGC photos as Experience proof
+- First-person narratives ("When we tested...")
+
+### Technical Requirements
+- INP under 200ms (Interaction to Next Paint)
+- LCP under 2.5s (Largest Contentful Paint)
+- British English spelling throughout
+- hreflang="en-gb" set correctly
+
+---
+
+## 14. COMPETITOR GAP ANALYSIS (UK Pet Travel Market)
+
+### Critical Content Gaps Identified
+
+**1. Crash Testing Information Vacuum**
+- Massive confusion around "crash tested" claims
+- Only 1-2 UK brands have genuine crash test data
+- CPS (Center for Pet Safety) vs ECE R17 standards unclear
+- **Opportunity**: Become the authoritative UK source on crash testing
+
+**2. Vehicle-Specific Content Void**
+- TransK9 model: Content organised by car make/model
+- "Best dog crate for Range Rover boot" = low competition
+- EV/Hybrid fitting problems (shallow boots, different dimensions)
+- **Opportunity**: Create vehicle-specific fitting guides
+
+**3. "Escape Artist" Solutions**
+- Owners of Huskies, clever breeds struggling with containment
+- "Escape proof dog crate" high intent, low competition
+- **Opportunity**: Problem-solution content for specific challenges
+
+### Consumer Pain Points (From Reddit/Forums)
+
+**Top Complaints:**
+1. **Rattle/Noise**: Metal crates rattling on motorway drives
+2. **Fit Nightmare**: Products that don't fit advertised boot sizes
+3. **Escape Artists**: Dogs defeating containment systems
+4. **Travel Rule Complexity**: Confusion about what's legal
+
+### Long-Tail Keyword Opportunities
+
+**Vehicle-Specific:**
+- "dog crate for Tesla Model Y boot UK"
+- "soft crate fitting Volvo XC40"
+- "ISOFIX dog seat for BMW 3 series"
+
+**Problem-Solution:**
+- "stop dog crate rattling in car"
+- "escape proof crate for Husky"
+- "dog barrier for hatchback without boot rails"
+
+**Comparative:**
+- "Variocage vs TransK9"
+- "fabric crate vs metal crate for nervous dog"
+- "harness vs crate which is safer crash"
+
+### UK Market Price Segmentation
+
+**Two Distinct Buyer Segments:**
+1. **"Grocery" Segment**: Price-sensitive, seeking value (under £50)
+2. **"Safety" Segment**: Will pay £500-£1,000 for premium crash-tested solutions
+
+**Trust Signals UK Buyers Seek:**
+- "Crash tested" (with verifiable data)
+- UK-based company/support
+- Vehicle-specific fit confirmation
+- Real customer reviews with photos
+- Returns policy clarity
+
+### 6-Month Content Action Plan
+
+**Month 1-2:**
+- Vehicle-specific fitting guides (start with top 10 UK cars)
+- Crash testing explainer content
+
+**Month 3-4:**
+- EV/Hybrid boot solutions
+- Escape-proof containment guides
+
+**Month 5-6:**
+- Problem-solver content (noise, fit, anxiety)
+- Comparative reviews with real testing
+
+---
+
+## RESEARCH INTEGRATION NOTES
+
+### Cross-Topic Opportunities
+
+**Booster Seats + Competitor Gap:**
+- Vehicle-specific booster seat guides
+- "Crash tested booster seat" content fills gap
+
+**Cat Fountains + Spring Content:**
+- "Summer hydration for cats" seasonal angle
+- Central heating dehydration winter content
+
+**Training Leads + Spring Content:**
+- Spring puppy season → training lead guides
+- New Year training resolution content
+
+**SEO/AEO + All Content:**
+- Apply Answer-First formatting to all blogs
+- Add FAQ schema to product pages
+- Vet review workflow for health content
+
+### Blog Automation Integration
+
+These condensed entries feed directly into Make.com blog automation workflow:
+- Long-tail keywords → Title/H2 generation
+- FAQs → Structured content sections
+- Competitors → Comparison table data
+- Seasonality → Content scheduling triggers
 
 ---
 
