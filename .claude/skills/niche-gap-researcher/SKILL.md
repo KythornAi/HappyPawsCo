@@ -54,6 +54,53 @@ Identify blog opportunities around budget-friendly pet travel solutions
 
 When a user invokes this skill, follow this systematic research process:
 
+### 0. Check Existing Inventory (For Product Research Only)
+
+**CRITICAL:** Before researching product opportunities, ALWAYS check what products HappyPawsCo already stocks to avoid recommending duplicates.
+
+**When to do this:**
+- Any time the research includes product opportunities/gaps
+- Skip this step for content/blog-only research
+
+**Actions:**
+1. Access Google Drive using the google-workspace MCP server
+2. Read the spreadsheet: "HappyPawsCo Product Data 11.01.26"
+3. Extract all product names, categories, and types currently in inventory
+4. Create a list of products to EXCLUDE from recommendations
+
+**How to access:**
+```
+Use mcp__google-workspace__listGoogleSheets to find the sheet
+Then use mcp__google-workspace__readSpreadsheet with the sheet ID
+Read all product data to understand current inventory
+```
+
+**Output Format:**
+```markdown
+## Current Inventory Check
+
+**Products Already Stocked:**
+- [Category 1]: [Product name 1], [Product name 2]
+- [Category 2]: [Product name 3], [Product name 4]
+- [etc.]
+
+**Total Products in Inventory:** [X]
+
+**Categories Covered:**
+- [Category 1]
+- [Category 2]
+- [etc.]
+
+**Note:** These products will be EXCLUDED from opportunity recommendations.
+```
+
+**If Google Sheet is not accessible:**
+- Note this in the report
+- Proceed with research but flag products that may overlap
+- Recommend user manually checks against inventory
+
+---
+
 ### 1. Understand the Research Scope
 
 Ask clarifying questions to focus the research:
@@ -237,6 +284,7 @@ Identify product opportunities in the market:
 Combine all research into actionable recommendations:
 
 **Prioritization Criteria**:
+- **NOT already in inventory** (Step 0 check - exclude existing products)
 - Demand strength (how many signals?)
 - Competition level (low = good opportunity)
 - Alignment with brand (HappyPawsCo values)
