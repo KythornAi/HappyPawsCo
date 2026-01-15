@@ -3859,7 +3859,458 @@ Great Danes (10x more likely), Weimaraners (4.6x), St Bernards (4.2x), Irish Set
 
 ---
 
-*Research completed: January 14, 2026*
-*Source: Research Gap Filler Agent analysis with web research*
-*Next update needed: Remaining products from Perplexity prompts*
+---
+
+## Product 18: Dog Seat Belt Attachments & Tethers
+
+**Use Case:** Car safety, Highway Code compliance (Rule 57), securing dogs during travel
+
+**Long-Tail Keywords:**
+- dog seat belt attachment UK
+- dog car safety tether adjustable
+- vehicle dog restraint for back seat
+- dog seat belt clip elastic
+- car seat belt harness connector dog
+- best dog seat belt for large dogs UK
+- adjustable dog car tether with clip
+- dog restraint for car back seat
+- bungee dog seat belt UK
+- Highway Code compliant dog restraint
+- dog car safety strap universal fit
+- seat belt harness attachment dog travel
+
+**FAQs to Answer:**
+- Do I need to restrain my dog by law in the UK?
+- What does Highway Code Rule 57 say about dogs in cars?
+- Can I use an extension tether with my dog's harness?
+- Is an elastic/bungee tether safer than a rigid one?
+- Should the seat belt attach to a collar or harness?
+- How long should a dog seat belt tether be?
+- Can I use my dog's walking harness with a car tether?
+- What's the difference between a tether and a crash-tested harness?
+- Will my insurance be void if my dog isn't restrained?
+
+**Ad Angles:**
+- Highway Code Compliant
+- Universal Fit for All Cars
+- Adjustable Length for Comfort
+- Easy One-Click Installation
+- Safe Travel for Your Dog
+- Pairs with Any Harness
+
+**Seasonality:**
+- **Year-round** essential safety product
+- **December:** Christmas travel peak - "Road trip ready? Secure your dog safely."
+- **Summer holidays:** Family travel season - "Holiday-ready pet travel safety."
+
+**Competitors:** Amazon basics, Pets at Home, RAC branded
+
+---
+
+## Product 19: Pet Travel Water Bottles & Portable Bowls
+
+**Use Case:** Hydration on walks, car journeys, hiking, day trips, pub visits
+
+**Long-Tail Keywords:**
+- dog water bottle with bowl attached UK
+- portable dog water bottle leak-proof
+- dog travel water bottle one-handed
+- collapsible dog bowl silicone travel
+- dog walking water bottle dispenser
+- best dog water bottle for hiking UK
+- squeeze dog water bottle car travel
+- portable pet water bottle with filter
+- dog water bottle that doesn't leak
+- silicone folding dog bowl camping
+- travel water bottle for large dogs
+- portable dog water dispenser walks
+
+**FAQs to Answer:**
+- How much water should I carry for my dog on a walk?
+- What's the best type of travel water bottle for dogs?
+- Are squeeze bottles better than flip-top bowls?
+- Will my dog drink from a portable bottle?
+- How do I clean a dog water bottle properly?
+- Can I put ice in a dog travel water bottle?
+- What size travel water bottle do I need for my dog?
+- Are silicone collapsible bowls safe for dogs?
+- How do I stop my dog's travel water bottle leaking?
+- Can I use a human water bottle for my dog?
+
+**Ad Angles:**
+- One-Handed Operation
+- Leak-Proof Design
+- Perfect for Walks & Car Trips
+- Lightweight & Portable
+- Easy to Clean
+- BPA-Free & Safe
+
+**Seasonality:**
+- **April-September:** Peak season for outdoor activities
+- **Summer:** Essential hydration - "Keep your dog hydrated on hot walks"
+- **Spring:** New puppy season, hiking begins
+
+**Competitors:** Kong H2O, Messy Mutts, Amazon basics
+
+---
+
+## Product 20: Car Boot Liners & Cargo Protectors for Dogs
+
+**Use Case:** Protecting car boot from mud, water, hair, scratches during dog transport
+
+**Long-Tail Keywords:**
+- dog boot liner waterproof UK
+- car boot protector for dogs universal
+- dog cargo area cover SUV
+- waterproof boot liner for muddy dogs
+- quilted car boot cover dogs
+- boot liner with bumper flap dog
+- estate car dog boot protector
+- raised lip boot liner dogs
+- heavy duty boot liner for large dogs
+- non-slip car boot mat for dogs
+- machine washable dog boot liner
+- boot liner with side protection dogs
+
+**FAQs to Answer:**
+- Will a universal boot liner fit my car?
+- What's the difference between a boot liner and a boot mat?
+- Do boot liners protect the bumper from scratches?
+- How do I measure my boot for a liner?
+- Are quilted boot liners better for dogs?
+- Can I machine wash my dog boot liner?
+- Do boot liners work with 60/40 split seats?
+- What material is best for a waterproof boot liner?
+- Will a boot liner stop my dog sliding around?
+- Can I use a boot liner with a dog guard?
+
+**Ad Angles:**
+- Full Boot Protection
+- Waterproof & Machine Washable
+- Bumper Flap Included
+- Fits Most UK Cars & SUVs
+- Heavy-Duty & Durable
+- Easy to Install & Remove
+
+**Seasonality:**
+- **October-February:** Peak muddy season - "Muddy paw season is here"
+- **August-September:** Back to school, autumn prep
+- **December:** Christmas travel preparation
+
+**Competitors:** Boot Buddy, Amazon basics, Pets at Home
+
+---
+
+## Product 21: Portable Dog Travel Beds & Mats
+
+**Use Case:** Pub visits, camping, hotel stays, car travel comfort, vet visits
+
+**Long-Tail Keywords:**
+- portable dog bed travel UK
+- roll up dog travel mat waterproof
+- dog settle mat pub cafe
+- memory foam dog travel mat
+- elevated dog bed camping
+- foldable dog bed car boot
+- waterproof dog travel bed outdoor
+- dog crate mat travel car
+- portable orthopaedic dog bed
+- dog camping bed raised
+- roll and go dog mat UK
+- travel dog bed with carry handle
+
+**FAQs to Answer:**
+- What's the best travel bed for a pub dog?
+- Are memory foam travel mats worth it for dogs?
+- How do I get my dog to settle on a travel mat?
+- Will an elevated bed work for camping?
+- What size travel bed does my dog need?
+- Are travel mats warm enough for cold floors?
+- Can I use a car boot bed in a hotel?
+- How do I clean a memory foam dog travel mat?
+- Is a roll-up mat better than a folding bed?
+- Do travel beds work for anxious dogs?
+
+**Ad Angles:**
+- Perfect Pub & Cafe Companion
+- Comfort On The Go
+- Waterproof & Easy Clean
+- Roll Up & Go
+- Memory Foam Support
+- Camping & Travel Ready
+
+**Seasonality:**
+- **April-September:** Outdoor pub garden season
+- **Summer:** Camping and staycation peak
+- **All year:** Pub and cafe visits
+
+**Competitors:** Ruffwear, Scruffs, Lords & Labradors
+
+---
+
+## Product 22: Soft-Sided Pet Carriers
+
+**Use Case:** Vet visits, car travel, ferry/Eurotunnel, EU flights (outbound only)
+
+**Long-Tail Keywords:**
+- soft sided pet carrier UK
+- airline approved pet carrier EU flights
+- cat carrier soft sided vet
+- dog carrier for car travel
+- expandable pet carrier soft
+- pet carrier with shoulder strap
+- soft dog carrier small breeds
+- collapsible pet carrier storage
+- pet carrier ferry Eurotunnel
+- breathable mesh pet carrier
+- pet carrier for nervous cats
+- top loading soft cat carrier
+
+**FAQs to Answer:**
+- Can I take my pet in the cabin on UK flights?
+- What size pet carrier fits under an airplane seat?
+- Are soft carriers crash-tested for car travel?
+- How do I get my cat to go in a carrier?
+- What's the best carrier for a nervous pet?
+- Do I need a carrier for ferry travel?
+- How do I measure my pet for a carrier?
+- Are expandable carriers worth it?
+- Can I use a soft carrier for a medium dog?
+- What features should I look for in a pet carrier?
+
+**Ad Angles:**
+- Perfect for Vet Visits
+- Highway Code Compliant
+- Lightweight & Portable
+- Multiple Entry Points
+- Breathable Mesh Panels
+- Collapsible for Storage
+
+**Seasonality:**
+- **Year-round:** Vet visits constant
+- **Summer:** EU travel season, ferry bookings
+- **January:** New pet adoptions, kitten season starts
+
+**Competitors:** Sherpa, Sleepypod, Amazon basics, Pets at Home
+
+**Important UK Note:** No UK commercial airlines allow pets in cabin. Carriers used primarily for car travel, vet visits, and ferry/Eurotunnel to Europe.
+
+---
+
+## Product 23: Pet Cooling Mats & Summer Accessories
+
+**Use Case:** Hot weather comfort, preventing overheating, summer car travel safety
+
+**Long-Tail Keywords:**
+- dog cooling mat gel UK
+- pet cooling mat self activating
+- cooling mat for dogs in car
+- dog cooling pad summer heat
+- pressure activated cooling mat pet
+- dog cooling mat large breed
+- cooling mat for flat faced dogs
+- portable dog cooling mat outdoor
+- best cooling mat for bulldogs
+- dog crate cooling mat
+- pet cooling pad hot weather
+- elevated cooling bed dogs summer
+
+**FAQs to Answer:**
+- How do dog cooling mats work?
+- Are gel cooling mats safe if my dog chews?
+- Do cooling mats need to be refrigerated?
+- How long do cooling mats stay cool?
+- What size cooling mat do I need for my dog?
+- Can cats use dog cooling mats?
+- Are pressure-activated mats better than water-filled?
+- Can I use a cooling mat in the car?
+- How do I clean a gel cooling mat?
+- Are elevated beds good for cooling dogs?
+
+**Ad Angles:**
+- Beat the Heat
+- Self-Cooling Technology
+- Safe Non-Toxic Gel
+- Perfect for Hot Weather
+- Ideal for Brachycephalic Breeds
+- Travel-Friendly Cooling
+
+**Seasonality:**
+- **May-September:** Peak summer season
+- **June-August:** Heatwave periods - "Heatwave essential for dogs"
+- **Pre-summer:** April promotion opportunity
+
+**Competitors:** Pets at Home, The Green Pet Shop, Amazon basics
+
+---
+
+## Product 24: Back Seat Extenders & Bridge Platforms
+
+**Use Case:** Long car journeys, anxious dogs, senior dogs, large breeds, filling footwell gap
+
+**Long-Tail Keywords:**
+- dog back seat extender UK
+- car seat bridge for dogs
+- dog car platform footwell filler
+- hard bottom dog seat cover
+- back seat extender large dogs
+- dog car bed extender platform
+- footwell bridge dog travel
+- inflatable dog seat extender
+- rigid dog seat cover car
+- foam dog car seat extender
+- back seat dog platform SUV
+- dog car seat extender arthritic dogs
+
+**FAQs to Answer:**
+- What is a dog back seat extender?
+- How does a seat extender differ from a hammock?
+- Which type of extender is best - inflatable, foam or rigid?
+- What weight can back seat extenders support?
+- Will a seat extender fit my car?
+- Are seat extenders safe for dogs?
+- Do I still need a harness with a seat extender?
+- Can two dogs share a seat extender?
+- Are seat extenders good for anxious dogs?
+- How do I install a back seat extender?
+
+**Ad Angles:**
+- No More Footwell Falls
+- Flat Surface for Sleeping
+- Perfect for Long Journeys
+- Senior Dog Friendly
+- Fills the Gap Safely
+- Premium Comfort Travel
+
+**Seasonality:**
+- **Year-round:** Travel essential
+- **Summer:** Holiday road trip season
+- **December:** Christmas travel preparation
+
+**Competitors:** Kurgo, 4Knines, Orvis, Ruff Liners
+
+**Types Available:**
+| Type | Price Range | Weight Capacity | Best For |
+|------|-------------|-----------------|----------|
+| Inflatable | £30-40 | 20-40kg | Small dogs, occasional use |
+| Foam | £45-60 | 30-60kg | Medium-large dogs, comfort |
+| Rigid/Hard-bottom | £55-70+ | 60-150kg | Large breeds, daily use |
+
+---
+
+## Product 25: Crash-Tested Dog Harnesses
+
+**Use Case:** Car safety, genuine crash protection, Highway Code compliance
+
+**Long-Tail Keywords:**
+- crash tested dog harness UK
+- CPS certified dog car harness
+- car safe dog harness tested
+- dog harness for car travel safe
+- best crash tested harness large dogs
+- FMVSS 213 dog harness UK
+- dog car harness actual safety
+- sleepypod clickit harness UK
+- crash tested dog restraint
+- car harness dog protection tested
+- safe dog harness car crash
+- dog car harness with tether
+
+**FAQs to Answer:**
+- What does "crash-tested" actually mean for dog harnesses?
+- Which harnesses have passed independent crash tests?
+- Is my current dog harness safe for the car?
+- What is the Center for Pet Safety certification?
+- Are cheap car harnesses safe for dogs?
+- How do crash-tested harnesses protect my dog?
+- Can I use a walking harness in the car?
+- What's the difference between crash-tested and "car safe"?
+- How do I correctly install a crash-tested harness?
+- Which crash-tested harness fits large breeds?
+
+**Ad Angles:**
+- Independently Crash Tested
+- Real Safety, Not Marketing Claims
+- Certified Protection
+- Highway Code Compliant
+- Peace of Mind Travel
+- Tested to Child Safety Standards
+
+**Seasonality:**
+- **Year-round:** Safety essential
+- **January:** New Year safety resolutions
+- **Summer:** Holiday travel preparation
+
+**Competitors:** Company of Animals CarSafe, Kurgo Impact, Sleepypod Clickit
+
+**Important Safety Note:**
+Only harnesses tested by independent facilities (Center for Pet Safety, Calspan, Automotive Safety Engineering) provide genuine crash protection. Marketing terms like "car safe" or "travel approved" without independent testing certification offer minimal real protection.
+
+**Crash-Tested Brands Available in UK:**
+| Brand | Product | Test Result | Weight Range |
+|-------|---------|-------------|--------------|
+| Company of Animals | CarSafe | CPS Certified | Up to 32kg |
+| Kurgo | Impact Harness | Calspan Tested | Up to 49kg |
+| Sleepypod | Clickit Sport | CPS 5-Star | 7-40kg |
+| EzyDog | Drive Harness | ASE Tested | 7-34kg |
+
+---
+
+## Product 26: Slow Feeder Bowls (Expanded)
+
+**Use Case:** Preventing bloat (GDV), reducing gulping, mental enrichment, weight management
+
+**Long-Tail Keywords:**
+- slow feeder bowl large dogs UK
+- anti-gulp dog bowl bloat prevention
+- puzzle feeder bowl fast eaters
+- slow feeder bowl Labrador Retriever
+- lick mat vs slow feeder bowl
+- best slow feeder Great Danes
+- slow feeder bowl wet food
+- slow feeder bowl deep chested dogs
+- anti-bloat dog bowl UK
+- slow feeder dishwasher safe
+- maze bowl dog fast eater
+- interactive slow feeder enrichment
+
+**FAQs to Answer:**
+- Can slow feeders really prevent bloat in dogs?
+- Which breeds need slow feeder bowls most?
+- What's the difference between a slow feeder and a puzzle bowl?
+- Are slow feeders frustrating for dogs?
+- Can I use a slow feeder for wet food?
+- How do I choose the right slow feeder difficulty?
+- Are lick mats better than slow feeder bowls?
+- Can puppies use slow feeder bowls?
+- How do I clean a slow feeder bowl properly?
+- Will my dog knock over a slow feeder bowl?
+
+**Ad Angles:**
+- Bloat Prevention Essential
+- Slow Down Fast Eaters
+- Mental Enrichment at Mealtime
+- Recommended by Vets
+- Great for Deep-Chested Breeds
+- Dishwasher Safe Options
+
+**Seasonality:**
+- **Year-round:** Health essential
+- **January:** New Year health focus
+- **New puppy season:** Training essentials
+
+**Competitors:** Outward Hound Fun Feeder, SodaPup, Dogit, Amazon basics
+
+**At-Risk Breeds for Bloat:**
+- Great Danes (10x higher risk)
+- Weimaraners (4.6x higher risk)
+- St Bernards (4.2x higher risk)
+- Irish Setters, German Shepherds, Dobermanns
+- Dogs over 40kg have 148.7x higher GDV odds vs dogs under 10kg
+
+---
+
+*Research completed: January 16, 2026*
+*Source: Perplexity Deep Research + Research Gap Filler Agent analysis*
+*10 category-focused research entries added from comprehensive Perplexity research*
 
