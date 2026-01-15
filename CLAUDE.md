@@ -324,6 +324,24 @@ This is a safety net, but you should STILL proactively save progress as describe
 
 ---
 
+## Excellence Standard: Research Before Building
+
+**CRITICAL:** Before creating ANY skill, agent, workflow, or significant deliverable:
+
+1. **Search for best practices** - "e-commerce email best practices 2026", etc.
+2. **Check Anthropic resources** - GitHub repos, published guides
+3. **Check industry leaders** - Klaviyo guides, Shopify docs, etc.
+4. **Find benchmarks** - What does "great" look like? (open rates, conversion rates)
+5. **THEN build** - Incorporating what you found
+
+**Why:** User wants GREAT deliverables, not "good enough". Don't reinvent wheels. Stand on shoulders of giants.
+
+**Document your research:** Briefly note what you found ("Checked Klaviyo's 2026 guide - incorporating their timing recommendations")
+
+**Full documentation:** `00_Knowledge_Base/HOW_WE_WORK_TOGETHER.md` - Excellence Standard section
+
+---
+
 ## Quality Standards Summary
 
 **Core Principle:** Do it right the first time. No "we'll fix it later."

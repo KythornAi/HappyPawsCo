@@ -423,4 +423,98 @@ HappyPawsCo/
 
 ---
 
-**Last Updated:** January 8, 2025
+**Last Updated:** January 15, 2026
+
+---
+
+## Excellence Standard: Research Before Building
+
+### The Problem We're Solving
+
+User noticed Claude instances were building skills/agents without first checking:
+- What best practices exist in the industry
+- What Anthropic has published or open-sourced
+- What proven frameworks could be adapted
+- What benchmarks define "great" vs "good enough"
+
+**This resulted in:** Skills that worked but weren't optimised, missing industry-standard features, reinventing wheels that already existed.
+
+### The New Standard: Research First, Build Second
+
+**Before creating ANY skill, agent, or significant deliverable, Claude MUST:**
+
+1. **Web Search for Best Practices**
+   - Search for "[topic] best practices 2025/2026"
+   - Search for "[topic] industry benchmarks"
+   - Search for "[topic] proven frameworks"
+   - Example: "e-commerce email marketing best practices 2026"
+
+2. **Check Anthropic Resources**
+   - Search Anthropic's GitHub repositories
+   - Check if Anthropic has published guides or examples
+   - Look for Claude-specific optimisations or patterns
+
+3. **Check Industry Leaders**
+   - For e-commerce: Klaviyo guides, Shopify resources, industry reports
+   - For SEO: Ahrefs, Moz, Search Engine Journal
+   - For content: Content Marketing Institute, HubSpot
+
+4. **Identify What "Great" Looks Like**
+   - Find benchmarks (open rates, conversion rates, engagement metrics)
+   - Identify features that separate good from excellent
+   - Note what competitors/leaders do that we should include
+
+5. **THEN Build**
+   - Incorporate best practices into the deliverable
+   - Include industry benchmarks where relevant
+   - Design for excellence, not just functionality
+
+### Example: Email Copywriter Skill
+
+**What should have happened:**
+1. Search "e-commerce welcome email best practices 2026"
+2. Search "abandoned cart email benchmarks"
+3. Check Klaviyo's official guides
+4. Look at Anthropic's marketing/email resources
+5. Find industry open rate benchmarks
+6. THEN build skill with all this incorporated
+
+**What happened instead:**
+- Built skill based on existing project files
+- Used general knowledge without verification
+- Missed potential industry best practices
+
+### Why This Matters
+
+**User's Words:** "I want to make sure our collaboration is working towards something great, that we can always make better."
+
+This isn't about being slow or over-researching. It's about:
+- Not reinventing the wheel
+- Standing on the shoulders of giants
+- Building things that are genuinely excellent
+- Respecting the user's time by getting it right the first time
+
+### When to Apply This Standard
+
+**Always apply for:**
+- New skills or agents
+- New workflows or processes
+- Strategies (email, SEO, content, etc.)
+- Anything that will be used repeatedly
+
+**Can skip for:**
+- Simple file edits
+- Following existing documented processes
+- Quick fixes to existing work
+- Tasks where user provides the framework
+
+### How to Document Research
+
+When researching, briefly note in the response:
+- "Checked Klaviyo's 2026 email guide - incorporating their welcome series timing recommendations"
+- "Industry benchmark for abandoned cart recovery: 3-5% conversion. Building to exceed this."
+- "Anthropic doesn't have specific email templates, but their prompt engineering guide informed the structure."
+
+This shows the user the research happened and what was found.
+
+---
