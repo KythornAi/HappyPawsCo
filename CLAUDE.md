@@ -2,17 +2,53 @@
 
 **Project:** HappyPawsCo
 **Type:** UK Pet Products E-commerce Store
-**Launch Date:** January 30, 2026
+**Launch Date:** January 31, 2026
 **GitHub:** github.com/KythornAi/HappyPawsCo
 
 ---
 
-## Quick Start
+## ⚠️ MANDATORY STARTUP SEQUENCE - DO THIS FIRST ⚠️
 
-**Before doing any work:**
-1. Check `00_Session_Summary/` for the latest `SESSION_HANDOVER_*.md` file
-2. Read pending tasks and context from that session
-3. Use the proper agents/skills (don't do things manually)
+**STOP. Before responding to ANY user message, you MUST complete these steps:**
+
+### Step 1: Read These Files (in order)
+```
+1. This file (CLAUDE.md) - You're reading it now, finish it completely
+2. 00_Session_Summary/INCOMPLETE_TASKS_TRACKER.md - Current task status
+3. The LATEST session handover file in 00_Session_Summary/ (find by date)
+```
+
+### Step 2: Start Your First Response With This
+Begin your first message to the user with a brief status check:
+```
+"I've read the project files. Current status:
+- Launch date: [date from tracker]
+- Last session: [handover filename and date]
+- Outstanding tasks: [top 2-3 priorities]
+- Ready to continue from: [where we left off]
+
+What would you like to work on?"
+```
+
+### Step 3: Only THEN Respond to Their Request
+After confirming you've loaded context, proceed with whatever they asked.
+
+**WHY THIS MATTERS:**
+- The user has carpal tunnel and cannot type lengthy context each session
+- Previous Claude instances kept "forgetting" and making the user repeat everything
+- All the context you need is IN these files - read them, don't ask the user
+- If you skip this, you're creating extra work for someone with a disability
+
+**NON-NEGOTIABLE:** Do not skip this sequence. Do not give a lazy 2-line status. Actually read the files and demonstrate you understand the project state.
+
+---
+
+## Quick Reference
+
+**Key files to check:**
+- `00_Session_Summary/INCOMPLETE_TASKS_TRACKER.md` - What's done, what's pending
+- Latest `SESSION_HANDOVER_*.md` - Detailed context from last session
+- This file - Project rules and preferences
 
 ---
 
@@ -231,9 +267,13 @@ If nearing end of context:
 - Lead magnet development
 
 **Skills:** 11 active
-**Agents:** 2 complete (Blog Publisher, Blog Image Prompter)
+**Agents:** 7 complete (see INCOMPLETE_TASKS_TRACKER.md for full list)
 **MCP Servers:** github, filesystem, everything, thinking, google-workspace
+
+**Image Generation:** Google Vertex AI (Imagen) - NOT DALL-E or Midjourney
 
 ---
 
 **Remember:** Use the proper agents and skills. Consistency matters across all Claude instances.
+
+**FINAL REMINDER:** If you're starting a new session and haven't read the task tracker and latest handover file yet, go back to the top and follow the MANDATORY STARTUP SEQUENCE.

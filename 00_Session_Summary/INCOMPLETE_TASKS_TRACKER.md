@@ -1,9 +1,11 @@
-# Incomplete Tasks Tracker - January 13, 2026
+# Incomplete Tasks Tracker - January 2026
 
 **Purpose**: Track things we said we'd do but haven't completed yet across all sessions.
 
-**Last Updated**: January 13, 2026 23:10
-**Context**: 78% - created before hitting limit to prevent losing track of commitments
+**Last Updated**: January 16, 2026
+**Updated By**: Claude (this session)
+
+**⚠️ LAUNCH DATE: January 31, 2026** (end of month, NOT 49 days away - previous Claude misunderstood)
 
 ---
 
@@ -15,42 +17,73 @@
 - ✅ Blog Publisher Agent / Final Editor (Jan 13) - Polishes blogs + checks for missed product opportunities
 - ✅ Keyword Research Agent (Jan 13) - WebSearch for 50-100 rankable topics
 - ✅ Research Gap Filler Agent (Jan 13) - Fills missing product research
+- ✅ Blog Image Prompter Agent (Jan 14) - Generates image prompts for blogs
+- ✅ Pinterest Pin Strategist Agent (Jan 16 - discovered) - 3 pin strategies per blog
 
 ### Skills Built & Working
 - ✅ Content Calendar Planner v2.0 (Jan 13) - 60/20/20 ratio, flexible dog/cat balance
 - ✅ SEO Blog Optimizer (existing)
 - ✅ Blog Quality Checker (existing)
 - ✅ Pinterest Pin Creator (existing)
+- ✅ Niche Gap Researcher (Jan 15) - Market research skill
 
 ### MCPs Set Up & Working
-- ✅ Google Workspace MCP - Authenticated, accessing 4 Google Sheets successfully
+- ✅ Google Workspace MCP - Authenticated, accessing Google Sheets/Docs
 - ✅ GitHub MCP - Available
 - ✅ Filesystem MCP - Available
 - ✅ Everything MCP (test) - Available
 - ✅ Thinking MCP - Available
 
+### Research & Content Tasks
+- ✅ Perplexity Deep Research (Jan 15-16) - 10 category-focused prompts run by user
+- ✅ Condense Perplexity Research (Jan 16) - Added 9 new entries (Products 18-26) to research brief
+- ✅ Polish slow feeder blog (Jan 15) - `clean-slow-feeder-dog-bowl/polished.md`
+- ✅ Polish dental health blog (Jan 15) - `dog-dental-health-uk-vet-guide/polished.md`
+- ✅ Image prompts for slow feeder blog (Jan 15) - 14 prompts created
+- ✅ Image prompts for dental health blog (Jan 15) - 16 prompts created
+- ✅ 5 blogs polished (Jan 14) - See SESSION_HANDOVER_JAN_14_2026.md
+- ✅ 30 image prompts for 5 blogs (Jan 14)
+
 ---
 
 ## 🚨 INCOMPLETE / NOT YET STARTED
 
-### HIGH PRIORITY - Need These for 49-Day Sprint
+### HIGH PRIORITY - Need These for Jan 31 Launch
 
-**1. Pinterest Pin Strategist Agent** ⚠️ CRITICAL MISSING PIECE
-- **Status**: Discussed but NOT built
-- **Why**: Need 3 pin strategies per blog (different hooks) for Pinterest automation
-- **Details**:
-  - Reads 50 blog topics from Content Calendar
-  - Designs 3 pins per topic (problem/solution, educational, seasonal angles)
+**1. Pinterest Pin Strategist Agent** ✅ FOUND - ALREADY BUILT
+- **Status**: COMPLETE - Agent exists at `.claude/agents/pinterest-pin-strategist/agent.md`
+- **Discovered**: Jan 16, 2026 - Was listed as "not built" but agent file exists (452 lines)
+- **What it does**:
+  - Creates 3 pin strategies per blog (problem/solution, educational, seasonal hooks)
   - Writes pin titles (50 chars) and descriptions (500 chars)
   - Suggests visual styles for Canva text overlay
-  - Outputs to Pinterest Workflow Sheet
-- **Referenced in**: SESSION_HANDOVER_JAN_13_CONTINUED.md lines 235-263
-- **Impact**: Without this, Pinterest automation incomplete (only generates images, not strategy)
-- **Action**: Build in next session BEFORE running Keyword Research Agent
+  - Outputs in Google Sheet-ready format
+  - UK-specific seasonal calendar and references
+- **Related skill**: `.claude/skills/pinterest-pin-creator/SKILL.md` (558 lines)
+- **Action**: Ready to use when Pinterest workflow activates
+
+**2. Generate Blog Images & Publish to Shopify** 🔜 IN PROGRESS (Kyle doing this weekend)
+- **Status**: Kyle generating images this weekend, will read blogs and upload to Shopify as banked content
+- **Image tool**: Google Vertex AI (NOT DALL-E or Midjourney) - update Blog Image Prompter agent if needed
+- **Blogs with images done**:
+  - ✅ `cat-litter-tracking-solutions` - 2 images (published)
+  - ✅ `protect-dog-paws-seasonal-hazards` - 2 images
+- **Blogs needing images**:
+  - `clean-slow-feeder-dog-bowl` - 14 image prompts ready
+  - `dog-dental-health-uk-vet-guide` - 16 image prompts ready
+  - `new-year-pet-travel-resolutions` - prompts ready
+  - `dog-highway-code-car-safety` - prompts ready
+  - `measure-dog-harness-step-by-step` - prompts ready
+  - `orthopedic-support-road-trips` - prompts ready
+- **Action**: Kyle handling this weekend
+
+**3. More Blog Drafts Coming** 🔜 PLANNED
+- **Status**: Kyle adding more drafts to drafts folder (today or tomorrow)
+- **Action**: Polish new drafts when they arrive
 
 ### MEDIUM PRIORITY - Important But Not Blocking Sprint
 
-**2. Knowledge Base Q&A Session** ⚠️ INCOMPLETE
+**4. Knowledge Base Q&A Session** ⚠️ INCOMPLETE
 - **Status**: Mentioned during knowledge base creation, never completed
 - **Why**: Fill gaps in brand understanding for agents/skills
 - **What's Missing**:
@@ -60,12 +93,19 @@
   - Brand values (beyond voice/tone)
   - Working processes (update HOW_WE_WORK_TOGETHER.md with carpel tunnel note, 49-day sprint context)
 - **Files Affected**:
-  - `HOW_WE_WORK_TOGETHER.md` - Has user profile but missing recent context (carpel tunnel, 49-day sprint urgency)
+  - `HOW_WE_WORK_TOGETHER.md` - Has user profile but missing recent context
   - `HAPPYPAWSCO_BRAND_VOICE.md` - Has brand voice but missing customer personas
   - **NEW FILE NEEDED**: `CUSTOMER_PERSONAS.md` - Who buys from HappyPawsCo?
 - **Impact**: Agents write better content when they understand target audience deeply
-- **Action**: Q&A session to fill gaps (can do now at 82% context OR save for dedicated session)
 - **User Quote**: "we will also have to analyse who our customer(s) are so we keep them in mind with our product positioning"
+
+**5. Run Workflow Agents** 🔜 PLANNED
+- **Status**: Agents built, not yet run at scale
+- **Tasks**:
+  - Run Keyword Research Agent (100 topics)
+  - Run Content Calendar Planner (50 topics)
+  - Test full workflow with 5 blogs end-to-end
+- **Blocked by**: Should complete Pinterest Pin Strategist first for full workflow
 
 ---
 
@@ -75,105 +115,98 @@
 
 **Brave Search MCP**
 - **Status**: Mentioned as optional enhancement (not necessary)
-- **Source**: SESSION_SUMMARY_JAN_13_FINAL.md line 227
-- **Quote**: "Brave Search MCP: Mentioned as optional enhancement (not necessary), would give more search parameter control"
 - **Decision**: WebSearch is sufficient, Brave not needed
 
 **Gemini/Perplexity Integration**
 - **Status**: Kyle has paid access, can manually run prompts
-- **Source**: SESSION_HANDOVER_JAN_13_CONTINUED.md
-- **Decision**: Not building formal integration, Kyle runs manually and saves results to folder for agents to read
-
-**Additional Blog Structure Updates**
-- **Status**: Mentioned in Jan 12 handover re: AEO/GEO optimization
-- **Source**: SESSION_HANDOVER_JAN_12_2026.md
-- **Decision**: Already addressed in Research Gap Filler Agent (searches for 2024-2026 AEO/GEO best practices)
+- **Decision**: Not building formal integration, Kyle runs manually and saves results to folder
 
 ---
 
 ## 🔍 AUDIT OF PREVIOUS SESSION PROMISES
 
-### Jan 12, 2026 Session
+### Jan 14, 2026 Session
 **Said We'd Do**:
-- ✅ Build Product Database Agent → DONE
-- ✅ Build Content-Inventory Alignment Agent → DONE
-- ⚠️ "May need to revisit blog structure with modern SEO in mind" → Addressed via Research Gap Filler Agent (searches for AEO/GEO)
+- ✅ Polish 5 blogs → DONE
+- ✅ Create image prompts for polished blogs → DONE (30 prompts)
+- ✅ Set up CLAUDE.md project instructions → DONE
 
-### Jan 13, 2026 Morning Session
+### Jan 15, 2026 Session
 **Said We'd Do**:
-- ✅ Build Keyword Research Agent → DONE
-- ✅ Build Research Gap Filler Agent → DONE
-- ✅ Update Content Calendar Planner with 60/20/20 ratio → DONE
-- ✅ Update Blog Publisher with Final Editor capabilities → DONE
+- ✅ Research gap analysis → DONE
+- ✅ Add research entries #15-17 → DONE
+- ✅ Polish slow feeder and dental blogs → DONE
+- ✅ Create 10 Perplexity prompts → DONE (user ran them)
 
-### Jan 13, 2026 Evening Session
+### Jan 16, 2026 Session (Today)
 **Said We'd Do**:
-- ⚠️ Build Pinterest Pin Strategist Agent → NOT DONE (todo for next session)
-- 🔜 Run Keyword Research Agent for 100 topics → Next session
-- 🔜 Run Research Gap Filler for 5 new products → Next session
-- 🔜 Run Content Calendar Planner for 50 topics → Next session
-- 🔜 Test workflow with 5 blogs → Next session
+- ✅ Condense Perplexity research into research brief format → DONE
+- ✅ Add Products 18-26 to research brief → DONE
+- ✅ Update this tracker → DONE
 
 ---
 
-## 🎯 CONFIRMED TODO LIST FOR NEXT SESSION
+## 🎯 CURRENT TODO LIST (Prioritised)
 
-1. **Build Pinterest Pin Strategist Agent** ← MUST DO FIRST!
-2. Run Keyword Research Agent (100 topics)
-3. Run Research Gap Filler (5 new products)
-4. Run Content Calendar Planner (50 topics)
-5. Test workflow (5 blogs end-to-end)
+### This Weekend (Kyle Handling)
+1. **Generate blog images** - Kyle running prompts through image generator
+2. **Review & upload blogs to Shopify** - Banking content for launch
+3. **Add more blog drafts** - Today or tomorrow
 
----
+### Next Up (Claude Tasks When Ready)
+4. **Polish new blog drafts** - When Kyle adds them to drafts folder
+5. **Build Pinterest Pin Strategist Agent** - For complete Pinterest automation
+6. **Run Keyword Research Agent** - Generate 100 topic ideas
+7. **Run Content Calendar Planner** - Schedule 50 topics
 
-## 📊 TRACKING METHODOLOGY
-
-**How to use this file**:
-1. Before ending each session, update this file
-2. Mark items ✅ when completed
-3. Add ⚠️ for critical incomplete items
-4. Add 🔜 for planned next-session items
-5. Review this file at START of each session to ensure nothing forgotten
-
-**Red flags to watch for**:
-- Something mentioned in multiple handovers but never completed
-- "Should build X" that never gets built
-- "May need to" that never gets resolved
-- Skills/agents discussed but not in `.claude/` directories
+### When Time Permits
+8. **Knowledge Base Q&A** - Customer personas, pain points
+9. **Test full workflow** - 5 blogs end-to-end
 
 ---
 
-## 🚨 CRITICAL: Nothing Missing!
+## 📊 RESEARCH BRIEF STATUS
 
-**Audit complete as of Jan 13, 2026 23:10:**
+**File**: `/Volumes/Home Ext/Home Ext/Desktop/Claude/00_Knowledge_Base/HappyPawsCo_Research_Brief_Condensed.md`
 
-✅ All agents we said we'd build → BUILT (except Pinterest Pin Strategist - flagged for tomorrow)
-✅ All skills we said we'd update → UPDATED
-✅ All MCPs we needed → SET UP
-✅ All Google Sheets → VERIFIED ACCESSIBLE
+| Entry | Product/Category | Status |
+|-------|------------------|--------|
+| 1-14 | Original products | ✅ Complete |
+| 15 | Flatbed Back-Seat Extender | ✅ Complete (Jan 15) |
+| 16 | Kurgo Crash-Tested Harness | ✅ Complete (Jan 15) |
+| 17 | Slow Feeder Bowl | ✅ Complete (Jan 15) |
+| 18 | Dog Seat Belt Attachments | ✅ Complete (Jan 16) |
+| 19 | Pet Travel Water Bottles | ✅ Complete (Jan 16) |
+| 20 | Car Boot Liners | ✅ Complete (Jan 16) |
+| 21 | Portable Travel Beds | ✅ Complete (Jan 16) |
+| 22 | Soft-Sided Pet Carriers | ✅ Complete (Jan 16) |
+| 23 | Pet Cooling Mats | ✅ Complete (Jan 16) |
+| 24 | Back Seat Extenders | ✅ Complete (Jan 16) |
+| 25 | Crash-Tested Harnesses | ✅ Complete (Jan 16) |
+| 26 | Slow Feeder Bowls (Expanded) | ✅ Complete (Jan 16) |
 
-**Only 1 incomplete item**: Pinterest Pin Strategist Agent (caught it before forgetting!)
-
----
-
-## 💡 LESSONS LEARNED
-
-**What worked**:
-- Creating comprehensive handover docs after each session
-- Writing detailed session summaries
-- Todo lists with clear status markers
-- This tracker file to prevent "said but never did" issues
-
-**What to improve**:
-- Create this tracker earlier (would have caught Pinterest agent sooner)
-- Update this file DURING session, not just at end
-- Review this file at START of each session
+**Total**: 26 product/category research entries
 
 ---
 
-**Status**: Up to date as of Jan 13, 2026 23:10 (78% context)
+## 📁 KEY FILE LOCATIONS
 
-**Next Review**: Start of next session (Jan 14 or whenever Kyle returns)
+**Research**:
+- Research Brief: `00_Knowledge_Base/HappyPawsCo_Research_Brief_Condensed.md`
+- Perplexity Source: `00_Knowledge_Base/Deep_Research_Jan2026/full Perplexity research.md`
+
+**Blogs Waiting for Images**:
+- `11_HappyPawsCo_Blogs/drafts/2026-blogs/clean-slow-feeder-dog-bowl/`
+- `11_HappyPawsCo_Blogs/drafts/2026-blogs/dog-dental-health-uk-vet-guide/`
+
+**Agents**: `.claude/agents/`
+**Skills**: `.claude/skills/`
+
+---
+
+**Status**: Up to date as of Jan 16, 2026
+
+**Next Review**: Start of next session
 
 ---
 
