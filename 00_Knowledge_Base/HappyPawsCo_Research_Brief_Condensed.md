@@ -3585,3 +3585,281 @@ These condensed entries feed directly into Make.com blog automation workflow:
 
 ---
 
+## ADDITIONAL RESEARCH - JANUARY 14, 2026
+
+*Generated via Research Gap Filler analysis*
+
+---
+
+## 15. FLATBED BACK-SEAT EXTENDER (UK Market Research)
+
+### Use Case
+Creates a flat, stable surface across the back seat and footwell, eliminating the gap where dogs slide during braking. Ideal for anxious dogs who need a secure, settled space during car journeys, and for protecting back seats and door panels from mud, claws, and scratches. Particularly suited to medium and large dogs who need more room to lie flat than a traditional booster seat provides.
+
+### Long-Tail Keywords
+
+**Primary Keywords:**
+- dog back seat extender UK
+- dog car seat bridge UK buy
+- flatbed dog car platform UK
+- back seat dog platform hard base UK
+- dog footwell bridge UK car
+- dog car seat extender rigid base UK
+- back seat dog bed extender UK
+
+**Secondary Keywords:**
+- dog car seat gap filler
+- dog seat extender with door protection
+- flat surface dog car seat cover
+- rigid dog car platform
+- dog back seat bridge footwell
+- hard base dog travel platform
+- dog car seat leveller
+- anxious dog car seat solution
+- dog anti-slide car seat bridge
+- back seat extender for large dogs
+
+**Question-Based:**
+- how to stop my dog falling into car footwell UK
+- what stops dogs sliding into footwell when braking
+- best dog car seat for anxious dogs UK
+- how to create flat back seat for dog
+- do dog back seat extenders actually work
+
+### FAQs to Answer
+1. How do I stop my dog sliding into the footwell when I brake?
+2. Will a back seat extender fit my car (hatchback/estate/SUV)?
+3. Does a hard base actually make a difference compared to soft covers?
+4. Can I still use a harness and tether with a back seat extender?
+5. How do I secure the extender so it doesn't shift during driving?
+6. Will this help my anxious dog settle during car journeys?
+7. Does the extender protect my door panels from scratches?
+8. How do I clean the extender after muddy walks?
+9. Can I still fold my back seats down with this installed?
+10. What's the weight limit for a flatbed back seat extender?
+11. Is the hard base uncomfortable for my dog to lie on?
+12. Does the extender work with ISOFIX points or seatbelt anchors?
+
+### Ad Angles
+- **Anxiety Relief:** "Create a calm, flat space where anxious dogs can finally settle during car journeys"
+- **No More Footwell Falls:** "Stop the braking slide - a rigid platform that keeps dogs secure and comfortable"
+- **Door Protection Built In:** "Side flaps protect doors from muddy paws and nervous scratches"
+- **Stability First:** "Hard base means no sagging, no sliding, no stress for you or your dog"
+- **The Flat Surface Solution:** "Give medium and large dogs the lying-down space they need for longer journeys"
+
+### Seasonality
+- **October-November (PEAK):** Muddy autumn walks, school half-term travel
+- **December (HIGH):** Christmas travel period peaks around 22nd December
+- **January-February:** Post-holiday sales, new year pet travel resolutions
+- **March-April (RISING):** Spring travel begins, Easter holidays
+- **June-August (MODERATE):** Summer staycations to Cornwall, Lake District, Wales
+- **Year-Round:** Vet visits, weekly trips, dog training classes
+
+### Competitors (UK Market)
+
+| Competitor/Brand | Product Type | Price Range (GBP) | Key Features |
+|-----------------|--------------|-------------------|--------------|
+| Amazon Basics | Soft seat extender/bridge | £25-£40 | Budget option, basic padding |
+| Luther Bennett | Premium car travel beds | £89-£129 | Memory foam, anxiety-focused |
+| Viovet/Trixie | Basic seat covers with extension | £30-£50 | Universal fit, established brand |
+| Pets at Home | Seat covers, some with extensions | £35-£60 | High street availability |
+| Kurgo Backseat Bridge | Hammock with inflatable insert | £55-£75 | Known brand, can puncture |
+| zooplus/Ferplast | Back seat protectors | £20-£45 | Budget to mid-range |
+| FunnyFuzzy | Luxury car seat/beds | £60-£136 | Premium materials, soft bases |
+
+**Market Gap:** Most UK competitors offer soft covers OR booster seats, but not hard-base flatbed platforms. HappyPawsCo fills this gap with rigid support + door protection at mid-range pricing (£45-£65).
+
+---
+
+## 16. KURGO CRASH-TESTED DOG CAR HARNESS (UK Market Research)
+
+### Use Case
+The Kurgo Enhanced Strength Tru-Fit harness is designed for UK dog owners who need a reliable, crash-tested restraint system that complies with Highway Code Rule 57 requirements. It serves dual purposes: securing dogs safely during car journeys and functioning as a comfortable walking harness with front and back lead attachment points.
+
+### Long-Tail Keywords
+
+**Primary Keywords:**
+- crash tested dog harness UK
+- FMVSS 213 dog car harness
+- dog seatbelt harness UK legal
+- Highway Code dog restraint harness
+- crash tested dog car seat belt UK
+- Kurgo Tru-Fit harness UK
+- certified dog car safety harness
+
+**Secondary Keywords:**
+- dog car harness with seatbelt tether
+- steel buckle dog car harness
+- padded dog travel harness UK
+- dual purpose car walking dog harness
+- dog restraint car UK law
+- medium dog car harness crash tested
+- secure dog harness for car travel
+- adjustable dog car safety harness
+- dog harness Highway Code compliant
+- pet safety harness car UK
+
+**Question-Based:**
+- what does crash tested mean for dog harnesses
+- is it illegal to have an unrestrained dog in car UK
+- what is FMVSS 213 crash testing for dogs
+- do I need a crash tested dog harness UK
+- how to restrain dog in car Highway Code
+
+### FAQs to Answer
+1. What does "crash tested" actually mean for a dog harness?
+2. What is FMVSS 213 and why does it matter for dog harnesses?
+3. Is it a legal requirement to restrain my dog in the car in the UK?
+4. Can a passenger simply hold the dog instead of using a harness?
+5. How does a crash-tested harness differ from a regular walking harness?
+6. What certifications should I look for when buying a crash-tested dog harness?
+7. Can the Kurgo Tru-Fit harness be used as a walking harness too?
+8. What size Kurgo harness do I need for my dog?
+9. How do I attach the harness to my car's seatbelt?
+10. Will using a crash-tested harness affect my car insurance?
+11. What weight rating does the Kurgo Enhanced Strength harness have?
+12. Are extension tethers safe to use with crash-tested harnesses?
+
+### Ad Angles
+- **Safety First:** "The Only Dog Harness Crash-Tested to Child Car Seat Standards"
+- **Legal Compliance:** "Stay on the Right Side of Highway Code Rule 57"
+- **Dual-Purpose Value:** "One Harness for the Car AND the Walk"
+- **Steel Strength:** "Rock-Climbing Grade Steel Buckles for Your Best Friend"
+- **Peace of Mind:** "Because Your Dog Deserves Seatbelt-Level Protection"
+
+### Seasonality
+- **May-August (PEAK):** Summer holiday staycations, road trips
+- **December-January:** Christmas travel - 5 of 6 dog owners take dogs to family
+- **March/April:** Easter bank holiday travel
+- **March & September:** New car purchase cycles prompt accessory purchases
+- **Year-Round:** Legal compliance messaging always relevant
+
+### Competitors (UK Market)
+
+| Brand & Model | Crash Testing | UK Price (GBP) | Key Differentiator |
+|---------------|---------------|----------------|-------------------|
+| Kurgo Enhanced Strength Tru-Fit | FMVSS 213 | £19-£27 | Best value crash-tested option |
+| Sleepypod Clickit Sport Plus | CPS 5-Star | £100-£120 | Highest safety rating |
+| Sleepypod Clickit Terrain Plus | CPS 5-Star | £110-£130 | Heavy-duty, up to 50kg |
+| Ruffwear Load Up | MGA Research tested | £89-£100 | Premium outdoor brand |
+| EzyDog Drive | FMVSS 213 | £79 | Australian engineering |
+| Thule Cappy | TUV Approved | £80 | Scandinavian design |
+| MIMsafe AllSafe | TUV/ECE R-17 | £105 | German engineering |
+| CarSafe (Company of Animals) | OVSC Lab | £24-£35 | UK brand, mid-range |
+
+**Price Positioning:** At £19-£27, Kurgo is the most affordable genuinely crash-tested option in the UK market.
+
+### Crash Testing Standards Explainer
+
+**FMVSS 213 (US Federal Standard):**
+- Originally designed for child car seats
+- Tests involve a 30 mph frontal crash simulation
+- Measures excursion limits (how far dog moves forward)
+- Passing criteria: ≤32 inches for dogs up to 23kg
+
+**Center for Pet Safety (CPS) Certification:**
+- Gold standard for pet restraint testing
+- Independent, non-profit organisation
+- Provides star ratings (1-5 stars)
+- Currently certified: Sleepypod only
+
+**Key Warning Signs:**
+- "Tested" without specifying standard
+- No crash test videos available
+- No third-party certification
+
+---
+
+## 17. SLOW FEEDER DOG BOWL (UK Market Research)
+
+### Use Case
+Slow feeder dog bowls prevent gulping and encourage steadier eating habits. The silicone suction bowl helps reduce bloat (GDV) risk, improves digestion, and creates calmer mealtimes by engaging dogs for up to 10 times longer during feeding. Ideal for small to medium dogs who eat too quickly.
+
+### Long-Tail Keywords
+
+**Primary Keywords:**
+- slow feeder dog bowl UK
+- anti-gulping dog bowl UK buy
+- silicone slow feeder bowl for dogs UK
+- suction cup dog bowl UK
+- bloat prevention dog bowl UK
+- slow eating dog bowl small dogs UK
+- dog digestion bowl UK
+
+**Secondary Keywords:**
+- best slow feeder for puppies UK
+- green slow feeder dog bowl
+- slow feeder bowl for fast eaters
+- anti-bloat dog bowl
+- dog puzzle feeder bowl
+- dog food bowl stops gulping
+- slow feeder for Cockapoo/Spaniel/French Bulldog
+- enrichment feeding bowl dogs
+- silicone pet bowl suction base
+- portion control dog bowl UK
+
+**Question-Based:**
+- do slow feeder dog bowls really work
+- are slow feeders good for puppies
+- can slow feeders prevent bloat in dogs
+- what size slow feeder bowl do I need for my dog
+- how do I clean a silicone slow feeder bowl
+
+### FAQs to Answer
+1. Do slow feeder dog bowls actually work? (Yes - dogs eat 5-10x slower)
+2. Are slow feeder bowls safe for puppies? (Yes - ideal for fast-eating pups)
+3. Can slow feeders help prevent bloat (GDV)? (Yes - reduces air gulping)
+4. What is the difference between silicone and plastic slow feeders?
+5. How do I clean a silicone slow feeder bowl? (Dishwasher safe)
+6. What size slow feeder do I need?
+7. Can slow feeders be used with wet food? (Yes)
+8. Why does my dog flip the slow feeder over? (Get suction base)
+9. Will a slow feeder help my overweight dog?
+10. Are slow feeders good for senior dogs? (Yes - mental stimulation)
+11. How do suction cup slow feeders stay in place?
+12. Can slow feeders reduce gas and flatulence? (Yes)
+
+### Ad Angles
+- **Health-First:** "Vet-recommended solution to reduce bloat risk and aid digestion"
+- **Calm Mealtimes:** "Transform chaotic feeding time into calmer, enriching mealtimes"
+- **Bloat Prevention:** "Deep-chested breed? Help protect against life-threatening GDV"
+- **Problem-Solution:** "Does your dog inhale their food in seconds? Make mealtime last longer"
+- **New Pet Parent:** "New puppy gulping down food? Start healthy habits early"
+
+### Seasonality
+- **Spring (March-May):** Peak puppy season in UK
+- **January:** New Year health resolutions extend to pets
+- **Post-Christmas:** Increased awareness of pet health after indulgent feeding
+- **Year-Round:** Pet owners increasingly focused on pet mental health and enrichment
+
+### Competitors (UK Market)
+
+| Brand | Product | Price (GBP) | Key Features |
+|-------|---------|-------------|--------------|
+| Outward Hound | Fun Feeder Slo Bowl | £13-£15 | Multiple sizes, dishwasher safe |
+| SodaPup | eBowl Enrichment | £18-£25 | Premium designs, USA-made |
+| Dogit | Go Slow Anti-Gulp | £8-£12 | Budget-friendly |
+| Trixie | Slow Feeding Plastic | £8-£10 | Entry-level |
+| Neater Pets | Adjustable Double Diner | £35-£45 | Adjustable height |
+| Amazon Basics | Various | £6-£15 | Wide range, variable quality |
+
+### Health Benefits Section
+
+**Bloat (GDV) Prevention:**
+Gastric Dilatation-Volvulus occurs when excess air fills the stomach, potentially causing it to twist. 25-40% of dogs do not survive GDV even with emergency surgery. Fast eating causes dogs to gulp air - slow feeders significantly reduce this risk.
+
+**Breeds at Higher Risk:**
+Great Danes (10x more likely), Weimaraners (4.6x), St Bernards (4.2x), Irish Setters, German Shepherds, Dobermanns. Dogs over 40kg have 148.7x higher GDV odds compared to dogs under 10kg.
+
+**Additional Benefits:**
+- Improved digestion and nutrient absorption
+- Weight management (brain receives satiety signals)
+- Reduced choking risk
+- Mental enrichment and cognitive stimulation
+
+---
+
+*Research completed: January 14, 2026*
+*Source: Research Gap Filler Agent analysis with web research*
+*Next update needed: Remaining products from Perplexity prompts*
+

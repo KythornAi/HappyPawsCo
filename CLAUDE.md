@@ -77,6 +77,11 @@
 
 ## Session Handover Format
 
+**CRITICAL:** User requires DETAILED, COMPREHENSIVE handover summaries. Short summaries are NOT acceptable. The handover must be thorough enough that:
+1. The user can remember everything discussed and revisit ideas
+2. Any new Claude instance can pick up exactly where we left off
+3. No context is lost between sessions
+
 **Location:** `00_Session_Summary/`
 **Naming:** `SESSION_HANDOVER_[MONTH]_[DAY]_[YEAR].md`
 
@@ -84,12 +89,66 @@ Examples:
 - `SESSION_HANDOVER_JAN_14_2026.md`
 - `SESSION_HANDOVER_JAN_14_2026_EVENING.md` (if multiple same day)
 
-**Include in handover:**
-- What was accomplished
-- Git commits made
-- What's still pending
-- Priority for next session
-- Any decisions made
+### Required Sections (ALL MANDATORY):
+
+**1. Context From Previous Session**
+- Reference the previous handover file
+- What was left pending that we addressed
+
+**2. What We Accomplished (DETAILED)**
+- Every task completed with full explanation
+- File paths for all files created/modified
+- Content summaries (what's in each file)
+- Line numbers or locations in files if relevant
+
+**3. Key Decisions Made**
+- Strategic decisions and WHY they were made
+- Alternative approaches considered and rejected
+- User preferences identified during session
+
+**4. Files Created/Modified**
+- Full file paths (not abbreviated)
+- What each file contains
+- Any important content details
+
+**5. Git Status**
+- Commits made (with hashes if available)
+- Uncommitted changes pending
+- Exact git commands if manual commit needed
+
+**6. Outstanding Tasks**
+- Prioritised list (Priority 1, 2, 3)
+- What's needed to complete each
+- Any blockers or dependencies
+
+**7. Important Reference Information**
+- IDs, URLs, Sheet IDs used during session
+- Any credentials or access info (non-sensitive)
+- Key file locations referenced
+
+**8. Full Text of Any Prompts/Templates Created**
+- If prompts were created for user to run elsewhere (Perplexity, etc.), include FULL TEXT
+- Don't make user scroll back to find them
+
+**9. Technical Issues Encountered**
+- What failed and workarounds used
+- Notes for future sessions
+
+**10. How to Start Next Session**
+- Specific prompts/phrases user can say
+- What context the next Claude will need
+
+### Length Guideline:
+- Minimum 200 lines for a productive session
+- 300-500 lines for complex sessions with multiple tasks
+- NEVER summarise to 10-20 sentences - that loses valuable context
+
+### Why This Matters:
+The user reviews these handovers to:
+- Remember brainstorming ideas to expand on later
+- Identify things that were mentioned but not fully explored
+- Ensure nothing falls through the cracks
+- Give new Claude instances full context
 
 ---
 
