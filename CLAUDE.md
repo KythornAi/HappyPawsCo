@@ -273,6 +273,37 @@ The user reviews these handovers to:
 
 ---
 
+## Context Preservation Rules
+
+**CRITICAL:** To prevent information loss during compaction/summarization:
+
+### Rule 1: Update Tracker After Each Completed Task
+After completing ANY significant task, IMMEDIATELY update:
+- `00_Session_Summary/INCOMPLETE_TASKS_TRACKER.md` - Mark task complete, add notes
+- Don't batch updates - do them as you go
+
+### Rule 2: Commit Frequently
+After creating or modifying files:
+- Commit to git immediately
+- Don't wait until end of session
+- Use descriptive commit messages
+
+### Rule 3: If Context Is Running Low
+If you notice you're using a lot of context (~70%+):
+1. **STOP** what you're doing
+2. Create a handover file using the template above
+3. Update the task tracker
+4. Commit everything to git
+5. Tell the user: "I'm running low on context. I've saved progress to [files]. Safe to continue or start fresh."
+
+### PreCompact Hook Active
+A backup script runs automatically before compaction, saving the full transcript to:
+`00_Session_Summary/compaction_backups/`
+
+This is a safety net, but you should STILL proactively save progress as described above.
+
+---
+
 ## Brand Voice Essentials
 
 ### DO:
