@@ -125,59 +125,142 @@ Examples:
 - `SESSION_HANDOVER_JAN_14_2026.md`
 - `SESSION_HANDOVER_JAN_14_2026_EVENING.md` (if multiple same day)
 
-### Required Sections (ALL MANDATORY):
+### COPY THIS TEMPLATE (fill in the brackets):
 
-**1. Context From Previous Session**
-- Reference the previous handover file
-- What was left pending that we addressed
+```markdown
+# Session Handover: [Brief Title of What Was Done]
 
-**2. What We Accomplished (DETAILED)**
-- Every task completed with full explanation
-- File paths for all files created/modified
-- Content summaries (what's in each file)
-- Line numbers or locations in files if relevant
+**Date:** [Month Day, Year]
+**Previous Session:** [filename of previous handover, or "N/A if first"]
+**Context Used:** [approximate %, e.g., "~80%"]
 
-**3. Key Decisions Made**
-- Strategic decisions and WHY they were made
-- Alternative approaches considered and rejected
-- User preferences identified during session
+---
 
-**4. Files Created/Modified**
-- Full file paths (not abbreviated)
-- What each file contains
-- Any important content details
+## 1. Context From Previous Session
 
-**5. Git Status**
-- Commits made (with hashes if available)
-- Uncommitted changes pending
-- Exact git commands if manual commit needed
+**Previous handover:** `[filename]`
+**What was pending:** [What tasks carried over that we addressed]
 
-**6. Outstanding Tasks**
-- Prioritised list (Priority 1, 2, 3)
-- What's needed to complete each
-- Any blockers or dependencies
+---
 
-**7. Important Reference Information**
-- IDs, URLs, Sheet IDs used during session
-- Any credentials or access info (non-sensitive)
-- Key file locations referenced
+## 2. What We Accomplished This Session
 
-**8. Full Text of Any Prompts/Templates Created**
-- If prompts were created for user to run elsewhere (Perplexity, etc.), include FULL TEXT
-- Don't make user scroll back to find them
+### [Task 1 Name]
+- [Detailed description of what was done]
+- [File paths created/modified]
+- [Any important details about the content]
 
-**9. Technical Issues Encountered**
-- What failed and workarounds used
-- Notes for future sessions
+### [Task 2 Name]
+- [Detailed description]
+- [Files affected]
 
-**10. How to Start Next Session**
-- Specific prompts/phrases user can say
-- What context the next Claude will need
+[Continue for each task...]
+
+---
+
+## 3. Key Decisions Made
+
+| Decision | Why | Alternatives Considered |
+|----------|-----|------------------------|
+| [Decision 1] | [Reasoning] | [What we didn't do] |
+| [Decision 2] | [Reasoning] | [What we didn't do] |
+
+**User preferences noted:**
+- [Any preferences identified during session]
+
+---
+
+## 4. Files Created/Modified
+
+| File Path | What It Contains | Notes |
+|-----------|------------------|-------|
+| `[full/path/to/file.md]` | [Description] | [Any important details] |
+| `[full/path/to/file2.md]` | [Description] | [Any important details] |
+
+---
+
+## 5. Git Status
+
+**Commits this session:**
+- `[hash]` - [commit message]
+- `[hash]` - [commit message]
+
+**Uncommitted changes:** [List any, or "None - all committed"]
+
+**Push status:** [Pushed to remote / Not yet pushed]
+
+---
+
+## 6. Outstanding Tasks
+
+### Priority 1 (Do Next)
+- [ ] [Task] - [What's needed to complete it]
+
+### Priority 2 (Soon)
+- [ ] [Task] - [What's needed]
+
+### Priority 3 (When Time Permits)
+- [ ] [Task] - [What's needed]
+
+**Blockers:** [Any dependencies or blockers]
+
+---
+
+## 7. Reference Information
+
+**Google Sheet IDs used:**
+- [Sheet name]: `[ID]`
+
+**Key file locations:**
+- [Description]: `[path]`
+
+**URLs referenced:**
+- [Description]: [URL]
+
+---
+
+## 8. Prompts/Templates Created
+
+[If any prompts were created for user to run elsewhere, include FULL TEXT here]
+
+### [Prompt Name]
+```
+[Full prompt text - do not summarise]
+```
+
+---
+
+## 9. Technical Issues & Workarounds
+
+| Issue | Workaround | Notes for Future |
+|-------|------------|------------------|
+| [Issue] | [How we handled it] | [What to remember] |
+
+---
+
+## 10. How to Start Next Session
+
+**The user can say:**
+> "[Suggested opening message to continue work]"
+
+**Context the next Claude needs:**
+- [Key thing to know]
+- [Key thing to know]
+
+---
+
+## Quick Reference for Next Session
+
+**Launch date:** January 31, 2026
+**Current priorities:** [Top 2-3 things]
+**Files to check first:** [Key files]
+```
 
 ### Length Guideline:
-- Minimum 200 lines for a productive session
-- 300-500 lines for complex sessions with multiple tasks
-- NEVER summarise to 10-20 sentences - that loses valuable context
+- **Minimum 200 lines** for a productive session
+- **300-500 lines** for complex sessions with multiple tasks
+- **NEVER summarise to 10-20 sentences** - that loses valuable context
+- Include ALL details - the user reviews these to remember ideas and find things to revisit
 
 ### Why This Matters:
 The user reviews these handovers to:
@@ -185,6 +268,8 @@ The user reviews these handovers to:
 - Identify things that were mentioned but not fully explored
 - Ensure nothing falls through the cracks
 - Give new Claude instances full context
+
+**If you write a lazy short summary, you are failing the user.**
 
 ---
 
