@@ -64,10 +64,12 @@ Quick reference for commands, agents, and skills. Print this or keep it handy.
 | `competitive-ads-extractor` | "Analyse competitor ads" |
 | `lead-research-assistant` | "Find leads for our products" |
 
-### Writing
+### Writing & Email
 | Skill | When to Use |
 |-------|-------------|
 | `product-copy-writer` | "Write product copy for this item" |
+| `email-copywriter` | "Write welcome sequence emails" |
+| `email-copywriter` | "Create abandoned cart email flow" |
 
 ---
 
@@ -117,6 +119,17 @@ Create 3 pin strategies for this blog
 ```
 ```
 Check my Pinterest automation is working
+```
+
+### Email & Newsletter
+```
+Write a welcome email sequence for new subscribers
+```
+```
+Create abandoned cart recovery emails
+```
+```
+Write a post-purchase follow-up sequence
 ```
 
 ### Content Planning
