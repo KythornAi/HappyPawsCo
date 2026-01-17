@@ -2,8 +2,8 @@
 
 **Purpose**: Track things we said we'd do but haven't completed yet across all sessions.
 
-**Last Updated**: January 16, 2026
-**Updated By**: Claude (this session)
+**Last Updated**: January 17, 2026
+**Updated By**: Claude (blog polishing session)
 
 **⚠️ LAUNCH DATE: January 31, 2026** (end of month, NOT 49 days away - previous Claude misunderstood)
 
@@ -43,6 +43,9 @@
 - ✅ Image prompts for dental health blog (Jan 15) - 16 prompts created
 - ✅ 5 blogs polished (Jan 14) - See SESSION_HANDOVER_JAN_14_2026.md
 - ✅ 30 image prompts for 5 blogs (Jan 14)
+- ✅ 23 additional blogs polished (Jan 17) - See SESSION_HANDOVER_JAN_17_2026.md
+- ✅ Image prompts for all 23 blogs (Jan 17) - 4-5 prompts each for Vertex AI
+- ✅ **Total: 30 blogs now polished with image prompts**
 
 ---
 
