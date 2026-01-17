@@ -86,7 +86,17 @@
 
 ### MEDIUM PRIORITY - Important But Not Blocking Sprint
 
-**4. Knowledge Base Q&A Session** ⚠️ INCOMPLETE
+**4. Migrate Make.com Workflow to n8n** 🔜 TO DISCUSS
+- **Status**: User wants to explore moving Make.com blog automation to self-hosted n8n
+- **Why**: User having issues with Make.com automation (wasn't producing header images, other issues TBD)
+- **Approach**: Claude can build n8n workflow as JSON, user adds credentials after
+- **What's needed**:
+  - User to share what Make.com workflow currently does
+  - Identify what issues they've been having
+  - Decide what to keep same vs change
+- **Added**: Jan 17, 2026
+
+**5. Knowledge Base Q&A Session** ⚠️ INCOMPLETE
 - **Status**: Mentioned during knowledge base creation, never completed
 - **Why**: Fill gaps in brand understanding for agents/skills
 - **What's Missing**:
